@@ -30,7 +30,7 @@
 	the Sourceforge servers.  Instructions for using Subversion on Sourceforge can be
 	found <a href="http://sourceforge.net/svn/?group_id=41847">here</a>.</p>
 	<p><b>Note:</b> Developers can check out from 'trunk' with the following command:
-	<pre>svn co https://stella.svn.sourceforge.net/svnroot/stella/trunk/stella</pre></p>
+	<pre>svn co https://stella.svn.sourceforge.net/svnroot/stella/trunk stella</pre></p>
 <!---------------------------------------------------------------->
 
 			</div>
