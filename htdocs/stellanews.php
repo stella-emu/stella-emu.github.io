@@ -54,6 +54,9 @@ Ports to other operating systems will be released as they become available.
     ROM brings up the ROM launcher, but this can be disabled for those
     using an external frontend (in which case exiting a ROM also exits
     from Stella).</li>
+
+<li>The '-listrominfo' commandline argument now shows all ROM
+    information built in to the internal database.</li>
 </ul>
 
 Have Fun!
