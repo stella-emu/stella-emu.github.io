@@ -12,6 +12,53 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>June 9, 2009</H4>
+Stella release 2.8 for Linux, Mac OSX and Windows is now available.
+Ports to other operating systems will be released as they become available.
+<ul>
+<li>Added CRT simulation effects as described in the AtariAge posting
+    <a href="http://www.atariage.com/forums/index.php?showtopic=142886">CRT emulation for Stella</a>.
+    For now, this requires OpenGL 2.0 or greater with support for GLSL
+    (GL Shading Language).  This code will be expanded on and optimized
+    in future releases.</li>
+
+<li>Adding editing of extended RAM in the debugger RAM UI.  The RAM
+    'spreadsheet' now shows the entire address space of RAM in the
+    system, in 128 byte increments.  The first bank shown is zero-page,
+    with the others following in consecutive order.  The UI takes care
+    of read vs. write port differences, so you don't have to worry
+    about the offsets.  For now, all SuperChip based ROMs (EFSC, F4SC,
+    F6SC, F8SC) as well as 3E, CV, E7 and FASC are supported.</li>
+
+<li>All ROMs which include SC extended RAM will now have memory erased if
+    you attempt to read from the write port.  Related to this,
+    entering/exiting the debugger will no longer erase the extended RAM.</li>
+
+<li>Patching of ROM for bankswitch types 0840, SB, UA and X07 is now
+    implemented, but hasn't been extensively tested.</li>
+
+<li>Visual improvements to the CPU register UI in the debugger; the
+    SP/A/X/Y registers now have separate decimal and binary views.</li>
+
+<li>Tweaked paddle control so that all positions are reachable in game
+    4 of Activision Casino in both NTSC and PAL versions.</li>
+
+<li>Auto-detection for '3F' bankswitching improved; several ROMs
+    previously detected as 'F8' now work correctly.</li>
+
+<li>Updated internal ROM properties database to ROM-Hunter version 5
+    (thanks go to RomHunter for his tireless research in this area).</li>
+
+<li>Added '-exitlauncher' commandline argument and associated UI item,
+    to specify what happens when you exit a ROM.  Normally, exiting a
+    ROM brings up the ROM launcher, but this can be disabled for those
+    using an external frontend (in which case exiting a ROM also exits
+    from Stella).</li>
+</ul>
+
+Have Fun!
+
+
 <H4>May 16, 2009</H4>
 Major website update using newer technologies (PHP and CSS).  Updated
 many dead links, and added a new 'Homebrew Developers' section.
@@ -39,8 +86,6 @@ Ports to other operating systems will be released as they become available.
 <li>Changed internal sound frequency of Pitfall 2 from 15.75KHz to 20KHz,
     as this sounds much more authentic when compared to a real cartridge.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>April 14, 2009</H4>
