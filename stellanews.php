@@ -43,6 +43,10 @@ Ports to other operating systems will be released as they become available.
 <li>Tweaked paddle control so that all positions are reachable in game
     4 of Activision Casino in both NTSC and PAL versions.</li>
 
+<li>SuperCharger/AR ROMs now start with a random value in the CPU
+    accumulator.  This should fix issues with Dragonstomper always
+    starting in exactly the same state.</li>
+
 <li>Auto-detection for '3F' bankswitching improved; several ROMs
     previously detected as 'F8' now work correctly.</li>
 
@@ -55,8 +59,13 @@ Ports to other operating systems will be released as they become available.
     using an external frontend (in which case exiting a ROM also exits
     from Stella).</li>
 
+<li>Re-added '-fastscbios' commandline argument, and added an associated
+    UI item.  When enabled, the SuperCharger load bars are now completely
+    removed (and not just sped up as in previous releases).</li>
+
 <li>The '-listrominfo' commandline argument now shows all ROM
-    information built in to the internal database.</li>
+    information built in to the internal database, taking into account
+    any information in 'personal' stella.pro files.</li>
 </ul>
 
 Have Fun!
