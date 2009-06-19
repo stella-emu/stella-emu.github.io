@@ -12,6 +12,52 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>June 19, 2009</H4>
+Stella release 2.8.1 for Linux, Mac OSX and Windows is now available.
+Ports to other operating systems will be released as they become available.
+<ul>
+<li>NOTE: Windows users will have to reset their options or manually move
+    their config folder in this release, since the location of the config
+    files has changed.</li>
+
+<li>Fixed OpenGL issue for some Windows users whereby the OpenGL TV
+    effects weren't available, even if the available version of OpenGL
+    was sufficient.  Related to this, the OpenGL version found by
+    Stella is now reported in the TV effects dialog.</li>
+
+<li>Added fallback to software rendering when OpenGL rendering has been
+    requested, but for whatever reason fails to initialize.</li>
+
+<li>Added native support for 4in1, 8in1 and 32in1 multicart bankswitching
+    schemes.  When using these schemes, the 'Reload ROM' action
+    (by default, Control-r) will switch between each game in the ROM.</li>
+
+<li>Added bankswitch support for ROMs smaller than 2K in size.  These
+    will be treated as 2K ROMs natively, without having to manually
+    'pad' them to 2048 bytes.</li>
+
+<li>Added preliminary suppport for autodetection of X07 bankswitching.</li>
+
+<li>Tweaked PAL autodetection; it was marking some PAL ROMs as NTSC.</li>
+
+<li>Changed default location for Stella config files in Windows to
+    the users' APPDATA folder (for XP and Vista, this is
+    '~/Application Data/Stella').  The '~' symbol now represents the
+    users PROFILE/home directory, matching its usage in Linux and OSX.
+    The ability to override this with 'basedir.txt' is still
+    available, but not advised.</li>
+
+<li>Changed '-exitlauncher' commandline argument to '-uselauncher'.
+    This works as before except the launcher is never used at all if
+    the option is set to false.</li>
+
+<li>Fixed crash when launching Stella from the commandline and giving
+    a directory name instead of a rom filename.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>June 9, 2009</H4>
 Stella release 2.8 for Linux, Mac OSX and Windows is now available.
 Ports to other operating systems will be released as they become available.
@@ -67,8 +113,6 @@ Ports to other operating systems will be released as they become available.
     information built in to the internal database, taking into account
     any information in 'personal' stella.pro files.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>May 16, 2009</H4>
