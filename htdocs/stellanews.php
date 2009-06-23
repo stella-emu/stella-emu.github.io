@@ -12,6 +12,22 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>June 23, 2009</H4>
+Stella release 2.8.2 for Linux, Mac OSX and Windows is now available.
+Ports to other operating systems will be released as they become available.
+<ul>
+<li>Fixed OpenGL detection bug which could disable OpenGL support entirely
+    if TV effects are not available (version &lt; 2.0), when in fact only the
+    effects should have been disabled.</li>
+
+<li>The '\' character can now be entered in UI text fields again.
+    Related to this, strings containing '\' are now properly loaded and
+    saved to various config files.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>June 19, 2009</H4>
 Stella release 2.8.1 for Linux, Mac OSX and Windows is now available.
 Ports to other operating systems will be released as they become available.
@@ -54,8 +70,6 @@ Ports to other operating systems will be released as they become available.
 <li>Fixed crash when launching Stella from the commandline and giving
     a directory name instead of a rom filename.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>June 9, 2009</H4>

@@ -14,37 +14,37 @@
 <!---------------------------------------------------------------->
 <table BORDER=0 CELLPADDING=6 WIDTH="100%">
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.1-win32.exe?download">stella-2.8.1-win32.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.2-win32.exe?download">stella-2.8.2-win32.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for Windows 95/98/ME/2000/XP/Vista</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.1-win32.zip?download">stella-2.8.1-win32.zip</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.2-win32.zip?download">stella-2.8.2-win32.zip</a></td>
 		<td BGCOLOR="#FFCC99">Binary ZIP for Windows 95/98/ME/2000/XP/Vista</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.1-win64.zip?download">stella-2.8.1-win64.zip</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.2-win64.zip?download">stella-2.8.2-win64.zip</a></td>
 		<td BGCOLOR="#FFCC99">Binary 64-bit ZIP for Windows Vista64 (not well tested, may not work in XP64)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/StellaOSX2.8.1.dmg?download">StellaOSX2.8.1.dmg</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/StellaOSX2.8.2.dmg?download">StellaOSX2.8.2.dmg</a></td>
 		<td BGCOLOR="#FFCC99">Binary DMG for Mac OSX</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.1-1.i586.rpm?download">stella-2.8.1-1.i586.rpm</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.2-1.i586.rpm?download">stella-2.8.2-1.i586.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit RPM for Mandriva Linux 2007 (may work on other RPM distributions)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_2.8.1-1_i386.deb?download">stella_2.8.1-1_i386.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_2.8.2-1_i386.deb?download">stella_2.8.2-1_i386.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu Jaunty Jackalope (9.04)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_2.8.1-1_amd64.deb?download">stella_2.8.1-1_amd64.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_2.8.2-1_amd64.deb?download">stella_2.8.2-1_amd64.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu Jaunty Jackalope (9.04)</td>
 	</tr>
 
@@ -59,12 +59,12 @@
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.1-1.src.rpm?download">stella-2.8.1-1.src.rpm</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.2-1.src.rpm?download">stella-2.8.2-1.src.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Source RPM for Mandriva Linux (may work on other RPM distributions)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.1-src.tar.gz?download">stella-2.8.1-src.tar.gz</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.2-src.tar.gz?download">stella-2.8.2-src.tar.gz</a></td>
 		<td BGCOLOR="#FFCC99">Source tarball for all systems</td>
 	</tr>
 
