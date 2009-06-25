@@ -12,6 +12,17 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>June 25, 2009</H4>
+Stella release 2.8.3 for Linux, Mac OSX and Windows is now available.
+Ports to other operating systems will be released as they become available.
+<ul>
+<li>Fixed OpenGL bug which caused an immediate program crash if the
+    available OpenGL version was less than 2.0.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>June 23, 2009</H4>
 Stella release 2.8.2 for Linux, Mac OSX and Windows is now available.
 Ports to other operating systems will be released as they become available.
@@ -24,8 +35,6 @@ Ports to other operating systems will be released as they become available.
     Related to this, strings containing '\' are now properly loaded and
     saved to various config files.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>June 19, 2009</H4>
