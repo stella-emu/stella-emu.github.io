@@ -12,6 +12,22 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>July 4, 2009</H4>
+Stella release 2.8.4 for Linux, Mac OSX and Windows is now available.
+Ports to other operating systems will be released as they become available.
+<ul>
+<li>Fixed bug where Stella could lock up after running for ~71 minutes.
+    Special thanks to Robert Tuccitto for bugtesting and feedback on this
+    issue.</li>
+
+<li>Updated UA bankswitch autodetection for Gingerbread Man ROM.</li>
+
+<li>The smallest ROM that Stella can support is 64 bytes; this lower
+    limit is now tested when loading Sub2K ROMs.</li>
+</ul>
+
+Have Fun!
+
 <H4>June 25, 2009</H4>
 Stella release 2.8.3 for Linux, Mac OSX and Windows is now available.
 Ports to other operating systems will be released as they become available.
@@ -19,8 +35,6 @@ Ports to other operating systems will be released as they become available.
 <li>Fixed OpenGL bug which caused an immediate program crash if the
     available OpenGL version was less than 2.0.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>June 23, 2009</H4>
