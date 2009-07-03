@@ -24,6 +24,14 @@ Ports to other operating systems will be released as they become available.
 
 <li>The smallest ROM that Stella can support is 64 bytes; this lower
     limit is now tested when loading Sub2K ROMs.</li>
+
+<li>Starting from this release onward, I will be providing Linux binaries
+	for the latest version of Ubuntu only (currently, 32/64-bit Jaunty).
+	The Mandriva RPMs are discontinued, but will probably be still
+	available from the <a href="http://plf.zarb.org">PLF repository</a>.
+	Sorry for any inconvenience this may cause, but I can no longer
+	build, maintain or support packages for systems that I don't
+	personally use.</li>
 </ul>
 
 Have Fun!
