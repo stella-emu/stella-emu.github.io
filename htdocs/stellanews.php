@@ -22,6 +22,8 @@ Ports to other operating systems will be released as they become available.
 
 <li>Updated UA bankswitch autodetection for Gingerbread Man ROM.</li>
 
+<li>Updated 0840 bankswitch autodetection for Toyshop Trouble ROM.</li>
+
 <li>The smallest ROM that Stella can support is 64 bytes; this lower
     limit is now tested when loading Sub2K ROMs.</li>
 
