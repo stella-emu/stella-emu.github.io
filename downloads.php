@@ -32,12 +32,7 @@
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/StellaOSX2.8.4.dmg?download">StellaOSX2.8.4.dmg</a></td>
 		<td BGCOLOR="#FFCC99">Binary DMG for Mac OSX</td>
 	</tr>
-<!--
-	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.4-1.i586.rpm?download">stella-2.8.4-1.i586.rpm</a></td>
-		<td BGCOLOR="#FFCC99">Binary 32-bit RPM for Mandriva Linux 2007 (may work on other RPM distributions)</td>
-	</tr>
--->
+
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_2.8.4-1_i386.deb?download">stella_2.8.4-1_i386.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu Jaunty Jackalope (9.04)</td>
@@ -49,6 +44,11 @@
 	</tr>
 
 	<tr>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.4-1.i586.rpm?download">stella-2.8.4-1.i586.rpm</a></td>
+		<td BGCOLOR="#FFCC99">Binary 32-bit RPM for Mandriva Linux 2009 (may work on other RPM distributions)</td>
+	</tr>
+
+	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.3.5-gp2x.zip?download">stella-2.3.5-gp2x.zip</a></td>
 		<td BGCOLOR="#FFCC99">Binary ZIP for GP2X</td>
 	</tr>
@@ -57,12 +57,12 @@
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.3.5-wince.zip?download">stella-2.3.5-wince.zip</a></td>
 		<td BGCOLOR="#FFCC99">Binary ZIP for WinCE devices (PocketPC and Smartphones)</td>
 	</tr>
-<!--
+
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.4-1.src.rpm?download">stella-2.8.4-1.src.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Source RPM for Mandriva Linux (may work on other RPM distributions)</td>
 	</tr>
--->
+
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.4-src.tar.gz?download">stella-2.8.4-src.tar.gz</a></td>
 		<td BGCOLOR="#FFCC99">Source tarball for all systems</td>

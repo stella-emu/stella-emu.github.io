@@ -12,6 +12,14 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>July 13, 2009</H4>
+Due to somewhat popular demand (and the fact that I finally got Mandriva
+2009 working in VirtualBox), the Mandriva RPMs are available again.
+Hopefully I can keep the VM working for future releases, but if anyone
+is interested in maintaining RPM builds for Mandriva, Fedora, etc, I'd
+really like to hear from you.
+
+
 <H4>July 4, 2009</H4>
 Stella release 2.8.4 for Linux, Mac OSX and Windows is now available.
 Ports to other operating systems will be released as they become available.
