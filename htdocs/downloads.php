@@ -13,6 +13,12 @@
 
 <!---------------------------------------------------------------->
 <table BORDER=0 CELLPADDING=6 WIDTH="100%">
+
+	<tr>
+		<td><b>Latest&nbsp;Release (v/ 2.8.4)</b></td>
+		<td>&nbsp;</td>
+	</tr>
+
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.4-win32.exe?download">stella-2.8.4-win32.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for Windows 95/98/ME/2000/XP/Vista</td>
@@ -30,7 +36,7 @@
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/StellaOSX2.8.4.dmg?download">StellaOSX2.8.4.dmg</a></td>
-		<td BGCOLOR="#FFCC99">Binary DMG for Mac OSX</td>
+		<td BGCOLOR="#FFCC99">Binary DMG for Mac OSX (Universal Binary, version 10.3 and higher)</td>
 	</tr>
 
 	<tr>
@@ -49,16 +55,6 @@
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.3.5-gp2x.zip?download">stella-2.3.5-gp2x.zip</a></td>
-		<td BGCOLOR="#FFCC99">Binary ZIP for GP2X</td>
-	</tr>
-
-	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.3.5-wince.zip?download">stella-2.3.5-wince.zip</a></td>
-		<td BGCOLOR="#FFCC99">Binary ZIP for WinCE devices (PocketPC and Smartphones)</td>
-	</tr>
-
-	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.8.4-1.src.rpm?download">stella-2.8.4-1.src.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Source RPM for Mandriva Linux (may work on other RPM distributions)</td>
 	</tr>
@@ -69,15 +65,46 @@
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC">
-			<a href="http://sourceforge.net/project/showfiles.php?group_id=41847" target="_top">Sourceforge project page</a></td>
-		<td BGCOLOR="#FFCC99">Older releases on the Sourceforge Stella project page</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td><b>Miscellaneous / Extras</b></td>
+		<td>&nbsp;</td>
 	</tr>
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-snapshots-20090619.zip?download">stella-snapshots-20090619.zip</a></td>
-		<td BGCOLOR="#ddCC99">Snapshot files for use in ROM launcher/ROM Info Viewer</td>
+		<td BGCOLOR="#FFCC99">Snapshot files for use in ROM launcher/ROM Info Viewer</td>
 	</tr>
+
+	<tr>
+		<td BGCOLOR="#CCCCCC">
+			<a href="http://sourceforge.net/project/showfiles.php?group_id=41847" target="_top">Sourceforge project page</a></td>
+		<td BGCOLOR="#ddCC99">Older releases on the Sourceforge Stella project page</td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td><b>Old / Unmaintained&nbsp;Releases</b></td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.3.5-gp2x.zip?download">stella-2.3.5-gp2x.zip</a></td>
+		<td BGCOLOR="#FFCC99">Binary ZIP for GP2X</td>
+	</tr>
+
+	<tr>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.3.5-wince.zip?download">stella-2.3.5-wince.zip</a></td>
+		<td BGCOLOR="#FFCC99">Binary ZIP for WinCE devices (PocketPC and Smartphones)</td>
+	</tr>
+
 </table>
 <!---------------------------------------------------------------->
 

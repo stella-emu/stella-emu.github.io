@@ -79,10 +79,6 @@
 	<td BGCOLOR="#FFCC99">Author/maintainer of the GP2X port of Stella</td>
 </tr>
 
-
-
-
-
 </table>
 <!---------------------------------------------------------------->
 
