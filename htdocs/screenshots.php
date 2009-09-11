@@ -42,15 +42,15 @@
 	</center>
 
 	<br>
-	<center><p><b><font size=+2>ROM Launcher (click for larger image)</font></b></center>
+	<center><p><b><font size=+2>ROM Launcher</font></b></center>
 	<center>
-		<a href="game-images/launcher.png"><img src="game-images/t_launcher.jpg"></img></a>
+		<img src="game-images/launcher.png"></img>
 	</center>
 
 	<br>
-	<center><p><b><font size=+2>Integrated Debugger (click for larger image)</font></b></center>
+	<center><p><b><font size=+2>Integrated Debugger</font></b></center>
 	<center>
-		<a href="game-images/debugger.png"><img src="game-images/t_debugger.jpg"></img></a>
+		<img src="game-images/debugger.png"></img>
 	</center>
 <!---------------------------------------------------------------->
 

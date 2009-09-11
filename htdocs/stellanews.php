@@ -12,6 +12,81 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>September 11, 2009</H4>
+Stella release 3.0 for Linux, Mac OSX and Windows is now available.
+Ports to other operating systems will be released as they become available.
+Note that starting with this release, the oldest supported version of
+Windows is Windows 2000; support has been discontinued for Windows 95/98/ME.
+It's been at least 10 years guys, it's time to move on.
+<ul>
+<li>Huge updates to the TIA emulation system.  Illegal HMOVEs are now
+    handled correctly, resulting in improvements to many ROMs (thanks
+    to Wilbert Pol for many ideas and code for these improvements).  All
+    HMOVE emulation 'cheats' were removed; the emulation is now cycle-exact
+    in this area.</li>
+
+<li>Improved emulation of the Cosmic Ark 'starfield effect', also used in
+    Stay Frosty; the emulation now looks very accurate.</li>
+
+<li>Many improvements to the normal TIA rendering code, fixing problems
+    when disabling certain graphical objects (certain objects were
+    being misdrawn when others were enabled/disabled).</li>
+
+<li>Improved TIA collision handling in the non-displayable area of the
+    screen; this fixes problems in RAMRacer ROM.</li>
+
+<li>Improved TIA redraw problems/graphical garbage when ROMs generate
+    many more scanlines than a real TV would allow; this fixes problems
+    in Q-Bert and the recent Playaround demo.</li>
+
+<li>Added 'Fixed Debug Colors' option similar to the no$26k emulator.
+    This allows each graphical object to be drawn in a fixed color,
+    more clearly showing how the objects interact.  HMOVE blanks are
+    also shown in a different color.  The TIA now emulates a 7-color
+    register model, allowing even shared objects to show different
+    colors.  This is toggled with the 'Alt Comma' key.</li>
+
+<li>Related to 'Fixed Debug Colors', HMOVE blanks can now toggled during
+    TIA display with the 'Alt-m' key.</li>
+
+<li>Added rewind functionality to the debugger, where states are saved
+    after each step/trace/scanline/frame advance.  Pressing 'Alt-r' or
+    clicking the new rewind button will undo up to 100 previous
+    operations.</li>
+
+<li>Added 'electron beam indicator' to the debugger TIA output.  Basically,
+    this is a visual pointer indicating the position of the electron gun
+    when scanning the display.</li>
+
+<li>Added ability to completely disable fullscreen mode, which fixes
+    problems for some people where fullscreen mode was being entered
+    even if it wasn't enabled.</li>
+
+<li>Added '-joyallow4' commandline argument and associated UI item to
+    allow all 4 directions to be pressed simultaneously on a joystick.</li>
+
+<li>Improvements made to the ROM launcher: the backspace key now goes
+    to the parent directory (this key can be remapped), and previously
+    selected directories are now automatically selected.</li>
+
+<li>Added support for 2IN1 bankswitching scheme, where two ROMs are
+    present in one binary.  Currently supported are 2, 4, 8, and 16K
+    ROMs.</li>
+
+<li>Added bankswitch support for the 6K version of Starpath/Supercharger
+    ROMS.  This allows the 6K version of Cubis to run.</li>
+
+<li>Updated bankswitching schemes FASC and MB; they are now known as
+    FA and F0, respectively.  This naming brings Stella in line with
+    other emulators and programming utilities.</li>
+
+<li>Fixed editing of cheats in the Cheat Dialog; the old cheat wasn't
+    being removed.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>July 13, 2009</H4>
 Due to somewhat popular demand (and the fact that I finally got Mandriva
 2009 working in VirtualBox), the Mandriva RPMs are available again.
@@ -44,7 +119,6 @@ Ports to other operating systems will be released as they become available.
 	personally use.</li>
 </ul>
 
-Have Fun!
 
 <H4>June 25, 2009</H4>
 Stella release 2.8.3 for Linux, Mac OSX and Windows is now available.

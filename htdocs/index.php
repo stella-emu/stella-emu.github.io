@@ -19,8 +19,9 @@
 				
 				<p>Stella is a multi-platform Atari 2600 VCS emulator released under
 				the GNU General Public License (GPL).  Stella was originally developed
-				for Linux by <a href="http://www.bradfordmott.com/">Bradford W. Mott</a>,
-				however, since its original release several people have joined the
+				for Linux by <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
+				and is currently maintained by <a href="http://minbar.org">Stephen Anthony</a>.
+				Since its original release several people have joined the
 				development team to port Stella to other operating systems such as
 				AcornOS, AmigaOS, DOS, FreeBSD, IRIX, Linux, OS/2, MacOS, Unix, and
 				Windows.  The development team is working hard to perfect the emulator
