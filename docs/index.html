@@ -10,7 +10,7 @@
 	<br><br>
 	<center><h2><b>A multi-platform Atari 2600 VCS emulator</b></h2></center>
 
-	<center><h4><b>Release 2.8.4</b></h4></center>
+	<center><h4><b>Release 3.0</b></h4></center>
 	<br><br>
 
 	<center><h2><b>User's Guide</b></h2></center>
@@ -40,7 +40,7 @@
 
 	<br><br><br>
 
-	<center><b>February 1999 - July 2009</b></center>
+	<center><b>February 1999 - September 2009</b></center>
 	<center><b>The Stella Team</b></center>
 	<center><b><a href="http://stella.sourceforge.net">Stella Homepage</a></b></center>
 
@@ -282,7 +282,7 @@
 		<li>Enough RAM for the OS + 16MB RAM for the emulation; 32MB highly recommended</li>
 		<li>15 bit color minimum; 16 bit color graphics card highly recommended</li>
 		<li>SDL version 1.2.10 or greater, latest version highly recommended</li>
-		<li>Latest version of the zlib library</li>
+		<li>Zlib version 1.2.3 or greater</li>
 		<li>CRT emulation effects require OpenGL 2.0 with GLSL (GL shading language) support</li>
 		<li>Joysticks or gamepads are highly recommended</li>
 		<li>Mouse or Stelladaptor with real paddles required for paddle emulation</li>
@@ -298,7 +298,7 @@
 		<li>i386 or x86_64 class machine, with 32 or 64-bit distribution</li>
 		<li>Other architectures (MIPS, PPC, PPC64, etc) have been confirmed to work,
 			but aren't as well tested as i386/x86_64</li>
-		<li>GNU C++ compiler version 3.2.x or 4.x and the make utility are required for compiling
+		<li>GNU C++ compiler version 4.x and the make utility are required for compiling
 			the Stella source code</li>
 	</ul>
 
@@ -310,7 +310,7 @@
 	<ul>
 		<li>Mac OSX 10.3 or Above</li>
 		<li>500 MHz G4 PPC/Intel processor or above (Stella <b>may</b> work with a G3
-			processor, but this is still a work-in-progress)</li>
+			processor, but no hardware is available for testing)</li>
 		<li>OpenGL capable video card.  Software rendering mode is still available,
 			but as of OSX 10.4 is substandard compared to OpenGL.</li>
 		<li>Xcode 3.0 is required to compile the Stella source code</li>
@@ -319,16 +319,15 @@
 	<p>
 	<h2><b>Windows</b></h2>
 
-	<p>The Windows version of Stella is designed to work on Windows 98/ME/2000/XP/Vista
+	<p>The Windows version of Stella is designed to work on Windows 2000/XP/Vista/7
 	with the following:</p>
 
 	<ul>
 		<li>Pentium class machine required; OpenGL accelerated video card highly
 			recommended</li>
-		<li>Experimental 64-bit port has been tested on Vista64 only; it may work on
+		<li>64-bit port has been tested on Windows Vista/7 only; it may work on
 			WinXP64 as well, but isn't a priority</li>
-		<li>Visual C++ 2008 or MinGW compiler is required to compile the Stella
-			source code</li>
+		<li>Visual C++ 2008 is required to compile the Stella source code</li>
 	</ul>
 
 	<p>
@@ -336,7 +335,7 @@
 
 	<p>Stella is extremely portable, and in its lifetime has been ported to almost every
 	platform where the SDL library exists.  It is 32/64 bit clean in Linux/Unix and Windows
-	(Win32/Win64), and is expected to be compatible with 64-bit OSX as well.  The Stella
+	(win32/x64), and is expected to be compatible with 64-bit OSX as well.  The Stella
 	team is interested in hearing about any problems you may encounter with diverse
 	operating systems and CPU types.</p>
 
@@ -374,6 +373,28 @@
 			</ol>
 		</li>
 		<li><b>Compressed tarball : building from source code</b> (stella-<i>release</i>-src.tar.gz)
+		<ul>
+			<li>Debian-based distributions:
+			<ol>
+				<li>Extract files from the distribution:
+					<pre>   tar zxvf stella-release-src.tar.gz</pre></li>
+				<li>Change directories to the stella-<i>release</i> directory</li>
+				<li>Build the executable with the following command:
+					<pre>   dpkg-buildpackage</pre></li>
+				<li>Install the executable as indicated in the previous section</li>
+			</ol>
+			</li>
+			<li>RPM-based distributions:
+			<ol>
+				<li>Extract files from the distribution:
+					<pre>   tar zxvf stella-release-src.tar.gz</pre></li>
+				<li>Change directories to the stella-<i>release</i>/src/unix directory</li>
+				<li>Build the executable with the following command:
+					<pre>   rpmbuild -ba stella.spec</pre></li>
+				<li>Install the executable as indicated in the previous section</li>
+			</ol>
+			</li>
+			<li>Generic build:
 			<ol>
 				<li>Extract files from the distribution:
 					<pre>   tar zxvf stella-release-src.tar.gz</pre></li>
@@ -385,6 +406,8 @@
 				<li>Install the executable with the following command:
 					<pre>   make install</pre></li>
 			</ol>
+			</li>
+		</ul>
 		</li>
 	</ul>
 
@@ -403,6 +426,7 @@
 					gzipped tar files</li>
 				<li>Open the <b>stella-<i>release</i>/src/macosx/stella.xcodeproj</b>
 					file using Xcode 3.0</li>
+				<li>Make sure you have the SDL framework installed where Xcode can find it</li>
 				<li>Build the 'Stella' project</li>
 				<li>Copy the <b>StellaOSX.app</b> package somewhere on your system</li>
 			</ol>
@@ -412,15 +436,15 @@
 	<p>
 	<h2><b>Windows</b></h2>
 	<ul>
-		<li><b>Binary EXE installer</b> (stella-<i>release</i>-win32.exe)
+		<li><b>Binary EXE installer</b> (stella-<i>release</i>-<i>arch</i>.exe)
 			<ol>
 				<li>Double-click on the installer and follow the onscreen instructions</li>
 			</ol>
 		</li>
-		<li><b>Binary ZIP file</b> (stella-<i>release</i>-win32.zip)
+		<li><b>Binary ZIP file</b> (stella-<i>release</i>-windows.zip)
 			<ol>
-				<li>Unzip the binary ZIP file using <b>Winzip</b> or <b>Total Commander</b>
-					and copy that directory somewhere</li>
+				<li>Unzip the binary ZIP file using <b>Winzip</b> or <b>Total Commander</b></li>
+				<li>Copy the contents of either 32-bit or 64-bit directory somewhere on your system</li>
 			</ol>
 		</li>
 		<li><b>Compressed tarball : building from source code</b> (stella-<i>release</i>-src.tar.gz)
@@ -428,15 +452,25 @@
 				<li>Extract files from the distribution using <b>Winzip</b>,
 					<b>Total Commander</b>, or some other archiving program that supports
 					gzipped tar files</li>
-				<li>If compiling the Stella executable using MinGW, use the same commands
-					as specified under <i>Linux/UNIX - Compressed tarball</i></li>
-				<li>If compiling using Visual C++ 2008:</li>
+				<li>Open the <b>stella-<i>release</i>/src/win32/Stella.sln</b>
+					file using Visual C++ 2008</li>
+				<li>Make sure you have library and header files installed for SDL and zlib for
+					the correct architecture (32-bit, 64-bit or both), and that Visual Studio
+					is properly configured to find them</li>
+				<li>Build the 'Stella' solution, making sure to correctly select either 'Win32'
+					or 'x64' mode (depending on the version of Windows you have installed)</li>
+				<li>For installation:
 				<ul>
-					<li>Open the <b>stella-<i>release</i>/src/win32/Stella.sln</b>
-						file using Visual C++ 2008</li>
-					<li>Build the 'Stella' solution</li>
-					<li>Copy the <b>Stella.exe</b> file	somewhere on your system</li>
+					<li>Double-click on <b>Create_builds.bat</b> to generate ZIP and EXE files;
+					you must have the 'flip' and 'zip' applications installed on your system.
+					This will generate the EXE and ZIP files, which can be installed as explained
+					above</li>
+					<b>OR</b>
+					<li>Manually copy the <b>Stella.exe</b>, <b>SDL.dll</b> and <b>zlibwapi.dll</b>
+						files somewhere on your system (they may be located in the 'Release' or
+						'x64\Release' directories)</li>
 				</ul>
+				</li>
 			</ol>
 		</li>
 	</ul>
@@ -684,8 +718,9 @@
 		</tr>
 
 		<tr>
-			<td><pre>-fullscreen &lt;1|0&gt;</pre></td>
-			<td>Play the game in fullscreen mode.</td>
+			<td><pre>-fullscreen &lt;1|0|-1&gt;</pre></td>
+			<td>Play the game in fullscreen mode (1 or 0), or completely disable
+				fullscreen mode (-1).</td>
 		</tr>
 
 		<tr>
@@ -786,6 +821,13 @@
 				Accepts a number from 0 - 29, and uses the formula
 				3200 + number * 1000.  So the possible deadzone values
 				range from 3200 to 32200.</td>
+		</tr>
+
+		<tr>
+			<td><pre>-joyallow4 &lt;1|0&gt;</pre></td>
+			<td>Allow all 4 directions on a joystick to be pressed
+				simultaneously.  Bumper Bash ignores this setting,
+				and always allows all 4 directions.</td>
 		</tr>
 
 		<tr>
@@ -1846,6 +1888,18 @@
 		</tr>
 
 		<tr>
+			<td>Toggle TIA HMOVE blanks</td>
+			<td>Alt + m</td>
+			<td>Shift-Cmd + m</td>
+		</tr>
+
+		<tr>
+			<td>Toggle TIA 'Fixed Debug Colors' mode</td>
+			<td>Alt + Comma</td>
+			<td>Shift-Cmd + Comma</td>
+		</tr>
+
+		<tr>
 			<td>Turn all TIA objects off</td>
 			<td>Alt + .</td>
 			<td>Shift-Cmd + .</td>
@@ -1953,7 +2007,13 @@
 		</tr>
 
 		<tr>
-			<td>Emulate 'frying' effect (*)</td>
+			<td>Emulate 'frying' effect (TIA mode) (*)</td>
+			<td>Backspace</td>
+			<td>Backspace</td>
+		</tr>
+
+		<tr>
+			<td>Go to parent directory (UI mode) (*)</td>
 			<td>Backspace</td>
 			<td>Backspace</td>
 		</tr>
@@ -2036,33 +2096,26 @@
 	<img src="graphics/eventmapping.png">
 	<img src="graphics/eventmapping_remap.png">
 
-	<p>Virtual devices can be configured under the 'Virtual Devs' tab, shown below:<br><br>
-	<img src="graphics/eventmapping_virtualdevs.png"></p>
 
-	<p>Stelladaptor devices can be configured to either the left or right virtual
-	ports.  See <b>Section 11 - <a href="#Adaptor">Stelladaptor Support</a></b>
-	for further information.</p>
 
-	<p>Joystick deadzone area for analog joysticks can be set here.  The deadzone
-	can be adjusted in an interval from 0 - 29, which internally is converted to
-	the range 3200 - 32200 using the formula '3200 + DEADZONE * 1000'.</p>
-
-	<p>Paddle settings are also configured here.  The mouse can emulate either paddle
-	0, 1, 2, or 3.  Note that some paddle games don't default to paddle 0.  In those
-	cases, the ROM properties will automatically set the mouse to emulate the paddle
-	used by Player 0.  So, for example, a ROM that defaults to paddle 1 (Demons to Diamonds)
-	will set 'Mouse is paddle' to 1, and a ROM that defaults to paddle 3 (Tac-Scan) will
-	set 'Mouse is paddle' to 3.</p>
-
-	<p>Paddle speed is used when emulating a paddle using a digital device
-	(keyboard, digital joystick, etc).  Because of the on/off nature of digital
-	devices, there are no smooth analog values as would be present on a real
-	paddle.  When using digital devices, the paddle is moved a certain amount
-	each frame.  This speed setting specifies how much movement will occur.</p>
-
-	<p>The serial port to which a real AtariVox is connected can be set here.
-	See <b>Section 12 - <a href="#AtariVox">AtariVox/SaveKey Support</a></b> for
-	further information.</p>
+	<p>Virtual devices can be configured under the 'Virtual Devs' tab, shown below:</p>
+	<table border="5" cellpadding="2" frame="box" rules="none">
+		<tr>
+			<td><img src="graphics/eventmapping_virtualdevs.png"></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td valign="top">
+				<table border="1" cellpadding="4">
+					<tr><th>Item</th><th>Brief description</th><th>For more information,<br>see Commandline</th></tr>
+					<tr><td>Stelladaptor X is</td><td>Specifies which virtual port each Stelladaptor uses (See <b>Section 11 - <a href="#Adaptor">Stelladaptor Support</a></b>)</td><td>-sa1 &amp; -sa2</td></tr>
+					<tr><td>Joy deadzone</td><td>Joystick deadzone area for analog joysticks</td><td>-joydeadzone</td></tr>
+					<tr><td>Mouse is paddle</td><td>The mouse can emulate either paddle	0, 1, 2, or 3.</td><td>&nbsp;</td></tr>
+					<tr><td>Paddle speed</td><td>Speed used when emulating a paddle using a digital device</td><td>-pspeed</td></tr>
+					<tr><td>AVox serial port</td><td>Described in further detail in <b>Section 12 - <a href="#AtariVox">AtariVox/SaveKey Support</a></b> </td><td>-avoxport</td></tr>
+					<tr><td>Allow all 4 ...</td><td>Allow all 4 joystick directions to be pressed simultaneously</td><td>-joyallow4</td></tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 
 
 <!-- /////////////////////////////////////////////////////////////////////////  -->
@@ -2629,6 +2682,7 @@ Ms Pac-Man (Stella extended codes):
 			<table cellpadding="2" border="1">
 				<tr><th>&nbsp;Type&nbsp;</th><th>Description</th></tr>
 				<tr><td>0840 </td><td>8K ECONObanking </td></tr>
+				<tr><td>2IN1 &#185;</td><td>4-32K Multicart (2 games) </td></tr>
 				<tr><td>4IN1 &#185;</td><td>8-32K Multicart (4 games) </td></tr>
 				<tr><td>8IN1 &#185;</td><td>16-64K Multicart (8 games) </td></tr>
 				<tr><td>32IN1 &#185;</td><td>64-128K Multicart (32 games) </td></tr>
@@ -2644,15 +2698,15 @@ Ms Pac-Man (Stella extended codes):
 				<tr><td>E7 </td><td>16K M-network </td></tr>
 				<tr><td>EF </td><td>64K Homestar Runner </td></tr>
 				<tr><td>EFSC </td><td>64K Homestar Runner + ram</td></tr>
+				<tr><td>F0 </td><td>Dynacom Megaboy </td></tr>
 				<tr><td>F4 </td><td>32K Atari </td></tr>
 				<tr><td>F4SC </td><td>32K Atari + ram </td></tr>
 				<tr><td>F6 </td><td>16K Atari </td></tr>
 				<tr><td>F6SC </td><td>16K Atari + ram </td></tr>
 				<tr><td>F8 </td><td>8K Atari </td></tr>
 				<tr><td>F8SC </td><td>8K Atari + ram </td></tr>
-				<tr><td>FASC </td><td>CBS RAM Plus </td></tr>
+				<tr><td>FA </td><td>CBS RAM Plus </td></tr>
 				<tr><td>FE </td><td>8K Decathlon </td></tr>
-				<tr><td>MB </td><td>Dynacom Megaboy </td></tr>
 				<tr><td>MC &#185;&#178;</td><td>C. Wilkson Megacart </td></tr>
 				<tr><td>SB </td><td>128-256k SUPERbanking </td></tr>
 				<tr><td>UA </td><td>8K UA Ltd. </td></tr>
@@ -2869,7 +2923,7 @@ Ms Pac-Man (Stella extended codes):
 			<td VALIGN="TOP">Ant<br>
 			(<a href="http://aqfl.net">http://aqfl.net</a>)</td>
 			<td>Provided much feedback and testing which eventually led to a fix
-			for the infamouse ATI OpenGL 'red screen' issue</td>
+			for the infamous ATI OpenGL 'red screen' issue</td>
 		</tr>
 
 		<tr>
@@ -3122,7 +3176,7 @@ Ms Pac-Man (Stella extended codes):
 			<td VALIGN="TOP">Robert&nbsp;Tuccitto</td>
 			<td>Provided valuable bugtesting and feedback which finally helped in fixing
 			a long-standing lockup which occurred after Stella has been running for
-			71 muinutes.</td>
+			71 minutes.</td>
 		</tr>
 
 		<tr>

@@ -26,16 +26,6 @@
 </tr>
 
 <tr>
-	<td BGCOLOR="#CCCCCC"><a href="mailto:AtariMac@cox.net">Mark&nbsp;Grebe</a></td>
-	<td BGCOLOR="#FFCC99">Original author of the Mac OSX port of Stella</td>
-</tr>
-
-<tr>
-	<td BGCOLOR="#CCCCCC"><a href="mailto:knakos@gmail.com">Kostas&nbsp;Nakos</a></td>
-	<td BGCOLOR="#FFCC99">Author/maintainer of the WinCE port of Stella</td>
-</tr>
-
-<tr>
 	<td BGCOLOR="#CCCCCC"><a href="mailto:bwmott@users.sourceforge.net">Bradford&nbsp;Mott</a></td>
 	<td BGCOLOR="#FFCC99">Project management and emulation core developer, original author of Stella</td>
 </tr>
@@ -60,22 +50,32 @@
 </tr>
 
 <tr>
-	<td BGCOLOR="#CCCCCC"><a href="mailto:jdandrea@users.sourceforge.net">Joe&nbsp;D'Andrea</a></td>
+	<td BGCOLOR="#CCCCCC">Mark&nbsp;Grebe</td>
+	<td BGCOLOR="#FFCC99">Original author of the Mac OSX port of Stella</td>
+</tr>
+
+<tr>
+	<td BGCOLOR="#CCCCCC">Joe&nbsp;D'Andrea</td>
 	<td BGCOLOR="#FFCC99">Maintainer of the Solaris build of Stella</td>
 </tr>
 
 <tr>
-	<td BGCOLOR="#CCCCCC"><a href="mailto:doodle@scenergy.dfmk.hu">Doodle</a></td>
+	<td BGCOLOR="#CCCCCC">Kostas&nbsp;Nakos</td>
+	<td BGCOLOR="#FFCC99">Author/maintainer of the WinCE port of Stella</td>
+</tr>
+
+<tr>
+	<td BGCOLOR="#CCCCCC">Doodle</td>
 	<td BGCOLOR="#FFCC99">Maintainer of the OS/2 port of Stella</td>
 </tr>
 
 <tr>
-	<td BGCOLOR="#CCCCCC"><a href="mailto:dspice@users.sourceforge.net">Darrell&nbsp;Spice&nbsp;Jr.</a></td>
+	<td BGCOLOR="#CCCCCC">Darrell&nbsp;Spice&nbsp;Jr.</td>
 	<td BGCOLOR="#FFCC99">Original author of the OS/2 port of Stella</td>
 </tr>
 
 <tr>
-	<td BGCOLOR="#CCCCCC"><a href="mailto:azaballa@users.sourceforge.net">Alex&nbsp;Zaballa</a></td>
+	<td BGCOLOR="#CCCCCC">Alex&nbsp;Zaballa</td>
 	<td BGCOLOR="#FFCC99">Author/maintainer of the GP2X port of Stella</td>
 </tr>
 
