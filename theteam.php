@@ -27,7 +27,7 @@
 
 <tr>
 	<td BGCOLOR="#CCCCCC"><a href="mailto:bwmott@users.sourceforge.net">Bradford&nbsp;Mott</a></td>
-	<td BGCOLOR="#FFCC99">Project management and emulation core developer, original author of Stella</td>
+	<td BGCOLOR="#FFCC99">Original author of Stella</td>
 </tr>
 
 <tr>
