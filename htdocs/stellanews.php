@@ -12,6 +12,19 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>February 13, 2010</H4>
+Stella release 3.0.1 for Linux, Mac OSX and Windows is now available.
+<ul>
+<li>Fixed a major bug with text drawing in software rendering mode.
+    Switching between windowed and fullscreen mode while text was being
+    shown could result in garbled text or even a program crash.</li>
+
+<li>A 64-bit release for RPM-based Linux distributions is now included.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>September 11, 2009</H4>
 Stella release 3.0 for Linux, Mac OSX and Windows is now available.
 Ports to other operating systems will be released as they become available.
@@ -83,8 +96,6 @@ It's been at least 10 years guys, it's time to move on.
 <li>Fixed editing of cheats in the Cheat Dialog; the old cheat wasn't
     being removed.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>July 13, 2009</H4>
