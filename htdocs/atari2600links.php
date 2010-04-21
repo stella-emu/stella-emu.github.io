@@ -30,12 +30,12 @@
 	<td BGCOLOR="#CCCCCC"><a href="http://jstella.sourceforge.net">JStella</a></td>
 	<td BGCOLOR="#FFCC99">A Java port of Stella which can be run in a web page</td>
 </tr>
-
+<!--
 <tr>
 	<td BGCOLOR="#CCCCCC"><a href="http://www.tripoint.org/kevtris/misc/texts.html">Kevin&nbsp;Horton's documents</a></td>
 	<td BGCOLOR="#FFCC99">Various documents about the 32in1 cart, Atari 2600 easter eggs, and more</td>
 </tr>
-
+-->
 <tr>
 	<td BGCOLOR="#CCCCCC"><a href="http://en.wikipedia.org/wiki/Atari_2600">Atari&nbsp;2600 on&nbsp;Wikipedia</a></td>
 	<td BGCOLOR="#FFCC99">Historical information about the Atari 2600 console</td>

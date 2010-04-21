@@ -12,14 +12,169 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
-<H4>February 13, 2010</H4>
-Stella release 3.0.1 for Linux, Mac OSX and Windows is now available.
+<H4>April 22, 2010</H4>
+Stella release 3.1 for Linux, MacOS X and Windows is now available.
 <ul>
 <li>Fixed a major bug with text drawing in software rendering mode.
     Switching between windowed and fullscreen mode while text was being
     shown could result in garbled text or even a program crash.</li>
 
-<li>A 64-bit release for RPM-based Linux distributions is now included.</li>
+<li>Fixed issues when using 'sleep' timing, whereby a lockup could occur
+    when changing video modes, and/or Stella would consume more CPU time
+    than was necessary.</li>
+
+<li>Integrated Distella disassembler, completely replacing the previous
+    disassembler.  The entire infrastructure has not been completely
+    ported yet.  As a result, labels defined by the user or from a
+    DASM symbol file aren't actually used in the disassembly, and almost
+    all distella config options are disabled.  These will be addressed in
+    a future release.</li>
+
+<li>Completely reworked the debugger cartridge interface, so that
+    the disassembly is dynamic (ie, the debugger tracks when cart address
+    space has changed, and automatically performs a re-disassembly).</li>
+
+<li>All carts with extended RAM that differentiate between read and write
+    ports now behave correctly when a read from the write port occurs.</li>
+
+<li>Added more complete support for the more esoteric bankswitch
+    schemes in the debugger.  These schemes now support accurate
+    disassembly and ROM patch functionality.  Related to this, fixed a
+    bug in disassembler view when a failure to patch a ROM still showed
+    the (incorrect) patched results.</li>
+
+<li>Added ability to disable TIA object collisions, independent of
+    enabling/disabling the objects.  Previously, one had to completely
+    disable an object to avoid collisions, but now an object can be
+    enabled (and seen) but still have its collisions disabled.  These
+    actions are tied to the same keys as the enable ones, except the
+    'Shift' key is also used.</li>
+
+<li>Added preliminary support for 'DPC+' bankswitching scheme, thanks to
+    Darrell Spice Jr and Fred Quimby.</li>
+
+<li>Added '16in1' bankswitching scheme, which works with various
+    ROMs labeled '128-in-1 ...' (the database has been updated for
+    these).  Related to this, switching between multicart ROMs for 2in1,
+    4in1, 8in1, 16in1 and 32in1 now shows a UI message indicating which
+    ROM is active.</li>
+
+<li>Reverted some of the TIA improvements with respect to 'starfield
+    effect' as seen in "Cosmic Ark" and "Stay Frosty".  The emulation is
+    now more accurate as compared to the majority of consoles in use.</li>
+
+<li>Added debugger pseudo-register '_rwport', which traps on a read from
+    the write port.  This differentiates from reads that are normally
+    part of a write cycle (ie, it traps only on inadvertent reads).</li>
+
+<li>Added 'resolvedata' commandline argument and associated UI item, used
+    to set the "resolve data sections" config option in Distella
+    (vs. treating all address space as code).</li>
+
+<li>Added 'runtopc' debugger command, used to step until encountering the
+    given program counter.  This is also available in the ROM disassembly
+    UI from the right-click context menu.</li>
+
+<li>Added 'listfunctions' and 'delfunction' debugger commands to
+    access/remove user-defined functions.  Related to this, fixed a bug
+    in 'function' command that could cause a program crash.</li>
+
+<li>Added 'cls' debugger command, used to erase the text and history
+    from the debugger prompt.</li>
+
+<li>Removed the 'listwatches' and 'poke' debugger commands, as they
+    were redundant.</li>
+
+<li>Removed the 'loadlst' debugger command and the ability to use a
+    DASM .lst file.  This code was incomplete, and no longer fits with
+    the recent disassembler improvements.  Support for this may return
+    in a future release.</li>
+
+<li>Modified 'disasm' debugger command to accept a second argument
+    indicating the number of lines to disassemble.</li>
+
+<li>Improved tab-completion in the debugger prompt; it now completes
+    on functions and pseudo-registers.</li>
+
+<li>Added emulation of the "Sega Genesis" controller, with two buttons
+    that are directly supported on a real system.</li>
+
+<li>The ZLib library is now included in the core code, so Windows
+    developers no longer have to track down the ZLIBWAPI archive.</li>
+
+<li>Many changes to the MacOS X port, bringing it more in line with
+    other systems:
+	<ul>
+
+      <li>The application is now known as 'Stella' (instead of StellaOSX).</li>
+
+      <li>Two versions are available: the first is a 32-bit Universal Binary
+      for OSX 10.4 - 10.6, and the second is 32/64-bit Intel-only for
+      OSX 10.6 (aka Snow Leopard).  The Intel version is compiled with the
+      very latest compiler (LLVM/Clang), resulting in better performance.</li>
+
+      <li>The keyboard handling is changed to match other systems in terms of
+      where the keys actually are on the keyboard (ie, the OSX Command key
+      corresponds to Alt, and the OSX Control key corresponds to Control).</li>
+
+      <li>The application menu has been cleaned up and simplified, and it
+      now shows the correct shortcuts for menu items.</li>
+
+      <li>The settings file is now (according to Apple standards)
+      '~/Library/Preferences/net.sourceforge.Stella.plist'.</li>
+
+      <li>The base directory (where all other Stella stuff is located) is now
+      '~/Library/Application Support/Stella'.</li>
+
+      <li>Because of these changes, all your settings will have to be entered
+      again.</li>
+	</ul>
+
+<li>Added 'ctrlcombo' commandline argument, which toggles the use of the
+    control key as a modifier key.  This is useful if you want to press
+    'Control' and 'R' in a two player game, and not have the combination
+    treated as 'Control-R' (which will issue a ROM reload).</li>
+
+<li>Added 'usemouse' commandline argument and associated UI item.  This
+    toggles the use of the mouse as a controller of any type.</li>
+
+<li>Added 'uimessages' commandline argument and associated UI item.
+    This toggles showing of UI messages overlaid on the screen.
+    Critical messages are still shown, though.</li>
+
+<li>Added ability to take multiple snapshots in a given interval every
+    x seconds.  This is currently tied to the 'Alt-s' key and is not
+    remappable (for now).  The interval can be set with the 'ssinterval'
+    commandline argument and within the UI, and defaults to 2.</li>
+
+<li>Many changes to the FrameBuffer and UI code for 'smaller' systems.
+    Stella will now scale correctly to small screens, down to 320x240
+    (which is the absolute lower limit supported).  Related to this,
+    added 'maxres' commandline argument, which is useful for developers
+    testing on such systems.</li>
+
+<li>The About dialog now shows the version of SDL in use, and the type
+    of CPU the application is running on (i386, x86_64, etc).</li>
+
+<li>Improved 'listrominfo' commandline argument to list all information
+    from Stella's internal ROM database, including a heading.  This
+    output can be imported into a spreadsheet or database program.</li>
+
+<li>Renamed 'tiafloat' commandline argument to 'tiadriven'.  The
+    emulation of the behaviour of floating TIA pins is also much more
+    accurate.</li>
+
+<li>Reworked state files so that they're associated with the cartridge
+    type used, not the MD5sum of the ROM.  This is useful for developers,
+    since the same state file can now be loaded from different ROMs,
+    as long as the cart type stays the same.  This also fixes a bug
+    where loading from a non-existent state file could cause Stella
+    to crash.  Because of these changes, old state files will no longer
+    work.</li>
+
+<li>Fixed bug in certain editable text fields, where pressing Return/Enter
+    would disable any further input.</li>
+
 </ul>
 
 Have Fun!

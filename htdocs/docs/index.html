@@ -10,7 +10,7 @@
 	<br><br>
 	<center><h2><b>A multi-platform Atari 2600 VCS emulator</b></h2></center>
 
-	<center><h4><b>Release 3.0.1</b></h4></center>
+	<center><h4><b>Release 3.1</b></h4></center>
 	<br><br>
 
 	<center><h2><b>User's Guide</b></h2></center>
@@ -40,8 +40,8 @@
 
 	<br><br><br>
 
-	<center><b>February 1999 - February 2010</b></center>
-	<center><b>The Stella Team</b></center>
+	<center><b>February 1999 - April 2010</b></center>
+  	<center><b>The Stella Team</b></center>
 	<center><b><a href="http://stella.sourceforge.net">Stella Homepage</a></b></center>
 
 	<br><br><br>
@@ -238,6 +238,8 @@
 			or joysticks</li>
 		<li>Emulates the CBS BoosterGrip Controller using your computer's keyboard or
 			joysticks</li>
+		<li>Emulates the Sega Genesis Controller using your computer's keyboard or
+			joysticks</li>
 		<li>Emulates CX-22 / CX-80 style trackballs and Amiga Mouse using your
 			computer's mouse</li>
 		<li>Support for real Atari 2600 controllers using the
@@ -250,12 +252,13 @@
 		<li>Supports cartridge autodetection for almost all bankswitching schemes</li>
 		<li>Supports Supercharger single-load and multi-load games</li>
 		<li>Supports property file for setting the properties associated with games</li>
-		<li>Supports the NTSC, PAL, PAL and SECAM television standards in 50Hz and 60Hz mode</li>
+		<li>Supports the NTSC, PAL and SECAM television standards in 50Hz and 60Hz mode</li>
 		<li>Supports autodetection of display format for 50Hz vs. 60Hz modes</li>
 		<li>Supports several "undocumented features" of the TIA graphics chip used by
 			some games</li>
-		<li>TIA emulation supports full collision checking</li>
-		<li>Built-in extensive debugger</li>
+		<li>TIA emulation supports full collision checking, with ability to disable
+      both TIA sprites and collisions for each object separately</li>
+		<li>Built-in extensive debugger, including the Distella disassembler</li>
 		<li>Emulation of CRT TV systems with OpenGL shaders, including texturing,
 			colour bleed, RF noise, and phosphor burn-off</li>
 		<li>Built-in ROM database with information compiled by RomHunter</li>
@@ -282,7 +285,7 @@
 		<li>Enough RAM for the OS + 16MB RAM for the emulation; 32MB highly recommended</li>
 		<li>15 bit color minimum; 16 bit color graphics card highly recommended</li>
 		<li>SDL version 1.2.10 or greater, latest version highly recommended</li>
-		<li>Zlib version 1.2.3 or greater</li>
+		<li>Zlib version 1.2.3 or greater (built-in ZLib functionality is also supported)</li>
 		<li>CRT emulation effects require OpenGL 2.0 with GLSL (GL shading language) support</li>
 		<li>Joysticks or gamepads are highly recommended</li>
 		<li>Mouse or Stelladaptor with real paddles required for paddle emulation</li>
@@ -305,15 +308,16 @@
 	<p>
 	<h2><b>Macintosh</b></h2>
 
-	<p>The Mac version of Stella is designed to work on a Power Macintosh with
+	<p>The Mac version of Stella is designed to work on an Apple Macintosh with
 	the following:</p>
 	<ul>
-		<li>Mac OSX 10.3 or Above</li>
-		<li>500 MHz G4 PPC/Intel processor or above (Stella <b>may</b> work with a G3
-			processor, but no hardware is available for testing)</li>
-		<li>OpenGL capable video card.  Software rendering mode is still available,
-			but as of OSX 10.4 is substandard compared to OpenGL.</li>
-		<li>Xcode 3.0 is required to compile the Stella source code</li>
+		<li>MacOSX 10.4 (Tiger) or above</li>
+		<li>PPC G4 or Intel processor, 500MHz or above</li>
+		<li>OpenGL capable video card; software rendering mode is still available,
+			but as of MacOSX 10.4 is substandard compared to OpenGL</li>
+		<li>Xcode 3.2 is required to compile the Stella source code (SDL 1.2.14 also
+			required to compile the 64-bit version)</li>
+		<li>The 64-bit version requires at minimum Snow Leopard (10.6) and Intel CPU</li>
 	</ul>
 
 	<p>
@@ -334,10 +338,9 @@
 	<h2><b>Other</b></h2>
 
 	<p>Stella is extremely portable, and in its lifetime has been ported to almost every
-	platform where the SDL library exists.  It is 32/64 bit clean in Linux/Unix and Windows
-	(win32/x64), and is expected to be compatible with 64-bit OSX as well.  The Stella
-	team is interested in hearing about any problems you may encounter with diverse
-	operating systems and CPU types.</p>
+	platform where the SDL library exists.  It is 32/64 bit clean in Linux/Unix, MacOSX
+	and Windows.  The Stella Team is interested in hearing about any problems you may
+	encounter with diverse operating systems and CPU types.</p>
 
 
 <!-- /////////////////////////////////////////////////////////////////////////  -->
@@ -414,10 +417,10 @@
 	<p>
 	<h2><b>Macintosh</b></h2>
 	<ul>
-		<li><b>Binary DMG file</b> (StellaOSX<i>release</i>.dmg)
+		<li><b>Binary DMG file</b> (Stella-<i>release</i>-macosx.dmg)
 			<ol>
-				<li>Mount the disk image, then copy the StellaOSX<i>release</i> folder to
-				your hard drive.</li>
+				<li>Double-click the disk image, open the 'Stella' folder, then copy the
+        <b>Stella.app</b> package to your 'Applications' folder.</li>
 			</ol>
 		</li>
 		<li><b>Compressed tarball : building from source code</b> (stella-<i>release</i>-src.tar.gz)
@@ -425,10 +428,18 @@
 				<li>Extract files from the distribution using an archiving program that supports
 					gzipped tar files</li>
 				<li>Open the <b>stella-<i>release</i>/src/macosx/stella.xcodeproj</b>
-					file using Xcode 3.0</li>
-				<li>Make sure you have the SDL framework installed where Xcode can find it</li>
-				<li>Build the 'Stella' project</li>
-				<li>Copy the <b>StellaOSX.app</b> package somewhere on your system</li>
+					file using Xcode 3.2</li>
+				<li>Make sure you have the SDL framework installed in src/macosx</li>
+				<li>Build the 'Stella' project (making sure to select 'Deployment' mode)</li>
+				<li>For installation:
+				<ul>
+					<li>Run the script <b>Create_build.sh</b>, located in the src/macosx directory.
+						This will create a DMG file on your desktop.</li>
+						&nbsp;&nbsp;&nbsp;<b>OR</b>
+					<li>Copy the <b>Stella.app</b> package to your 'Applications' folder.</li>
+				</ul>
+				<li>For compiling the Intel/Snow Leopard version, open the <b>stella-<i>release</i>/src/macosx/stella_intel.xcodeproj</b> file instead, and continue from
+					step 2 above.</li>
 			</ol>
 		</li>
 	</ul>
@@ -449,26 +460,26 @@
 		</li>
 		<li><b>Compressed tarball : building from source code</b> (stella-<i>release</i>-src.tar.gz)
 			<ol>
+				<li>Make sure you have library and header files installed for SDL for
+					the correct architecture (32-bit, 64-bit or both), and that Visual Studio
+					is properly configured to find them</li>
 				<li>Extract files from the distribution using <b>Winzip</b>,
 					<b>Total Commander</b>, or some other archiving program that supports
 					gzipped tar files</li>
 				<li>Open the <b>stella-<i>release</i>/src/win32/Stella.sln</b>
 					file using Visual C++ 2008</li>
-				<li>Make sure you have library and header files installed for SDL and zlib for
-					the correct architecture (32-bit, 64-bit or both), and that Visual Studio
-					is properly configured to find them</li>
 				<li>Build the 'Stella' solution, making sure to correctly select either 'Win32'
 					or 'x64' mode (depending on the version of Windows you have installed)</li>
 				<li>For installation:
 				<ul>
 					<li>Double-click on <b>Create_builds.bat</b> to generate ZIP and EXE files;
-					you must have the 'flip' and 'zip' applications installed on your system.
-					This will generate the EXE and ZIP files, which can be installed as explained
-					above</li>
-					<b>OR</b>
-					<li>Manually copy the <b>Stella.exe</b>, <b>SDL.dll</b> and <b>zlibwapi.dll</b>
-						files somewhere on your system (they may be located in the 'Release' or
-						'x64\Release' directories)</li>
+					you must have the 'flip' and 'zip' applications installed on your system,
+          as well as the InnoSetup application.  This will generate the EXE and ZIP
+          files, which can be installed as explained above</li>
+					&nbsp;&nbsp;&nbsp;<b>OR</b>
+					<li>Manually copy the <b>Stella.exe</b> and <b>SDL.dll</b> files somewhere
+            on your system (they may be located in the 'Release' or 'x64\Release'
+            directories)</li>
 				</ul>
 				</li>
 			</ol>
@@ -583,6 +594,7 @@
 					<tr><td>EEPROM path</td><td>specifies location of EEPROM files</td><td>-eepromdir</td></tr>
 					<tr><td>Multiple snapshots</td><td>whether to overwrite old snapshots</td><td>-sssingle</td></tr>
 					<tr><td>Snapshot in 1x mode</td><td>save snapshot in 1x mode, without filtering</td><td>-ss1x</td></tr>
+					<tr><td>Snapshot interval</td><td>interval (in seconds) between snapshot</td><td>-ssinterval</td></tr>
 				</table>
 			</td>
 		</tr>
@@ -637,7 +649,7 @@
 		<tr>
 			<td><pre>-gl_lib &lt;filename&gt;</pre></td>
 			<td>OpenGL mode only. Specify the OpenGL library to use (only use
-				this if you know what you're doing).  For OSX, this should
+				this if you know what you're doing).  For MacOSX, this should
 				probably be left blank.</td>
 		</tr>
 
@@ -751,6 +763,14 @@
 		</tr>
 
 		<tr>
+			<td><pre>-framerate &lt;number&gt;</pre></td>
+			<td>Display the given number of frames per second.  Normally, Stella
+				will determine framerate based on number of scanlines.
+				Setting this to 0 automatically enables auto-frame
+				calculation (ie, framerate based on scanlines).</td>
+		</tr>
+
+		<tr>
 			<td><pre>-timing &lt;sleep|busy&gt;</pre></td>
 			<td>Determines type of wait to perform between processing frames.
 				Sleep will release the CPU as much as possible, and is the
@@ -761,11 +781,10 @@
 		</tr>
 
 		<tr>
-			<td><pre>-framerate &lt;number&gt;</pre></td>
-			<td>Display the given number of frames per second.  Normally, Stella
-				will determine framerate based on number of scanlines.
-				Setting this to 0 automatically enables auto-frame
-				calculation (ie, framerate based on scanlines).</td>
+			<td><pre>-uimessages &lt;1|0&gt;</pre></td>
+			<td>Enable or disable display of message in the UI.  Note that messages
+				indicating serious errors override this setting, and are always
+				shown.</td>
 		</tr>
 
 		<tr>
@@ -831,6 +850,11 @@
 		</tr>
 
 		<tr>
+			<td><pre>-usemouse &lt;1|0&gt;</pre></td>
+			<td>Enable using the mouse for various controllers (paddle, driving, etc).</td>
+		</tr>
+
+		<tr>
 			<td><pre>-pspeed &lt;number&gt;</pre></td>
 			<td>Speed for digital emulation of paddles (1-15).</td>
 		</tr>
@@ -846,9 +870,23 @@
 		</tr>
 
 		<tr>
+			<td><pre>-ctrlcombo &lt;1|0&gt;</pre></td>
+			<td>Use control-x key combos.  This is normally enabled, since the
+      Quit command is tied to 'Control-q'.  However, there are times when
+      a 2-player game is using either the 'f' or 'r' keys for movement,
+      and pressing Control (for Fire) will perform an unwanted action
+      associated with Control-r or Control-f.</td>
+		</tr>
+
+		<tr>
 			<td><pre>-autoslot &lt;1|0&gt;</pre></td>
 			<td>Automatically switch to the next available save state slot after
 				saving a ROM state file.</td>
+		</tr>
+
+		<tr>
+			<td><pre>-stats &lt;1|0&gt;</pre></td>
+			<td>Overlay console info on the TIA image during emulation.</td>
 		</tr>
 
 		<tr>
@@ -879,6 +917,11 @@
 			<td><pre>-ss1x &lt;1|0&gt;</pre></td>
 			<td>Ignore any scaling applied to the TIA image, and save
 				snapshot in unscaled (1x) mode.</td>
+		</tr>
+
+		<tr>
+			<td><pre>-ssinterval &lt;number&gt;</pre></td>
+			<td>Set the interval in seconds between taking snapshots in continuous snapshot mode (currently, 1 - 10).</td>
 		</tr>
 
 		<tr>
@@ -978,6 +1021,12 @@
 		</tr>
 
 		<tr>
+			<td><pre>-maxres &lt;WxH&gt;</pre></td>
+			<td>Useful for developers, this sets the maximum size of window that
+      can be created, allowing to simulate testing on 'smaller' systems.</td>
+		</tr>
+
+		<tr>
 			<td><pre>-help</pre></td>
 			<td>Prints a help message describing these options, and then
 				exit Stella.</td>
@@ -992,6 +1041,12 @@
 		<tr>
 			<th>Argument</th>
 			<th>Description</th>
+		</tr>
+
+		<tr>
+			<td><pre>-resolvedata &lt;never|always|auto&gt;</pre></td>
+			<td>Try to differentiate between code vs. data sections in the
+      disassembler.  See the Debugger section for more information.</td>
 		</tr>
 
 		<tr>
@@ -1025,13 +1080,8 @@
 		</tr>
 
 		<tr>
-			<td><pre>-stats &lt;1|0&gt;</pre></td>
-			<td>Overlay console info on the TIA image during emulation.</td>
-		</tr>
-
-		<tr>
-			<td><pre>-tiafloat &lt;1|0&gt;</pre></td>
-			<td>Set unused TIA pins to be floating on a read/peek.</td>
+			<td><pre>-tiadriven &lt;1|0&gt;</pre></td>
+			<td>Set unused TIA pins to be randomly driven high or low on a read/peek.</td>
 		</tr>
 
 		<tr>
@@ -1173,6 +1223,7 @@
 					<tr><td>GL FS Stretch</td><td>stretch fullscreen OpenGL in emulation mode</td><td>-gl_fsmax</td></tr>
 					<tr><td>GL VSync</td><td>enable OpenGL vertical synchronization</td><td>-gl_vsync</td></tr>
 					<tr><td>Grab mouse</td><td>keep mouse in SDL window</td><td>-grabmouse</td></tr>
+					<tr><td>Show UI messages</td><td>overlay UI messages onscreen</td><td>-uimessages</td></tr>
 					<tr><td>Center window (*)</td><td>attempt to center SDL window (requires restart)</td><td>-center</td></tr>
 					<tr><td>Fast SC/AR BIOS</td><td>Skip progress loading bars for SuperCharger ROMs</td><td>-fastscbios</td></tr>
 				</table>
@@ -1303,7 +1354,7 @@
 		<tr>
 			<th>Function</th>
 			<th>Key (Standard)</th>
-			<th>Key (OSX)</th>
+			<th>Key (MacOSX)</th>
 		</tr>
 
 		<tr>
@@ -1411,7 +1462,7 @@
 		<tr>
 			<td>Pause/resume emulation</td>
 			<td>Pause</td>
-			<td>Pause</td>
+			<td>&nbsp;</td>
 		</tr>
 	</table>
 
@@ -1663,6 +1714,95 @@
 		</tr>
 	</table>
 
+	<p><b>Sega Genesis Controller (cannot be remapped, always associated with joystick and booster-grip controllers)</b></p>
+
+	<table BORDER=2>
+		<tr>
+			<th>Left Pad</th>
+			<th>Right Pad</th>
+		</tr>
+
+		<tr>
+			<td>
+				<table BORDER=1 cellpadding=5>
+					<tr>
+						<th>Function</th>
+						<th>Key</th>
+					</tr>
+
+					<tr>
+						<td>Pad Up</td>
+						<td>Same as 'Joy0 Up'</td>
+					</tr>
+
+					<tr>
+						<td>Pad Down</td>
+						<td>Same as 'Joy0 Down'</td>
+					</tr>
+
+					<tr>
+						<td>Pad Left</td>
+						<td>Same as 'Joy0 Left'</td>
+					</tr>
+
+					<tr>
+						<td>Pad Right</td>
+						<td>Same as 'Joy0 Right'</td>
+					</tr>
+
+					<tr>
+						<td>Button 'B'</td>
+						<td>Same as 'Joy0 Fire'</td>
+					</tr>
+
+					<tr>
+						<td>Button 'C'</td>
+						<td>Same as 'Joy0 Booster'</td>
+					</tr>
+				</table>
+			</td>
+
+			<td>
+				<table BORDER=1 cellpadding=5>
+					<tr>
+						<th>Function</th>
+						<th>Key</th>
+					</tr>
+
+					<tr>
+						<td>Pad Up</td>
+						<td>Same as 'Joy1 Up'</td>
+					</tr>
+
+					<tr>
+						<td>Pad Down</td>
+						<td>Same as 'Joy1 Down'</td>
+					</tr>
+
+					<tr>
+						<td>Pad Left</td>
+						<td>Same as 'Joy1 Left'</td>
+					</tr>
+
+					<tr>
+						<td>Pad Right</td>
+						<td>Same as 'Joy1 Right'</td>
+					</tr>
+
+					<tr>
+						<td>Button 'B'</td>
+						<td>Same as 'Joy1 Fire'</td>
+					</tr>
+
+					<tr>
+						<td>Button 'C'</td>
+						<td>Same as 'Joy1 Booster'</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
 	<p><b>Keypad Controller (can be remapped)</b></p>
 
 	<table BORDER=2>
@@ -1818,96 +1958,144 @@
 		<tr>
 			<th>Function</th>
 			<th>Key (Standard)</th>
-			<th>Key (OSX)</th>
+			<th>Key (MacOSX)</th>
 		</tr>
 
 		<tr>
 			<td>Set "Display.YStart" to next <i>larger</i> value</td>
 			<td>Alt + PageUp</td>
-			<td>Shift-Cmd + PageUp</td>
+			<td>Cmd + PageUp</td>
 		</tr>
 
 		<tr>
 			<td>Set "Display.YStart" to next <i>smaller</i> value</td>
 			<td>Alt + PageDown</td>
-			<td>Shift-Cmd + PageDown</td>
+			<td>Cmd + PageDown</td>
 		</tr>
 
 		<tr>
 			<td>Set "Display.Height" to next <i>larger</i> value</td>
 			<td>Control + PageUp</td>
-			<td>Cmd + PageUp</td>
+			<td>Control + PageUp</td>
 		</tr>
 
 		<tr>
 			<td>Set "Display.Height" to next <i>smaller</i> value</td>
 			<td>Control + PageDown</td>
-			<td>Cmd + PageDown</td>
+			<td>Control + PageDown</td>
 		</tr>
 
 		<tr>
 			<td>Toggle frame stats (scanline count/fps/bs type/etc)</td>
 			<td>Alt + l</td>
-			<td>Shift-Cmd + l</td>
+			<td>Cmd + l</td>
 		</tr>
 
 		<tr>
 			<td>Toggle TIA Player0 object</td>
 			<td>Alt + z</td>
-			<td>Shift-Cmd + z</td>
+			<td>Cmd + z</td>
 		</tr>
 
 		<tr>
 			<td>Toggle TIA Player1 object</td>
 			<td>Alt + x</td>
-			<td>Shift-Cmd + x</td>
+			<td>Cmd + x</td>
 		</tr>
 
 		<tr>
 			<td>Toggle TIA Missile0 object</td>
 			<td>Alt + c</td>
-			<td>Shift-Cmd + c</td>
+			<td>Cmd + c</td>
 		</tr>
 
 		<tr>
 			<td>Toggle TIA Missile1 object</td>
 			<td>Alt + v</td>
-			<td>Shift-Cmd + v</td>
+			<td>Cmd + v</td>
 		</tr>
 
 		<tr>
 			<td>Toggle TIA Ball object</td>
 			<td>Alt + b</td>
-			<td>Shift-Cmd + b</td>
+			<td>Cmd + b</td>
 		</tr>
 
 		<tr>
 			<td>Toggle TIA Playfield object</td>
 			<td>Alt + n</td>
+			<td>Cmd + n</td>
+		</tr>
+
+		<tr>
+			<td>Toggle TIA Player0 collisions</td>
+			<td>Shift-Alt + z</td>
+			<td>Shift-Cmd + z</td>
+		</tr>
+
+		<tr>
+			<td>Toggle TIA Player1 collisions</td>
+			<td>Shift-Alt + x</td>
+			<td>Shift-Cmd + x</td>
+		</tr>
+
+		<tr>
+			<td>Toggle TIA Missile0 collisions</td>
+			<td>Shift-Alt + c</td>
+			<td>Shift-Cmd + c</td>
+		</tr>
+
+		<tr>
+			<td>Toggle TIA Missile1 collisions</td>
+			<td>Shift-Alt + v</td>
+			<td>Shift-Cmd + v</td>
+		</tr>
+
+		<tr>
+			<td>Toggle TIA Ball collisions</td>
+			<td>Shift-Alt + b</td>
+			<td>Shift-Cmd + b</td>
+		</tr>
+
+		<tr>
+			<td>Toggle TIA Playfield collisions</td>
+			<td>Shift-Alt + n</td>
 			<td>Shift-Cmd + n</td>
 		</tr>
 
 		<tr>
 			<td>Toggle TIA HMOVE blanks</td>
 			<td>Alt + m</td>
-			<td>Shift-Cmd + m</td>
+			<td>Cmd + m</td>
 		</tr>
 
 		<tr>
 			<td>Toggle TIA 'Fixed Debug Colors' mode</td>
 			<td>Alt + Comma</td>
-			<td>Shift-Cmd + Comma</td>
+			<td>Cmd + Comma</td>
 		</tr>
 
 		<tr>
 			<td>Turn all TIA objects off</td>
 			<td>Alt + .</td>
-			<td>Shift-Cmd + .</td>
+			<td>Cmd + .</td>
 		</tr>
 
 		<tr>
 			<td>Turn all TIA objects on</td>
 			<td>Alt + /</td>
+			<td>Cmd + /</td>
+		</tr>
+
+		<tr>
+			<td>Turn all TIA collisions off</td>
+			<td>Shift-Alt + .</td>
+			<td>Shift-Cmd + .</td>
+		</tr>
+
+		<tr>
+			<td>Turn all TIA collisions on</td>
+			<td>Shift-Alt + /</td>
 			<td>Shift-Cmd + /</td>
 		</tr>
 	</table>
@@ -1918,7 +2106,7 @@
 		<tr>
 			<th>Function</th>
 			<th>Key (Standard)</th>
-			<th>Key (OSX)</th>
+			<th>Key (MacOSX)</th>
 		</tr>
 
 		<tr>
@@ -1942,68 +2130,68 @@
 		<tr>
 			<td>Decrease volume (*)</td>
 			<td>Alt + [</td>
-			<td>Shift-Cmd + [</td>
+			<td>Cmd + [</td>
 		</tr>
 
 		<tr>
 			<td>Increase volume (*)</td>
 			<td>Alt + ]</td>
-			<td>Shift-Cmd + ]</td>
+			<td>Cmd + ]</td>
 		</tr>
 
 		<tr>
 			<td>Grab mouse (keep mouse in game window)</td>
 			<td>Control + g</td>
-			<td>Cmd + g</td>
+			<td>Control + g</td>
 		</tr>
 
 		<tr>
 			<td>Toggle display palette (<i>NTSC/PAL/SECAM</i>)</td>
 			<td>Control + f</td>
-			<td>Cmd + f</td>
+			<td>Control + f</td>
 		</tr>
 
 		<tr>
 			<td>Save current properties to a new properties file</td>
 			<td>Control + s</td>
-			<td>Cmd + s</td>
+			<td>Control + s</td>
 		</tr>
 
 		<tr>
 			<td>Set mouse to emulate paddle 0</td>
 			<td>Control + 0</td>
-			<td>Cmd + 0</td>
+			<td>Control + 0</td>
 		</tr>
 
 		<tr>
 			<td>Set mouse to emulate paddle 1</td>
 			<td>Control + 1</td>
-			<td>Cmd + 1</td>
+			<td>Control + 1</td>
 		</tr>
 
 		<tr>
 			<td>Set mouse to emulate paddle 2</td>
 			<td>Control + 2</td>
-			<td>Cmd + 2</td>
+			<td>Control + 2</td>
 		</tr>
 
 		<tr>
 			<td>Set mouse to emulate paddle 3</td>
 			<td>Control + 3</td>
-			<td>Cmd + 3</td>
+			<td>Control + 3</td>
 		</tr>
 
 		<tr>
 			<td>Reload current ROM (singlecart ROM, TIA mode)<br>
 				Load next game in ROM (multicart ROM, TIA mode)</td>
 			<td>Control + r</td>
-			<td>Cmd + r</td>
+			<td>Control + r</td>
 		</tr>
 
 		<tr>
 			<td>Reload ROM listing (ROM launcher mode)</td>
 			<td>Control + r</td>
-			<td>Cmd + r</td>
+			<td>Control + r</td>
 		</tr>
 
 		<tr>
@@ -2021,19 +2209,25 @@
 		<tr>
 			<td>Toggle 'phosphor' effect</td>
 			<td>Alt + p</td>
-			<td>Shift-Cmd + p</td>
+			<td>Cmd + p</td>
 		</tr>
 
 		<tr>
 			<td>Toggle palette</td>
 			<td>Control + p</td>
-			<td>Cmd + p</td>
+			<td>Control + p</td>
 		</tr>
 
 		<tr>
 			<td>Toggle PAL color-loss effect</td>
 			<td>Control + l</td>
-			<td>Cmd + l</td>
+			<td>Control + l</td>
+		</tr>
+
+		<tr>
+			<td>Save continuous PNG snapshots</td>
+			<td>Alt + s</td>
+			<td>Cmd + s</td>
 		</tr>
 	</table>
 
@@ -2107,11 +2301,11 @@
 				<table border="1" cellpadding="4">
 					<tr><th>Item</th><th>Brief description</th><th>For more information,<br>see Commandline</th></tr>
 					<tr><td>Stelladaptor X is</td><td>Specifies which virtual port each Stelladaptor uses (See <b>Section 11 - <a href="#Adaptor">Stelladaptor Support</a></b>)</td><td>-sa1 &amp; -sa2</td></tr>
-					<tr><td>Joy deadzone</td><td>Joystick deadzone area for analog joysticks</td><td>-joydeadzone</td></tr>
-					<tr><td>Mouse is paddle</td><td>The mouse can emulate either paddle	0, 1, 2, or 3.</td><td>&nbsp;</td></tr>
-					<tr><td>Paddle speed</td><td>Speed used when emulating a paddle using a digital device</td><td>-pspeed</td></tr>
 					<tr><td>AVox serial port</td><td>Described in further detail in <b>Section 12 - <a href="#AtariVox">AtariVox/SaveKey Support</a></b> </td><td>-avoxport</td></tr>
+					<tr><td>Joy deadzone</td><td>Joystick deadzone area for analog joysticks</td><td>-joydeadzone</td></tr>
+					<tr><td>Paddle speed</td><td>Speed used when emulating a paddle using a digital device</td><td>-pspeed</td></tr>
 					<tr><td>Allow all 4 ...</td><td>Allow all 4 joystick directions to be pressed simultaneously</td><td>-joyallow4</td></tr>
+					<tr><td>Use mouse as ...</td><td>Use the mouse for various controllers (paddles, driving, etc)</td><td>-usemouse</td></tr>
 				</table>
 			</td>
 		</tr>
@@ -2165,7 +2359,7 @@
 	<p>The text box in the upper right corner can be used to narrow down the
 	results in the ROM listing.  When this box is empty, all files are shown
 	(subject to the restrictions from the filtering option, explained below).
-	Typing characters here where show only those files that match that
+	Typing characters here will show only those files that match that
 	pattern.  For example, typing 'Activision' will show only files that
 	contain the word 'Activision' in their name.  This is very useful for
 	quickly finding a group of related ROMs.  Note that the search is not
@@ -2222,7 +2416,7 @@
 		</li>
 
 		<li><b>Reload listing</b>: Selecting this performs a reload of the
-		current listing.  It is an alternative to pressing the Ctrl/Cmd-R
+		current listing.  It is an alternative to pressing the Control-r
 		key combo.</li>
 	</ol></p>
 
@@ -2314,8 +2508,8 @@
 
 	<p>Note that you must use the entire name of the port as specified by
 	your operating system.  For example, in Windows this would be COM1,
-	COM2, etc; Linux and OSX tend to use names similar to '/dev/xxxxxx'.
-	For now, only Linux/UNIX, OSX, and Win32 are supported.</p>
+	COM2, etc; Linux and MacOSX tend to use names similar to '/dev/xxxxxx'.
+	For now, only Linux/UNIX, MacOSX, and Win32 are supported.</p>
 
 	<p>Support for the EEPROM portion of the AtariVox and SaveKey is currently
 	emulated.  That is, a file will be created on your computer simulating the
@@ -2332,13 +2526,13 @@
 	<p><table cellpadding="5" border="1">
 		<tr>
 			<td><b>Linux/Unix</b></td>
-			<td><i>$HOME/.stella/atarivox_eeprom.dat<br>
-				$HOME/.stella/savekey_eeprom.dat</i></td>
+			<td><i>~/.stella/atarivox_eeprom.dat<br>
+				~/.stella/savekey_eeprom.dat</i></td>
 		</tr>
 		<tr>
 			<td><b>Macintosh</b></td>
-			<td><i>$HOME/.stella/atarivox_eeprom.dat<br>
-				$HOME/.stella/savekey_eeprom.dat</i></td>
+			<td><i>~/Library/Application Support/Stella/atarivox_eeprom.dat<br>
+				~/Library/Application Support/Stella/savekey_eeprom.dat</i></td>
 		</tr>
 		<tr>
 			<td><b>Windows</b></td>
@@ -2379,7 +2573,7 @@
 		for more information.</li>
 
 		<li>Viewing TIA/console information overlaid on the TIA image.  This option
-		can be enabled from the commandline or using the Alt/ShiftCmd-L key combo,
+		can be enabled from the commandline or using the Alt-L key combo,
 		and is extremely useful for viewing the current scanline count and associated
 		frames per second, bankswitch and display formats, etc.  The following shows
 		an example of this information:
@@ -2459,7 +2653,7 @@
 		</tr>
 		<tr>
 			<td><b>Macintosh</b></td>
-			<td>Not applicable; settings are saved in <i>$HOME/Library/Preferences/StellaOSX.plist</i></td>
+			<td>Not applicable; settings are saved in <i>~/Library/Preferences/net.sourceforge.Stella.plist</i></td>
 		</tr>
 		<tr>
 			<td><b>Windows</b></td>
@@ -2561,7 +2755,7 @@ Ms Pac-Man (Stella extended codes):
 		</tr>
 		<tr>
 			<td><b>Macintosh</b></td>
-			<td><i>$HOME/.stella/stella.cht</i></td>
+			<td><i>~/Library/Application Support/Stella/stella.cht</i></td>
 		</tr>
 		<tr>
 			<td><b>Windows</b></td>
@@ -2685,15 +2879,17 @@ Ms Pac-Man (Stella extended codes):
 				<tr><td>2IN1 &#185;</td><td>4-32K Multicart (2 games) </td></tr>
 				<tr><td>4IN1 &#185;</td><td>8-32K Multicart (4 games) </td></tr>
 				<tr><td>8IN1 &#185;</td><td>16-64K Multicart (8 games) </td></tr>
+				<tr><td>16IN1 &#185;</td><td>32-128K Multicart (16 games) </td></tr>
 				<tr><td>32IN1 &#185;</td><td>64-128K Multicart (32 games) </td></tr>
 				<tr><td>2K </td><td>64-2048 byte Atari </td></tr>
 				<tr><td>3E </td><td>32K Tigervision </td></tr>
 				<tr><td>3F </td><td>512K Tigervision </td></tr>
-				<tr><td>4A50 &#185;&#178;</td><td>64K 4A50 + ram </td></tr>
+				<tr><td>4A50 &#185;</td><td>64K 4A50 + ram </td></tr>
 				<tr><td>4K </td><td>4K Atari </td></tr>
-				<tr><td>AR &#178;</td><td>Supercharger </td></tr>
+				<tr><td>AR </td><td>Supercharger </td></tr>
 				<tr><td>CV </td><td>Commavid extra ram </td></tr>
-				<tr><td>DPC &#178;</td><td>Pitfall II </td></tr>
+				<tr><td>DPC </td><td>Pitfall II </td></tr>
+				<tr><td>DPC+</td><td>Enhanced DPC </td></tr>
 				<tr><td>E0 </td><td>8K Parker Bros </td></tr>
 				<tr><td>E7 </td><td>16K M-network </td></tr>
 				<tr><td>EF </td><td>64K Homestar Runner </td></tr>
@@ -2710,7 +2906,7 @@ Ms Pac-Man (Stella extended codes):
 				<tr><td>MC &#185;&#178;</td><td>C. Wilkson Megacart </td></tr>
 				<tr><td>SB </td><td>128-256k SUPERbanking </td></tr>
 				<tr><td>UA </td><td>8K UA Ltd. </td></tr>
-				<tr><td>X07 &#185;&#178;</td><td>64K AtariAge </td></tr>
+				<tr><td>X07 &#185;</td><td>64K AtariAge </td></tr>
 			</table></td>
 		</tr>
 
@@ -2746,7 +2942,7 @@ Ms Pac-Man (Stella extended codes):
 			<td>Indicates what type of controller the left player
 			uses.  The value must be <b>BoosterGrip</b>, <b>Driving</b>,
 			<b>Keyboard</b>, <b>Paddles</b>, <b>Trackball22</b>,
-			<b>Trackball80</b>, <b>AmigaMouse</b> or <b>Joystick</b>.</td>
+			<b>Trackball80</b>, <b>AmigaMouse</b>, <b>Genesis</b> or <b>Joystick</b>.</td>
 		</tr>
 
 		<tr>
@@ -2755,7 +2951,7 @@ Ms Pac-Man (Stella extended codes):
 			uses.  The value must be <b>BoosterGrip</b>, <b>Driving</b>,
 			<b>Keyboard</b>, <b>Paddles</b>, <b>Trackball22</b>,
 			<b>Trackball80</b>, <b>AmigaMouse</b>, <b>AtariVox</b>,
-			<b>SaveKey</b> or <b>Joystick</b>.</td>
+			<b>SaveKey</b>, <b>Genesis</b> or <b>Joystick</b>.</td>
 		</tr>
 
 		<tr>
@@ -2817,7 +3013,7 @@ Ms Pac-Man (Stella extended codes):
 		</tr>
 		<tr>
 			<td><b>Macintosh</b></td>
-			<td><i>$HOME/.stella/stella.pro</i></td>
+			<td><i>~/Library/Application Support/Stella/stella.pro</i></td>
 		</tr>
 		<tr>
 			<td><b>Windows</b></td>
@@ -2886,7 +3082,7 @@ Ms Pac-Man (Stella extended codes):
 		</tr>
 		<tr>
 			<td><b>Macintosh</b></td>
-			<td><i>$HOME/.stella/stella.pal</i></td>
+			<td><i>~/Library/Application Support/Stella/stella.pal</i></td>
 		</tr>
 		<tr>
 			<td><b>Windows</b></td>
@@ -2933,7 +3129,7 @@ Ms Pac-Man (Stella extended codes):
 			versions.  Added INI file support, faster startup, snapshot support,
 			and pause functionality to core.  Converted Stella 1.1 manual to HTML.
 			Ported codebase to SDL for Windows/MacOSX.  Added OpenGL support and
-			Stelladaptor support. Current maintainer for the Linux, OSX and Windows
+			Stelladaptor support. Current maintainer for the Linux, MacOSX and Windows
 			versions.</td>
 		</tr>
 
@@ -3031,6 +3227,12 @@ Ms Pac-Man (Stella extended codes):
 		<tr>
 			<td VALIGN="TOP">Andrew&nbsp;Kator<br>(<a href="http://www.katorlegaz.com">http://www.katorlegaz.com</a>)</td>
 			<td>Provided PHP and CSS code for a major update to the Stella website</td>
+		</tr>
+
+		<tr>
+			<td VALIGN="TOP">Richard&nbsp;Kennehan</td>
+			<td>Donated Atari light-sixer, various controllers, and several games to help
+        in testing ROMs on a real system</td>
 		</tr>
 
 		<tr>
@@ -3211,7 +3413,7 @@ Ms Pac-Man (Stella extended codes):
 
 		<tr>
 			<td VALIGN="TOP">Albert&nbsp;Yarusso (aka Al from AtariAge)</td>
-			<td>Provided helpful feedback for the OSX port, and generously
+			<td>Provided helpful feedback for the MacOSX port, and generously
 				donated an AtariVox device to help with development</td>
 		</tr>
 
