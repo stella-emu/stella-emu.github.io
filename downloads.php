@@ -15,52 +15,57 @@
 <table BORDER=0 CELLPADDING=6 WIDTH="100%">
 
 	<tr>
-		<td><b>Latest&nbsp;Release (v/ 3.0.1)</b></td>
+		<td><b>Latest&nbsp;Release (v/ 3.1)</b></td>
 		<td>&nbsp;</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.0.1-win32.exe?download">stella-3.0.1-win32.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.1-win32.exe?download">Stella-3.1-win32.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for 32-bit Windows 2000/XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.0.1-x64.exe?download">stella-3.0.1-x64.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.1-x64.exe?download">Stella-3.1-x64.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for 64-bit Windows Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.0.1-windows.zip?download">stella-3.0.1-windows.zip</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.1-windows.zip?download">Stella-3.1-windows.zip</a></td>
 		<td BGCOLOR="#FFCC99">Binary ZIP (32-bit and 64-bit) for Windows 2000/XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/StellaOSX3.0.1.dmg?download">StellaOSX3.0.1.dmg</a></td>
-		<td BGCOLOR="#FFCC99">Binary DMG for Mac OSX (Universal Binary, version 10.3 and higher)</td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.1-macosx.dmg?download">Stella-3.1-macosx.dmg</a></td>
+		<td BGCOLOR="#FFCC99">Binary DMG for MacOS X (32-bit Universal Binary, version 10.4 and higher)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.0.1-1_i386.deb?download">stella_3.0.1-1_i386.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.1_intel_10.6-macosx.dmg?download">Stella-3.1_intel_10.6-macosx.dmg</a></td>
+		<td BGCOLOR="#FFCC99">Binary DMG for MacOS X (32/64-bit, Intel CPU/Snow Leopard only)</td>
+	</tr>
+
+	<tr>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.1-1_i386.deb?download">stella_3.1-1_i386.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu Karmic Koala (9.10)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.0.1-1_amd64.deb?download">stella_3.0.1-1_amd64.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.1-1_amd64.deb?download">stella_3.1-1_amd64.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu Karmic Koala (9.10)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.0.1-2.i386.rpm?download">stella-3.0.1-2.i386.rpm</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.1-2.i386.rpm?download">stella-3.1-2.i386.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit RPM for Linux (tested in Fedora and Mandriva)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.0.1-2.x86_64.rpm?download">stella-3.0.1-2.x86_64.rpm</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.1-2.x86_64.rpm?download">stella-3.1-2.x86_64.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Binary 64-bit RPM for Linux (tested in Fedora and Mandriva)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.0.1-src.tar.gz?download">stella-3.0.1-src.tar.gz</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.1-src.tar.gz?download">stella-3.1-src.tar.gz</a></td>
 		<td BGCOLOR="#FFCC99">Source code tarball for all systems</td>
 	</tr>
 
@@ -75,7 +80,7 @@
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-snapshots-20090911.zip?download">stella-snapshots-20090911.zip</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-snapshots-20100422.zip?download">stella-snapshots-20100422.zip</a></td>
 		<td BGCOLOR="#FFCC99">Snapshot files for use in ROM launcher/ROM Info Viewer</td>
 	</tr>
 
