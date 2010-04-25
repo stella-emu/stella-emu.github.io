@@ -12,6 +12,18 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>April 26, 2010</H4>
+Stella release 3.1.1 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Fixed program crash when using RIOT addresses and labels in the
+    debugger console prompt.</li>
+
+<li>Updated DPC+ bankswitch scheme to latest specifications.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>April 22, 2010</H4>
 Stella release 3.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -176,8 +188,6 @@ Stella release 3.1 for Linux, MacOS X and Windows is now available.
     would disable any further input.</li>
 
 </ul>
-
-Have Fun!
 
 
 <H4>September 11, 2009</H4>
