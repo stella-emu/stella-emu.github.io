@@ -46,12 +46,12 @@
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.1.2-1_i386.deb?download">stella_3.1.2-1_i386.deb</a></td>
-		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu Karmic Koala (9.10)</td>
+		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu Lucid Lynx (10.04)</td>
 	</tr>
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.1.2-1_amd64.deb?download">stella_3.1.2-1_amd64.deb</a></td>
-		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu Karmic Koala (9.10)</td>
+		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu Lucid Lynx (10.04)</td>
 	</tr>
 
 	<tr>
