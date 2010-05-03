@@ -12,6 +12,29 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>May 3, 2010</H4>
+Stella release 3.1.2 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Modified 'showinfo' command to accept levels of output, where
+    increasingly larger numbers provide more debug output.  Related to
+    this, added UI item to modify 'showinfo'.</li>
+
+<li>Updated DPC+ bankswitch scheme to latest specifications, including
+    support for 32K ROMs with ARM code (the ARM code is ignored for now).</li>
+
+<li>Fixed bug in saving patched ROMs using DPC and DPC+ bankswitch
+    schemes; the saved image didn't actually include any changes made by
+    the user.</li>
+
+<li>Removed 'uselauncher' from the UI, since disabling it will remove
+    the ROM launcher on all future runs, and not allow one to enable it
+    again.  It's still available from the commandline, for those that
+    have a need for it.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>April 26, 2010</H4>
 Stella release 3.1.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -20,8 +43,6 @@ Stella release 3.1.1 for Linux, MacOS X and Windows is now available.
 
 <li>Updated DPC+ bankswitch scheme to latest specifications.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>April 22, 2010</H4>
