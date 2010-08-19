@@ -12,6 +12,118 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>August 20, 2010</H4>
+Added an FAQ (frequently asked questions) section to the Stella webpage.
+
+
+<H4>August 20, 2010</H4>
+Stella release 3.2 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>NOTE: because of the many event-related changes in this release, all
+    event mapping should be reset to defaults after starting Stella for
+    the first time.  As well, because of other internal changes, older
+    save-state files are no longer valid.</li>
+
+<li>Many improvements to joystick handling code, particularly for analog
+    axes.  Navigating the UI should be much smoother now, and remapping
+    events to analog axes should be less 'twitchy'.</li>
+
+<li>Added ability to assign and remap 'combo' events in emulation mode.
+    Combo events are basically a sequence of normal events (up to 8)
+    that are generated from a single event (ie, one button on a joystick
+    could generate up to 8 events).  Updated Input Settings UI to
+    access and modify these events.</li>
+
+<li>Default mappings are now available in UI and emulation mode for the
+    first 'hat' detected on a joystick/gamepad.  Related to this, a hat
+    now works exactly like an axis in UI mode (holding down a direction
+    continues that direction until the hat is released/centered).</li>
+
+<li>Several major improvements to the debugger:
+	<ul>
+    <li>the disassembler can now process multiple entry points, and
+        caches entry points as they're encountered (ie, the disassembly
+        isn't 'reset' each time a bank change occurs or you exit and
+        re-enter the debugger)</li>
+    <li>preliminary support for disassembling from zero-page RAM</li>
+    <li>re-added ability to change banks with the 'bank' debugger
+        prompt command and within the ROM disassembly UI</li>
+    <li>user labels in disassembly are now supported again</li>
+    <li>'runto' command is now case-insensitive, and shows a progressbar
+        while searching through the disassembly</li>
+    <li>the debugger window can be resized between ROM loads (previously,
+        the app had to be restarted)</li>
+    <li>fixed bug in Distella disassembler output, where it sometimes
+        generated addresses above $FFFF</li>
+    <li>a vertical line separates the disassembly from the raw bytes</li>
+	</ul>
+</li>
+
+<li>Fixed behaviour of SWCHB and SWBCNT; pins set to output now remember
+    the values previously written.  Some ROMs use this functionality for
+    extra storage.  Special thanks to Omegamatrix of AtariAge for advice
+    and test ROMs in this area.</li>
+
+<li>Fixed bug when reading from illegal TIA addresses; a Space Invaders
+    hack was showing pink enemies instead of white ones.  Again, special
+    thanks to to Omegamatrix of AtariAge for advice and test ROMs in this
+    area.</li>
+
+<li>Fixed bug in handling INPT4/INPT5 latches from VBLANK; a least one
+    ROM was working in Stella when it didn't on real hardware.</li>
+
+<li>Added 'ramrandom' commandline argument, which is used to randomize
+    all RAM in the system; otherwise, the RAM is zeroed.  This defaults
+    to off, which is different than previous versions of Stella.</li>
+
+<li>Added 'finishing touches' to some of the UI descriptions, giving a
+    better explanation of the functions.  Related to this, certain
+    options now show a message box explaining the option in further
+    detail (particularly the ROM Audit mode).  As well, when starting
+    Stella for the first time, a prompt appears to select a ROM
+    directory.</li>
+
+<li>Fixed bugs in the ROM launcher when viewing certain PNG images not
+    created by Stella.  Related to this, the official PNG library is now
+    included in the Stella codebase (version 1.4.3).  Also added composite
+    snapshots for those ROMs which consist of several games.  Thanks go
+    to Buzbard of AtariAge for these images.</li>
+
+<li>Added several fixes for crashes on 'small' systems (those systems
+    where the maximum resolution is less than 640x480).</li>
+
+<li>Tweaked bankswitch autodetection for 0840, DPC+, E7 and UA schemes.</li>
+
+<li>Improved F8 bankswitch autodetection for Yars Revenge in 8in1 ROM.</li>
+
+<li>Updated DPC+ bankswitch scheme to latest specifications.</li>
+
+<li>Snapshots taken in continuous snapshot mode are now timestamped, so
+    older files are never overwritten.</li>
+
+<li>Fixed a TIA segfault that could occur with certain ROMs.</li>
+
+<li>The 'center' application window functionality can now be changed
+    without having to restart the application.  Related to this, mouse
+    positioning bugs when using the Linux version in OpenGL mode with
+    SDL 1.2.14 have been fixed.</li>
+
+<li>Reworked the manual, dividing it into 'Getting Started' and
+    'Advanced Configuration' sections.  It still contains the same info
+    as before, but hopefully in a better organized way.</li>
+
+<li>Updated Help dialog; it was showing incorrect info for some OSX
+    shortcuts.</li>
+
+<li>Updated OSX build script to not crash when a previous build is
+    detected, and to properly handle filenames with spaces.</li>
+
+<li>Updated included ZLib to latest release version (1.2.5).</li>
+</ul>
+
+Have Fun!
+
+
 <H4>May 3, 2010</H4>
 Stella release 3.1.2 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -31,8 +143,6 @@ Stella release 3.1.2 for Linux, MacOS X and Windows is now available.
     again.  It's still available from the commandline, for those that
     have a need for it.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>April 26, 2010</H4>
