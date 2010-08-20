@@ -73,8 +73,7 @@ Stella release 3.2 for Linux, MacOS X and Windows is now available.
     ROM was working in Stella when it didn't on real hardware.</li>
 
 <li>Added 'ramrandom' commandline argument, which is used to randomize
-    all RAM in the system; otherwise, the RAM is zeroed.  This defaults
-    to off, which is different than previous versions of Stella.</li>
+    all RAM in the system; otherwise, the RAM is zeroed.</li>
 
 <li>Added 'finishing touches' to some of the UI descriptions, giving a
     better explanation of the functions.  Related to this, certain
