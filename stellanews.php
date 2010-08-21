@@ -12,6 +12,22 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>August 25, 2010</H4>
+Stella release 3.2.1 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Improved behaviour of joystick 'hat' movement.  This should fix bugs
+    most visible in Yars' Revenge.</li>
+
+<li>Fixed bug in debugger rewind states; bankswitching wasn't being
+    performed during the rewind.  Related to this, fixed a similar issue
+    with the debugger 'loadstate' and 'savestate' commands.</li>
+
+<li>Added game properties info for the newly released 'Halo 2600' ROM.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>August 20, 2010</H4>
 Added an FAQ (frequently asked questions) section to the Stella webpage.
 
@@ -119,8 +135,6 @@ Stella release 3.2 for Linux, MacOS X and Windows is now available.
 
 <li>Updated included ZLib to latest release version (1.2.5).</li>
 </ul>
-
-Have Fun!
 
 
 <H4>May 3, 2010</H4>
