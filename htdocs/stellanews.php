@@ -12,6 +12,16 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>September 17, 2010</H4>
+Stella release 3.2.2 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Fixed bug with window centering; if enabled and the the window was
+    larger than the desktop, the window would be moved offscreen.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>August 25, 2010</H4>
 Stella release 3.2.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -24,8 +34,6 @@ Stella release 3.2.1 for Linux, MacOS X and Windows is now available.
 
 <li>Added game properties info for the newly released 'Halo 2600' ROM.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>August 20, 2010</H4>
