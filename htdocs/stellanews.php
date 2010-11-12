@@ -12,14 +12,111 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>November 12, 2010</H4>
+Stella release 3.3 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added the following Distella 'directives', which are used to override
+    and specifically tell the debugger how to treat address space (CODE,
+    GFX, PGFX, DATA, ROW).  See the debugger documentation for more
+    information.</li>
+
+<li>Disassembly from the debugger is now tracked by the emulation core,
+    and accented by the built-in Distella code.  Basically, the emulation
+    core knows when an address is referenced as code, making for very
+    accurate disassembled output.  Related to this, the emulation core now
+    tracks accesses to GRPx and PFx registers, automatically marking the
+    addresses as GFX or PGFX sections.  This will be improved in future
+    releases, as there are many ways to store data in the graphics
+    registers.</li>
+
+<li>Improved output of graphics output in the disassembler, by marking
+    such addresses with a bitmap of the data they represent.  This
+    allows player graphics (GFX directive) and playfield graphics (PGFX
+    directive) to really stand out in the disassembly.  Related to this,
+    added ability to edit such graphics in either binary or hexidecimal.</li>
+
+<li>Added preliminary support for Distella configuration files.  Much
+    more work is required in this area, since Stella now contains
+    directives that don't yet exist in the standalone Distella program.
+    Configuration files are automatically loaded, and debugger commands
+    now exist to load and save configuration directives directly from
+    the debugger.</li>
+
+<li>Added the following commands to the debugger prompt:
+  <ul>
+    <li>clearconfig, listconfig, loadconfig, saveconfig<br>
+       (used for Distella configuration files)</li>
+    <li>code, data, gfx, pgfx, row<br>
+       (directives used to override automatic disassembly types)</li>
+    <li>jump (jumps to a specific address in the disassembly)</li>
+    </li>type (gives detailed info for disassembly type of an address)</li>
+  </ul>
+</li>
+
+<li>The debugger prompt commands 'trap', 'trapread' and 'trapwrite' now
+    accept a range of addresses as well as a single address.</li>
+
+<li>Added 'data source' address output for the CPU SP/A/X/Y registers.
+    This is useful for quickly seeing what an operand address resolves
+    into with various load commands.</li>
+
+<li>Many commands in the debugger prompt are now case-insensitive;
+    further improvements will be made in future releases.</li>
+
+<li>Many improvements to the built-in Distella disassembler.  When passing
+    a relative branch or jump, data is now disassembled as code only if
+    the emulation core hasn't detected it as data.  Such 'preliminary'
+    code is marked with a '*' in the disassembler, indicating that it is
+    tentative code, and hasn't actually been executed yet.  This allows to
+    quickly see possible code paths, and at the same time eliminate
+    disassembly of addresses that are never used as code sections.</li>
+
+<li>Program counter/instruction addresses can now be toggled in the
+    disassembly.</li>
+
+<li>Disassembled instructions involving relative branches now show only
+    one byte for the operand, not two bytes.</li>
+
+<li>Fixed bug in several text input fields, whereby binary data couldn't
+    be input (a '\' was required, but the character was blocked).</li>
+
+<li>Fixed issues with PAL ROMs on screenmodes smaller than a PAL ROM
+    would require.  In this case, the image is centered and clipped to
+    the screen resolution.  This prevents the message "PAL ROM not
+    supported" from appearing.</li>
+
+<li>Fixed bug in fullscreen OpenGL mode when using ATI video cards;
+    the desktop background was 'bleeding through', resulting in a very
+    annoying flickering.</li>
+
+<li>Fixed crashes when opening windows larger than the desktop resolution
+    in fullscreen mode; this is now allowed only in windowed mode.</li>
+
+<li>Application window centering now also works when switching between
+    video modes, not just when starting the application.</li>
+
+<li>Added support for building a Windows version compatible with Windows
+    98 and 2000 (compiled with Visual Studio 2005).  Testing is very
+    limited, since I no longer have access to these systems.</li>
+
+<li>Fixed build issues for Innosetup in Windows XP.</li>
+
+<li>Fixed bug in OSX version where the name of the application wasn't
+    being shown in Activity Monitor.</li>
+
+<li>State files from older versions will no longer work in this release,
+    because of the extensive changes to the debugger and disassembler.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>September 17, 2010</H4>
 Stella release 3.2.2 for Linux, MacOS X and Windows is now available.
 <ul>
 <li>Fixed bug with window centering; if enabled and the the window was
     larger than the desktop, the window would be moved offscreen.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>August 25, 2010</H4>
