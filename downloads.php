@@ -51,12 +51,12 @@
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.3-1_i386.deb?download">stella_3.3-1_i386.deb</a></td>
-		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu Lucid Lynx (10.04)</td>
+		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu Maverick Meerkat (10.10)</td>
 	</tr>
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.3-1_amd64.deb?download">stella_3.3-1_amd64.deb</a></td>
-		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu Lucid Lynx (10.04)</td>
+		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu Maverick Meerkat (10.10)</td>
 	</tr>
 
 	<tr>
