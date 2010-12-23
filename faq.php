@@ -162,7 +162,7 @@ to one that does :)</p>
 while not introducing any distortion.  The smaller the size, the more
 accurate the audio 'resolution'.</p>
 <p>In terms of controllers, consider using actual 2600 controllers.
-Several options exist, such as the <a href="http://www.pixelspast.com/products">
+Several options exist, such as the <a href="http://www.stelladaptor.com">
 Stelladaptor</a> or <a href="http://www.legacyengineer.com/storefront">
 USB joysticks</a>.</p>
 
