@@ -144,6 +144,32 @@ type, which is much faster than navigating the UI.</p>
 
 <br>
 
+<h3>When Stella exits from fullscreen mode, the icons or windows
+on my desktop are re-arranged.  Similarly, exiting from external
+'frontends' sometimes causes the display to be repositioned/shifted.</h3>
+<p>This problem occurs under the following conditions:</p>
+<ul>
+<li>you're using Windows (any version)</li>
+<li>you switch from fullscreen to windowed mode, or quit the application
+while in fullscreen mode</li>
+<li>the fullscreen resolution used for Stella is smaller than your
+desktop resolution</li>
+</ul>
+<p>This problem is caused by the version of SDL that Stella uses, and
+unfortunately cannot be fixed.  Newer versions of SDL no longer have
+this problem, and when a stable release is available, Stella will move
+to the newer version.  For now, there is a workaround:</p>
+<ul>
+<li>turn on OpenGL rendering</li>
+<li>set Stella's fullscreen resolution to match your desktop resolution</li>
+<li>make sure that the emulation output is stretched to fill the screen
+(using the 'GL FS Stretch' option)</li>
+</ul>
+<p>Following these steps will fix the icon/window/frontend shifting, and
+also eliminate black borders around the emulation video output.</p>
+
+<br>
+
 <h3>What options should I use to get the most authentic emulation
 possible?</h3>
 <p>In my experience, using OpenGL rendering mode with vertical sync
