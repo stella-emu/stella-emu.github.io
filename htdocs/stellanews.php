@@ -12,6 +12,54 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>May 29, 2011</H4>
+Stella release 3.4 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Many improvements to input handling, particularly with the mouse and
+    paddles:<ul>
+    <li>The mouse can now be used to emulate a joystick, booster-grip or
+      driving controller.</li>
+
+    <li>The mouse now controls only one device at a time (1 of 4 paddles,
+      1 of 2 joysticks, etc), instead of devices from both virtual ports.</li>
+
+    <li>The sensitivity for digital and mouse input (for paddles) can now
+      be set separately with the 'dsense' and 'msense' commandline
+      arguments, and from within the Input Settings UI.</li></ul>
+</li>
+
+<li>Added support for the 2600-daptor device (<a href="http://2600-daptor.com">http://2600-daptor.com</a>), which is
+    similar to a Stelladaptor but improves handling of paddles.  Thanks
+    go to Tom Hafner for a complimentary test sample of this device.</li>
+
+<li>Added new controller types 'Paddles_IAxis', 'Paddles_IDir', and
+    'Paddles_IAxDr', which invert the paddle axis, direction, and
+    axis+direction, respectively.  These are used for certain ROMs
+    that have the axis or direction inverted from normal (for example,
+    using the paddles causes on onscreen object to move up and down vs.
+    left and right).  All applicable ROMs in the internal database
+    have been updated.</li>
+
+<li>Added preliminary support for emulating ARM code to the DPC+
+    bankswitching scheme (thanks to Batari).  Related to this, fatal
+    errors in the DPC+ ARM code are now caught and shown in the debugger.</li>
+
+<li>Updated internal ROM properties database to ROM-Hunter version 6
+    (thanks go to RomHunter for his tireless research in this area).</li>
+
+<li>The ROM audit dialog now automatically selects the current
+    directory in the ROM launcher, and reloads the directory after
+    the audit is complete.</li>
+
+<li>Removed the 'grabmouse' functionality; the mouse is now always
+    grabbed while playing a game, and released otherwise.</li>
+
+<li>Updated built-in version of the PNG library to the latest version.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>November 12, 2010</H4>
 Stella release 3.3 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -107,8 +155,6 @@ Stella release 3.3 for Linux, MacOS X and Windows is now available.
 <li>State files from older versions will no longer work in this release,
     because of the extensive changes to the debugger and disassembler.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>September 17, 2010</H4>
