@@ -56,22 +56,22 @@
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.4-1_i386.deb?download">stella_3.4-1_i386.deb</a></td>
-		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu Maverick Meerkat (10.10)</td>
+		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu 11.04 (Natty Narwhal)</td>
 	</tr>
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.4-1_amd64.deb?download">stella_3.4-1_amd64.deb</a></td>
-		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu Maverick Meerkat (10.10)</td>
+		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu 11.04 (Natty Narwhal)</td>
 	</tr>
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.4-2.i386.rpm?download">stella-3.4-2.i386.rpm</a></td>
-		<td BGCOLOR="#FFCC99">Binary 32-bit RPM for Linux (tested in Fedora and Mandriva)</td>
+		<td BGCOLOR="#FFCC99">Binary 32-bit RPM for Linux (tested in latest Fedora)</td>
 	</tr>
 
 	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.4-2.x86_64.rpm?download">stella-3.4-2.x86_64.rpm</a></td>
-		<td BGCOLOR="#FFCC99">Binary 64-bit RPM for Linux (tested in Fedora and Mandriva)</td>
+		<td BGCOLOR="#FFCC99">Binary 64-bit RPM for Linux (tested in latest Fedora)</td>
 	</tr>
 
 	<tr>
