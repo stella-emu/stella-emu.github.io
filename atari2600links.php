@@ -40,6 +40,10 @@
 	<td BGCOLOR="#CCCCCC"><a href="http://en.wikipedia.org/wiki/Atari_2600">Atari&nbsp;2600 on&nbsp;Wikipedia</a></td>
 	<td BGCOLOR="#FFCC99">Historical information about the Atari 2600 console</td>
 </tr>
+<tr>
+	<td BGCOLOR="#CCCCCC"><a href="http://en.wikipedia.org/wiki/Stella_(emulator)">Stella&nbsp;on&nbsp;Wikipedia</a></td>
+	<td BGCOLOR="#FFCC99">Wikipedia page for Stella itself</td>
+</tr>
 
 </table>
 <!---------------------------------------------------------------->
