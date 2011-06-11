@@ -15,67 +15,67 @@
 <table BORDER=0 CELLPADDING=6 WIDTH="100%">
 
 	<tr>
-		<td><b>Latest&nbsp;Release (v/ 3.4)</b></td>
+		<td><b>Latest&nbsp;Release (v/ 3.4.1)</b></td>
 		<td>&nbsp;</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4-win32.exe?download">Stella-3.4-win32.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4.1-win32.exe?download">Stella-3.4.1-win32.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for 32-bit Windows XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4-x64.exe?download">Stella-3.4-x64.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4.1-x64.exe?download">Stella-3.4.1-x64.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for 64-bit Windows XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4-windows.zip?download">Stella-3.4-windows.zip</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4.1-windows.zip?download">Stella-3.4.1-windows.zip</a></td>
 		<td BGCOLOR="#FFCC99">Binary ZIP (32-bit and 64-bit) for Windows XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4_98_2k-win32.exe?download">Stella-3.4_98_2k-win32.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4.1_98_2k-win32.exe?download">Stella-3.4.1_98_2k-win32.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for 32-bit Windows 98/2000</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4_98_2k-windows.zip?download">Stella-3.4_98_2k-windows.zip</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4.1_98_2k-windows.zip?download">Stella-3.4.1_98_2k-windows.zip</a></td>
 		<td BGCOLOR="#FFCC99">Binary ZIP for 32-bit Windows 98/2000</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4-macosx.dmg?download">Stella-3.4-macosx.dmg</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4.1-macosx.dmg?download">Stella-3.4.1-macosx.dmg</a></td>
 		<td BGCOLOR="#FFCC99">Binary DMG for MacOS X (32-bit Universal Binary, version 10.4 and higher)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4_intel_10.6-macosx.dmg?download">Stella-3.4_intel_10.6-macosx.dmg</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.4.1_intel_10.6-macosx.dmg?download">Stella-3.4.1_intel_10.6-macosx.dmg</a></td>
 		<td BGCOLOR="#FFCC99">Binary DMG for MacOS X (32/64-bit, Intel CPU/Snow Leopard only)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.4-1_i386.deb?download">stella_3.4-1_i386.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.4.1-1_i386.deb?download">stella_3.4.1-1_i386.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu 11.04 (Natty Narwhal)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.4-1_amd64.deb?download">stella_3.4-1_amd64.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.4.1-1_amd64.deb?download">stella_3.4.1-1_amd64.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu 11.04 (Natty Narwhal)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.4-2.i386.rpm?download">stella-3.4-2.i386.rpm</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.4.1-2.i386.rpm?download">stella-3.4.1-2.i386.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit RPM for Linux (tested in latest Fedora)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.4-2.x86_64.rpm?download">stella-3.4-2.x86_64.rpm</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.4.1-2.x86_64.rpm?download">stella-3.4.1-2.x86_64.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Binary 64-bit RPM for Linux (tested in latest Fedora)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.4-src.tar.gz?download">stella-3.4-src.tar.gz</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.4.1-src.tar.gz?download">stella-3.4.1-src.tar.gz</a></td>
 		<td BGCOLOR="#FFCC99">Source code tarball for all systems</td>
 	</tr>
 

@@ -12,6 +12,46 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>June 11, 2011</H4>
+Stella release 3.4.1 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Re-enabled 'grabmouse' commandline argument and associated
+    functionality with the following changes:<ul>
+      <li>it is changed in the "Input Settings' UI, not in 'Video Settings'</li>
+      <li>it only has meaning while in emulation mode</li>
+      <li>it is enabled by default</li></ul></li>
+
+<li>Fixed bug with emulation of paddles using the mouse most evident in
+    Warlords; movement was being filtered out if the mouse was moved too
+    fast.  There's still more work required in this area, however.</li>
+
+<li>Fixed bug with analog axes on gamepad devices, whereby jittering in
+    these axes would override input from digital axis, hat or keyboard
+    input.</li>
+
+<li>Fixed bug when switching to the debugger and back again would
+    sometimes cause an extra mouse motion event (which would cause the
+    emulation to think the mouse was moved and move the player
+    accordingly).</li>
+
+<li>Tweaked bankswitch autodetection code for 4A50 bankswitching; several
+    more test ROMs are automatically detected.</li>
+
+<li>The 'saverom' debugger command now saves ROMs in your home
+    directory by default if you don't specify a valid path.  This fixes
+    a bug whereby ROMs were saved in strange locations and couldn't later
+    be found.</li>
+
+<li>Fixed bug in automatically executing the debugger 'autoexec.stella'
+    file; any commands it contained weren't actually being executed.</li>
+
+<li>Zero-byte ROMs are no longer loaded and mis-detected as Supercharger
+    images.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>May 29, 2011</H4>
 Stella release 3.4 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -56,8 +96,6 @@ Stella release 3.4 for Linux, MacOS X and Windows is now available.
 
 <li>Updated built-in version of the PNG library to the latest version.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>November 12, 2010</H4>
