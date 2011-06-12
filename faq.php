@@ -82,6 +82,30 @@ AtariAge</a>.  As for how to start playing a game, I refer you to the
 
 <br>
 
+<h3>After starting a ROM, there can sometimes be a delay of up to 5-10 seconds
+before the game starts playing.</h3>
+<p>This could be caused by several issues, but most of them are related to a
+'timeout' in some way.  If your ROMs are stored on a network drive, accessing
+them may be slow if your network is slow.  This one is outside the scope of
+Stella.  Perhaps check your network settings, cables, etc to diagnose the problem.</p>
+<p>Another frequent problem occurs specifically for Linux users with respect to
+sound servers.  The audio library that Stella uses will try several sound devices
+in sequence until it finds one that works.  If you're not using 'PulseAudio' or
+any other sound server, it can take up to 5 seconds or more before Stella
+realizes this.  The easiest workaround is to specifically tell the audio system
+which device you'll be using.  Place the following in your startup script:
+<pre>  export SDL_AUDIODRIVER=alsa</pre></p>
+<p>Yet another problem is that you could have an obsolete 'stella.pro' file
+that is being read each time Stella starts.  As Stella now has a built-in ROM
+properties database, you no longer need use an external one.  Any external
+database will override the properties built into Stella, and will cause the
+application to start more slowly.  Normally, your stella.pro file will be
+quite small, and only contain changes for specific ROMs you're interested in.
+This means it will either be non-existent or a few kilobytes in size at most.
+If you find one that is over 400KB, then it's probably obsolete and should
+be edited down or removed entirely.</p>
+<br>
+
 <h3>I've located some ROMs and can get them to start in Stella, but I don't
 know how to actually start/play the game.</h3>
 <p>There are several issues to consider.  First, some games need to be 'started'
@@ -121,6 +145,17 @@ compared to a real system.</h3>
 <p>Always make sure you try setting the sound 'fragment size' to 512 bytes
 before reporting this as a bug.  In fact, try playing with the various
 options under 'Audio Settings' to see if it makes any difference as well.</p>
+
+<br>
+
+<h3>I'm experiencing sound issues, sound only works with the first ROM
+accessed; after returning to the ROM launcher and starting another ROM,
+sound is disabled. </h3>
+<p>Based on feedback, this seems to happen in very specific circumstances:
+people using Windows with an ATI video card in OpenGL mode.  I suspect it's
+a bug in either SDL or ATI drivers, but haven't been able to track it down
+yet.  For now, the only workaround is to completely quit Stella and start
+it again (which admittedly makes the ROM launcher essentially useless).</p>
 
 <br>
 
@@ -189,7 +224,8 @@ while not introducing any distortion.  The smaller the size, the more
 accurate the audio 'resolution'.</p>
 <p>In terms of controllers, consider using actual 2600 controllers.
 Several options exist, such as the <a href="http://www.stelladaptor.com">
-Stelladaptor</a> or <a href="http://www.legacyengineer.com/storefront">
+Stelladaptor</a>, <a href="http://www.2600-daptor.com">
+2600-daptor</a> or <a href="http://www.legacyengineer.com/storefront">
 USB joysticks</a>.</p>
 
 
