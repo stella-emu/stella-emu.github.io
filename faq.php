@@ -82,6 +82,15 @@ AtariAge</a>.  As for how to start playing a game, I refer you to the
 
 <br>
 
+<h3>When starting Stella and entering the ROM launcher, it sometimes takes up to
+30 seconds to see the list of ROMs.</h3>
+<p>This could be caused by several issues; the most probable reason has been fixed in
+version 3.5.  Otherwise, you could be attempting to access ROMs stored on a (slow) network
+drive.  This one is outside the scope of Stella.  Perhaps check your network settings,
+cables, etc to diagnose the problem.</p>
+
+<br>
+
 <h3>After starting a ROM, there can sometimes be a delay of up to 5-10 seconds
 before the game starts playing.</h3>
 <p>This could be caused by several issues, but most of them are related to a
@@ -151,11 +160,14 @@ options under 'Audio Settings' to see if it makes any difference as well.</p>
 <h3>I'm experiencing sound issues, sound only works with the first ROM
 accessed; after returning to the ROM launcher and starting another ROM,
 sound is disabled. </h3>
-<p>Based on feedback, this seems to happen in very specific circumstances:
+<p>This bug has been fixed as of Stella version 3.5.  Please upgrade if you
+haven't already done so.  For reference, the original bug report is included
+below:</p>
+<blockquote>Based on feedback, this seems to happen in very specific circumstances:
 people using Windows with an ATI video card in OpenGL mode.  I suspect it's
 a bug in either SDL or ATI drivers, but haven't been able to track it down
 yet.  For now, the only workaround is to completely quit Stella and start
-it again (which admittedly makes the ROM launcher essentially useless).</p>
+it again (which admittedly makes the ROM launcher essentially useless).</blockquote>
 
 <br>
 

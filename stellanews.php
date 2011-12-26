@@ -12,6 +12,89 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>December 31, 2011</H4>
+Stella release 3.5 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added several improvements to the joystick management code.  Joystick
+    event mapping is now saved per device, meaning that if you map events
+    to a certain joystick device, remove the device and then later insert
+    it again, Stella will remember the original mapping.</li>
+
+<li>The total number of joysticks present and their associated properties
+    (number of axes, buttons and hats) is now dynamic.  That is, there's
+    no longer a hard-coded limit on the number of joysticks that Stella
+    can use, or the number of buttons, etc that it contains.  This fixes
+    a serious bug with PS3 controllers with 27 buttons, whereby adding a
+    mapping for joystick 0 would inadvertantly change settings for
+    joystick 1, and could potentially lead to a program crash.</li>
+
+<li>Added 'mcontrol' commandline argument, which can specify to use each
+    mouse axis as a separate paddle.  The old (and default) behaviour can
+    be activated by setting this argument to 'auto'.  Related to this,
+    removed redundant 'usemouse' argument.</li>
+
+<li>Huge restructuring of the OpenGL code, making it compatible with 
+    OpenGL 2.x+ features (such as vertex buffer objects), while at the
+    same time keeping compatibility with OpenGL 1.5 / OpenGL ES.
+    Because of the required changes, TV effects were removed (they will
+    be added again for the next release).</li>
+
+<li>Improvements to audio handling, particularly for certain cases of
+    Windows, ATI video cards, and OpenGL mode.  The sound device is now
+    opened only once when Stella starts, and is paused between loading
+    different ROMs.  This fixes a problem whereby sound could possibly
+    not be functional after loading the first ROM.  Related to this,
+    removed the 'audiofirst' commandline argument as it's now redundant.</li>
+
+<li>Fixed bug with displaying the ROM launcher in Windows XP; the initial
+    load was sometimes taking up to 30 seconds to complete.</li>
+
+<li>Added logging facility, whereby the output of the application is
+    available within Stella itself.  This can still be printed to the
+    console, or also saved to a file.  Add the 'loglevel' and
+    'logtoconsole' commandline arguments which control these settings,
+    and removed the 'showinfo' argument as it's now redundant.</li>
+
+<li>Updated DPC+ bankswitching scheme to latest code provided by
+    SpiceWare.</li>
+
+<li>Added MAMCR handling to the Thumb ARM emulation code.  Note that
+    MAMCR isn't actually emulated, it is just ignored for now.  This
+    fixes a bug whereby accessing MAMCR would crash the ARM emulation.</li>
+
+<li>Added 'thumb.trapfatal' commandline argument, which causes the
+    Thumb ARM emulation to either trap on a fatal error (throw an
+    exception to the debugger and exit emulation) or simply log the
+    error and continue.  This should normally always be enabled, but
+    can be disabled by developers for testing reasons.</li>
+
+<li>Updated default snapshot directory to be much saner and easier to
+    find.  For most systems, it now defaults to the users 'Desktop'.
+    Note that the commandline argument has changed to 'snapdir'.</li>
+
+<li>The debugger 'print' command now indicates "special" addresses if
+    they are read-only (R), write-only (W) or read-write (R/W).</li>
+
+<li>Fixed a bug where scrolling the mouse-wheel in certain debugger UI
+    items would cause the program to crash; scrolling now works as
+    expected.</li>
+
+<li>Fixed minor display issue in the debugger RAM area; some addresses
+    were being displayed as '...'.</li>
+
+<li>Fixed compile issues in the latest versions of Ubuntu and Debian, and
+    fixed UNIX desktop file so that Stella will launch with a ROM when
+    selected from its icon.  Thanks go to Stephen Kitt for this code.</li>
+
+<li>Updated included PNG library to latest stable version.</li>
+
+<li>Updated the credits list in the documentation, listing people that
+    have donated hardware to the Stella team.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>June 11, 2011</H4>
 Stella release 3.4.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -48,8 +131,6 @@ Stella release 3.4.1 for Linux, MacOS X and Windows is now available.
 <li>Zero-byte ROMs are no longer loaded and mis-detected as Supercharger
     images.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>May 29, 2011</H4>
