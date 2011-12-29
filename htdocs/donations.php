@@ -58,7 +58,7 @@
       can't be choosers</i>.  That being said, I'm listing some of the things I'd like
       to receive in order of importance (most important at the top):
       <ul>
-        <li>Esoteric controllers, such as a MindControl, BoosterGrip, Trakball, KidVid, etc.</li>
+        <li>Esoteric controllers, such as a MindLink, BoosterGrip, Trakball, KidVid, etc.</li>
         <li>For appreciative homebrew developers, a copy of your released cart</li>
         <li>2600 carts, particularly those of rarer vintage, or in any case with manuals
         and/or boxes</li>
