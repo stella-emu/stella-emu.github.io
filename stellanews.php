@@ -15,6 +15,9 @@
 <H4>December 31, 2011</H4>
 Stella release 3.5 for Linux, MacOS X and Windows is now available.
 <ul>
+<li>Stella is now DonationWare!  Please see the DonationWare link on the
+    main webpage for more information.</li>
+
 <li>Added several improvements to the joystick management code.  Joystick
     event mapping is now saved per device, meaning that if you map events
     to a certain joystick device, remove the device and then later insert
