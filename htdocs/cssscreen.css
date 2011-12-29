@@ -24,6 +24,7 @@ a:hover  { color: red }
 body#about a#about  { color: black; background: white url(menucurrent.gif) no-repeat right top }
 body#screenshots a#screenshots  { color: black; background: white url(menucurrent.gif) no-repeat right top }
 body#news a#news  { color: black; background: white url(menucurrent.gif) no-repeat right top }
+body#donations a#donations  { color: black; background: white url(menucurrent.gif) no-repeat right top }
 body#team a#team  { color: black; background: white url(menucurrent.gif) no-repeat right top }
 body#mailing a#mailing  { color: black; background: white url(menucurrent.gif) no-repeat right top }
 body#guide a#guide  { color: black; background: white url(menucurrent.gif) no-repeat right top }
