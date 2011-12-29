@@ -26,9 +26,9 @@
       coordinated several large merges from other projects (ScummVM for parts of the GUI,
       Distella for the debugger disassembler, etc).  I've also created the <b>Harmony
       Programming Tool</b> software for the <a href="http://harmony.atariage.com">Harmony
-      Cartridge</a>, and created a version of the <b>KrokCom</b> software for UNIX -
-      <a href="http://krokcom.sourceforge.net">KrokCom for UNIX</a>.  So as you can see,
-      I'm quite prolific in Atari 2600 development.</p>
+      Cartridge</a>, and created a version of the <a href="http://www.arminvogl.de/KrokodileCartridge">KrokCom</a>
+      software for Linux/OSX - <a href="http://krokcom.sourceforge.net">KrokCom for UNIX</a>.
+      So as you can see, I'm quite prolific in Atari 2600 development.</p>
 
       <p>Let me say up-front that donating is completely voluntary.  Stella is an open-source /
       free software project, and will remain so because of its license (GPLv/2).  It's
@@ -46,17 +46,19 @@
         all possible, nobody will be left behind</li>
         <li>Stella is one of the few (only?) Atari 2600 emulators still under active development</li>
         <li>One of the main goals of Stella is to help homebrew developers; as such, Stella
-        contains an actively developed built-in debugger that IMHO is <b>unrivaled</b></li>
+        contains an actively developed <a href="docs/debugger.html">built-in debugger</a>
+        that IMHO is <b>unrivaled</b></li>
         <li>You're a homebrew developer who feels that Stella has helped greatly in your
         development efforts</li>
         <li>If you just want to fire it up and play a game, the process is as plug and play
         as possible</li>
-        <li>To see your name in print in the Credits section of the manual :)</li>
+        <li>To see your name in print in the <a href="docs/index.html#Acknowledgments">Credits</a>
+        section of the manual :)</li>
       </ul></p>
 
       <p>What type of donations would I consider?  I'm firmly of the opinion that <i>beggars
       can't be choosers</i>.  That being said, I'm listing some of the things I'd like
-      to receive in order of importance (most important at the top):
+      to receive (in no particular order):
       <ul>
         <li>Esoteric controllers, such as a MindLink, BoosterGrip, Trakball, KidVid, etc.</li>
         <li>For appreciative homebrew developers, a copy of your released cart</li>
@@ -66,9 +68,10 @@
         <li>2600 consoles (heavy-sixer, light-sixer, Vader, Jr, etc.)</li>
         <li>Anything 7800 related; I'm beginning to get into the 7800 scene, and have
         just the console and a few games at this point</li>
+        <li>Anything Atari-computer related, such as an Atari 400, 800, ST, etc</li>
         <li>Anything Amiga related; seriously, this isn't related to the Atari at all,
         but the Amiga is another retro-love of mine</li>
-        <li>A Commodore 128-D; I know this is an extreme longshot, but I'll throw it
+        <li>A <a href="http://oldcomputers.net/c128d.html">Commodore 128D</a>; I know this is an extreme longshot, but I'll throw it
         out there anyway</li>
         <li>Anything else retro-related that you think is cool</li>
         <li>Cash donations</li>
@@ -83,7 +86,7 @@
       Canada, so your location in the world might cause some shipping issues.</p>
 
       <h3>Thanks in advance for any donations I may receive, and for all past donations.
-      Let's help keep the Atari alive.</h3>
+      Let's help keep the Atari 2600 scene alive.</h3>
 
 
 			</div>
