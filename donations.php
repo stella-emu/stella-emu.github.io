@@ -52,7 +52,7 @@
         development efforts</li>
         <li>If you just want to fire it up and play a game, the process is as plug and play
         as possible</li>
-        <li>To see your name in print in the <a href="docs/index.html#Acknowledgments">Credits</a>
+        <li>To see your name in print in the <a href="credits.php">Credits</a>
         section of the manual :)</li>
       </ul></p>
 
