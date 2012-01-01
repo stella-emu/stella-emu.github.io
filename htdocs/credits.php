@@ -158,6 +158,11 @@
     </tr>
 
     <tr>
+      <th>Sandro de Oliveira Maia</td>
+      <td>Generously donated a monetary contribution, and provided words of support</td>
+    </tr>
+
+    <tr>
       <th>Nick&nbsp;Montfort and Ian&nbsp;Bogost<br>
       (<a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=11696">Racing the Beam</a>)</td>
       <td>Specifically mentioned Stella in their book</td>
