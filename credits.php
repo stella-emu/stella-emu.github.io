@@ -54,7 +54,9 @@
       (<a href="http://www.bogost.com/games/a_television_simulator.shtml">CRT Simulation Project</a>)</td>
       <td>Contributed code for the 'CRT simulation' OpenGL filters.  The Winter 2009
       team members are Edward Booth, Michael Cook, Justin Dobbs, William Rowland
-      and Prince Yang.</td>
+      and Prince Yang.<br>Also contributed <a href="http://slack.net/~ant/libs/ntsc.html">Blargg filtering</a>
+      code, a version of which will eventually be integrated into Stella.
+      </td>
     </tr>
 
     <tr>
@@ -136,7 +138,7 @@
 
     <tr>
       <th>Richard&nbsp;Hutchinson</td>
-      <td>Provided an AtariVox USB adaptor to help with AVox development</td>
+      <td>Generously donated an AtariVox USB adaptor to help with AVox development</td>
     </tr>
 
     <tr>
@@ -151,7 +153,7 @@
 
     <tr>
       <th>Richard&nbsp;Kennehan</td>
-      <td>Donated Atari light-sixer, various controllers, and several games to help
+      <td>Generously donated Atari light-sixer, various controllers, and several games to help
         in testing ROMs on a real system</td>
     </tr>
 
@@ -231,13 +233,18 @@
     </tr>
 
     <tr>
-      <th>James&nbsp;Randall aka&nbsp;'toymailman'</td>
+      <th>James&nbsp;Randall (aka&nbsp;'toymailman')</td>
       <td>Generously donated a 7800 console and several games and manuals to help
       with development</td>
     </tr>
 
     <tr>
-      <th>RomHunter<br>(<a href="http://www.atarimania.com/roms-MENU-2.html">RomHunter ROMs</a>)</td>
+      <th>Fred X. Quimby (aka 'batari')<br>(<a href="http://bataribasic.com/">Batari Basic</a>)</td>
+      <td>Generously donated several Harmony Cartridges to help with development</td>
+    </tr>
+
+    <tr>
+      <th>RomHunter<br>(<a href="http://www.atarimania.com/atari-vcs-2600.html">RomHunter ROMs</a>)</td>
       <td>Provides an updated database of ROM information on a regular basis</td>
     </tr>
 
@@ -254,7 +261,7 @@
 
     <tr>
       <th>Glenn&nbsp;Saunders</td>
-      <td>Provided a Supercharger to help with Stella's development</td>
+      <td>Generously donated a Supercharger to help with Stella's development</td>
     </tr>
 
     <tr>

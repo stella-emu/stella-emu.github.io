@@ -26,7 +26,7 @@
       coordinated several large merges from other projects (ScummVM for parts of the GUI,
       Distella for the debugger disassembler, etc).  I've also created the <b>Harmony
       Programming Tool</b> software for the <a href="http://harmony.atariage.com">Harmony
-      Cartridge</a>, and created a version of the <a href="http://www.arminvogl.de/KrokodileCartridge">KrokCom</a>
+      Cartridge</a>, and a version of the <a href="http://www.arminvogl.de/KrokodileCartridge">KrokCom</a>
       software for Linux/OSX - <a href="http://krokcom.sourceforge.net">KrokCom for UNIX</a>.
       So as you can see, I'm quite prolific in Atari 2600 development.</p>
 
@@ -52,8 +52,7 @@
         development efforts</li>
         <li>If you just want to fire it up and play a game, the process is as plug and play
         as possible</li>
-        <li>To see your name in print in the <a href="credits.php">Credits</a>
-        section of the manual :)</li>
+        <li>To see your name in print in the <a href="credits.php">Credits List</a> :)</li>
       </ul></p>
 
       <p>What type of donations would I consider?  I'm firmly of the opinion that <i>beggars
@@ -80,10 +79,12 @@
       While I appreciate any monetary donations I might receive, I'm not in this for the money.
       If I was, I would have abandoned the project after the first year. :)</p>
 
-      <p>If you're interested in making a donation, please
-      <a href="mailto:stephena@users.sourceforge.net">contact me by email</a>.
-      I can provide shipping details, Paypal address, etc.  Note that I'm located in
-      Canada, so your location in the world might cause some shipping issues.</p>
+      <p>If you're interested in making a Paypal donation, my Paypal address is
+      <a href="mailto:stephena@users.sourceforge.net">stephena@users.sourceforge.net</a>.
+      Otherwise, if you have something to ship, please contact me at the same address for shipping
+      details.  Note that I'm located in Canada, so your location in the world might cause some
+      shipping issues.  Also, let me know how you'd like to be credited in the <a href="credits.php">Credits List</a>
+      (real name or a nickname, your personal webpage, other info about yourself, etc).</p>
 
       <h3>Thanks in advance for any donations I may receive, and for all past donations.
       Let's help keep the Atari 2600 scene alive.</h3>
