@@ -70,8 +70,6 @@
         <li>Anything Atari-computer related, such as an Atari 400, 800, ST, etc</li>
         <li>Anything Amiga related; seriously, this isn't related to the Atari at all,
         but the Amiga is another retro-love of mine</li>
-        <li>A <a href="http://oldcomputers.net/c128d.html">Commodore 128D</a>; I know this is an extreme longshot, but I'll throw it
-        out there anyway</li>
         <li>Anything else retro-related that you think is cool</li>
         <li>Cash donations</li>
       </ul></p>

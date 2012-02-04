@@ -19,9 +19,9 @@
 
   <p><table class="shaded_content" BORDER=0 CELLPADDING=6 WIDTH="100%">
     <tr>
-      <th>Ant<br>(<a href="http://aqfl.net">http://aqfl.net</a>)</td>
-      <td>Provided much feedback and testing which eventually led to a fix
-      for the infamous ATI OpenGL 'red screen' issue</td>
+      <th>Bradford W. Mott<br>(<a href="http://www.bradfordmott.com">http://www.bradfordmott.com</a>)</th>
+      <td>Original author and creator of Stella.  The inspiration for the entire project,
+      it goes without saying that without Brad, there would be no Stella project at all.</td>
     </tr>
 
     <tr>
@@ -32,6 +32,22 @@
       Ported codebase to SDL for Windows/MacOSX.  Added OpenGL support and
       Stelladaptor/2600-daptor support. Current maintainer for the Linux, MacOSX and Windows
       versions.</td>
+    </tr>
+
+    <tr>
+      <th>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <th>8-Bit Classics<br>(<a href="http://www.8bitclassics.com">http://www.8bitclassics.com</a>)</td>
+      <td>Offered a very good price on a Commodore 128D</td>
+    </tr>
+
+    <tr>
+      <th>Ant<br>(<a href="http://aqfl.net">http://aqfl.net</a>)</td>
+      <td>Provided much feedback and testing which eventually led to a fix
+      for the infamous ATI OpenGL 'red screen' issue</td>
     </tr>
 
     <tr>
@@ -101,6 +117,12 @@
     </tr>
 
     <tr>
+      <th>Goldenegg (on AtariAge)</td>
+      <td>Generously donated a monetary contribution, and provided feedback/testing
+      for OSX versions</td>
+    </tr>
+
+    <tr>
       <th>Mark&nbsp;Grebe<br>
       (<a href="http://www.atarimac.com">http://www.atarimac.com</a>)</td>
       <td>Author of the Macintosh OSX version of Stella from releases
@@ -108,9 +130,9 @@
     </tr>
 
     <tr>
-      <th>Goldenegg (on AtariAge)</td>
-      <td>Generously donated a monetary contribution, and provided feedback/testing
-      for OSX versions</td>
+      <th>Sean&nbsp;Green (Bliss-Box)<br>
+      (<a href="http://spawnlinux.dyndns.org/Bliss-Box">http://spawnlinux.dyndns.org/Bliss-Box/</a>)</td>
+      <td>Generously donated a Bliss-Box adaptor to help with development</td>
     </tr>
 
     <tr>
@@ -159,7 +181,7 @@
 
     <tr>
       <th>Sandro de Oliveira Maia</td>
-      <td>Generously donated a monetary contribution, and provided words of support</td>
+      <td>Generously donated several monetary contributions, and provided words of support</td>
     </tr>
 
     <tr>
@@ -245,11 +267,13 @@
 
     <tr>
       <th>Fred X. Quimby (aka 'batari')<br>(<a href="http://bataribasic.com/">Batari Basic</a>)</td>
-      <td>Generously donated several Harmony Cartridges to help with development</td>
+      <td>Generously donated several Melody and Harmony Cartridges to help with
+      development, and also donated a collectors edition of the Harmony Cart (release
+      version including the cart, CD, SD card, etc)</td>
     </tr>
 
     <tr>
-      <th>RomHunter<br>(<a href="http://www.atarimania.com/atari-vcs-2600.html">RomHunter ROMs</a>)</td>
+      <th>RomHunter<br>(<a href="http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html">RomHunter ROMs</a>)</td>
       <td>Provides an updated database of ROM information on a regular basis</td>
     </tr>
 
@@ -295,6 +319,12 @@
     <tr>
       <th>Chris&nbsp;Snell</td>
       <td>Maintained a mirror of the Stella FTP site</td>
+    </tr>
+
+    <tr>
+      <th>Spacedueler (on AtariAge)</td>
+      <td>Generously donated several homemade 'spinners' to help with testing
+      the mouse "specific axis" mode</td>
     </tr>
 
     <tr>
