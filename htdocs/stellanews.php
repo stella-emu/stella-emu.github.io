@@ -12,6 +12,70 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>February 4, 2012</H4>
+Stella release 3.5.5 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Due to changes in the debugger, old state files will not work with
+    this release.</li>
+
+<li>Fixed bug in sound restructuring introduced in the last release; in
+    some cases, there could be some sound 'crackling' when starting a
+    ROM after at least one ROM had already been loaded.</li>
+
+<li>Several significant improvements to the debugger I/O tab:<ul>
+    <li>added controller input widgets for many of the built-in
+        controllers, allowing to control joysticks, paddles, etc
+        from within the debugger.</li>
+    <li>added ability to modify the SWCHB/SWBCNT port B registers.</li>
+    <li>added ability to view TIA INPTx and VBLANK latch/dump bits.</li></ul></li>
+
+<li>Reworked 'mcontrol' argument, and added ability to map the mouse
+    axes separately for paddles 0-3 or driving controllers 0-1.  In
+    such modes, the left mouse button is tied to the x-axis, and the
+    right button is tied to the y-axis.</li>
+
+<li>Mouse 'specific-axis' mode is now saved per-ROM, meaning that each
+    ROM can have separate settings.  For example, this allows one ROM to
+    use paddles 0 and 1, while another can use paddles 0 and 2, etc.</li>
+
+<li>The key-combo for switching the mouse between controller modes is now
+    'Control-0' (Control-1,2,3 have been removed).  This switches
+    between all possible modes for the current virtual controllers.</li>
+
+<li>Fixed bug in 'Fixed Debug Colors' mode; under certain circumstances,
+    playfield graphics could be coloured as being player graphics.</li>
+
+<li>Fixed bug in PAL color-loss setting in Video Settings; changing the
+    settings wouldn't take effect until the ROM was reloaded.</li>
+
+<li>Fixed bugs with cheatcode handling; loading a ROM with a cheat
+    disabled would sometimes trash the emulation.  More work is
+    required in this area, including the ability to create more
+    advanced types of cheats.</li>
+
+<li>Updated ROM properties database for all Sega Genesis controller
+    compatible ROMs.  Also, the mouse can now emulate a Genesis
+    controller, with the left/right buttons mapped to buttons B and C,
+    respectively.</li>
+
+<li>Added 'FA2' bankswitch scheme, thanks to code from Chris D.
+    Walton.  This scheme will be used in an upcoming 'Star Castle' ROM.</li>
+
+<li>Updated internal ROM properties database to ROM-Hunter version 7
+    (thanks go to RomHunter for his tireless research in this area).</li>
+
+<li>Added several PERL tools to help in automation of analyzing RomHunter
+    ROM set releases.</li>
+
+<li>Fixed compile issues in Irix when using the default compiler
+    instead of gcc.  Thanks go to Rainer M. Canavan for this code.</li>
+
+<li>Updated included PNG library to latest stable version.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>December 29, 2011</H4>
 Stella release 3.5 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -94,8 +158,6 @@ Stella release 3.5 for Linux, MacOS X and Windows is now available.
 <li>Updated the credits list in the documentation, listing people that
     have donated hardware to the Stella team.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>June 11, 2011</H4>
