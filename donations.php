@@ -39,7 +39,7 @@
 
       <p>I'll list a few reasons why you might want to make a donation:
       <ul>
-        <li>I've been involved with this project for over 10 years; I can't even begin
+        <li>I've been involved with this project for over 12 years; I can't even begin
         to estimate how much time I've invested in this project, but it is <b>easily</b>
         in the 1000's of hours!</li>
         <li>My number one goal for Stella is cross-platform compatibility; if at
@@ -75,7 +75,9 @@
       </ul></p>
       <p>Note that I've ranked money at the bottom of the list.  This isn't a mistake.
       While I appreciate any monetary donations I might receive, I'm not in this for the money.
-      If I was, I would have abandoned the project after the first year. :)</p>
+      If I was, I would have abandoned the project after the first year. :)  That being
+      said, any monetary contributions I do receive will be used to purchase extra hardware,
+      carts, etc for testing.</p>
 
       <p>If you're interested in making a Paypal donation, my Paypal address is
       <a href="mailto:stephena@users.sourceforge.net">stephena@users.sourceforge.net</a>.
@@ -85,7 +87,7 @@
       (real name or a nickname, your personal webpage, other info about yourself, etc).</p>
 
       <h3>Thanks in advance for any donations I may receive, and for all past donations.
-      Let's help keep the Atari 2600 scene alive.</h3>
+      Let's help keep the Atari 2600 emulation scene alive.</h3>
 
 
 			</div>

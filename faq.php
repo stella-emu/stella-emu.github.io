@@ -237,8 +237,8 @@ accurate the audio 'resolution'.</p>
 <p>In terms of controllers, consider using actual 2600 controllers.
 Several options exist, such as the <a href="http://www.stelladaptor.com">
 Stelladaptor</a>, <a href="http://www.2600-daptor.com">
-2600-daptor</a> or <a href="http://www.legacyengineer.com/storefront">
-USB joysticks</a>.</p>
+2600-daptor</a>, <a href="http://spawnlinux.dyndns.org/Bliss-Box">Bliss-box</a>
+or <a href="http://www.legacyengineer.com/storefront">USB joysticks</a>.</p>
 
 
 <!---------------------------------------------------------------->
