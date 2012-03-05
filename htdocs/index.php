@@ -30,6 +30,9 @@
 				<p>On this site you'll find information about downloading, installing,
 				using, and enhancing Stella.&nbsp; You'll also find useful information
 				about the Atari 2600, emulation and homebrew development.</p>
+
+        <p>Stella is now <font size="+1"><a href="donations.php">DonationWare</a></font>.
+        Please help to encourage further Stella development by considering a contribution.</p>
 <!---------------------------------------------------------------->
 				
 			</div>
