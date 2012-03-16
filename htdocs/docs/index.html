@@ -10,7 +10,7 @@
   <br><br>
   <center><h2><b>A multi-platform Atari 2600 VCS emulator</b></h2></center>
 
-  <center><h4><b>Release 3.5.5</b></h4></center>
+  <center><h4><b>Release 3.6</b></h4></center>
   <br><br>
 
   <center><h2><b>User's Guide</b></h2></center>
@@ -54,7 +54,7 @@
 
   <br><br><br>
 
-  <center><b>February 1999 - February 2012</b></center>
+  <center><b>February 1999 - March 2012</b></center>
     <center><b>The Stella Team</b></center>
   <center><b><a href="http://stella.sourceforge.net">Stella Homepage</a></b></center>
 
@@ -260,16 +260,20 @@
       joysticks or mouse</li>
     <li>Emulates CX-22 / CX-80 style trackballs and Amiga Mouse using your
       computer's mouse</li>
+    <li>Emulates Spectravideo CompuMate system using your computer's keyboard,
+      including mapping of CompuMate 'Backspace', 'Space' and 'Enter' functionality to
+      to the actual keys on your keyboard.</li>
     <li>Support for real Atari 2600 controllers using the
       <a href="http://www.stelladaptor.com">Stelladaptor</a> and
-      <a href="http://2600-daptor.com">2600-adaptor</a></li>
+      <a href="http://2600-daptor.com">2600-adaptor/2600-daptor II</a></li>
     <li>Support for the speech portion of a real  
       <a href="http://www.richard.hutchinson.dsl.pipex.com/new_page_5.htm">
       AtariVox</a> device connected to your PC using a USB adaptor</li>
     <li>Supports EEPROM emulation for <a href="http://www.richard.hutchinson.dsl.pipex.com/new_page_5.htm">
       AtariVox</a> and <a href="http://www.vectrex.biz/MemCard.htm">SaveKey</a> controllers</li>
     <li>Supports all known bankswitching schemes (let us know if there's one we missed)</li>
-    <li>Supports DPC+ bankswitching scheme from the Harmony cart, including partial emulation of the ARM processor</li>
+    <li>Supports DPC+ bankswitching scheme from the <a href="http://harmony.atariage.com">Harmony Cart</a>,
+      including partial emulation of the ARM processor</li>
     <li>Supports cartridge autodetection for almost all bankswitching schemes</li>
     <li>Supports Supercharger single-load and multi-load games</li>
     <li>Supports ROMs stored in ZIP and GZIP format, as well as the usual A26/BIN/ROM formats</li>
@@ -304,6 +308,7 @@
   <p>
   <h3><b><u>General</u> (required for all versions of Stella)</b></h3>
   <ul>
+    <li>1GHz+ CPU</li>
     <li>Enough RAM for the OS + 64MB RAM for the emulation; 128MB+ highly recommended</li>
     <li>15/16 bit color minimum; 24/32 bit color graphics card highly recommended</li>
     <li>SDL version 1.2.10 or greater, latest version highly recommended</li>
@@ -321,10 +326,9 @@
   <p>The Linux version of Stella is designed to work on a Linux Workstation with
   the following:</p>
   <ul>
-    <li>Pentium class machine required; OpenGL accelerated video card highly
-      recommended</li>
-    <li>Linux Kernel 2.4.x, Linux Kernel 2.6.x/3.x is highly recommended</li>
+    <li>Linux Kernel 2.6.x/3.x</li>
     <li>i386 or x86_64 class machine, with 32 or 64-bit distribution</li>
+    <li>OpenGL accelerated video card highly recommended</li>
     <li>Other architectures (MIPS, PPC, PPC64, etc) have been confirmed to work,
       but aren't as well tested as i386/x86_64</li>
     <li>GNU C++ compiler version 4.x and the make utility are required for compiling
@@ -338,11 +342,10 @@
   the following:</p>
   <ul>
     <li>MacOSX 10.4 (Tiger) or above</li>
-    <li>PPC G4 or Intel processor, 500MHz or above</li>
-    <li>OpenGL capable video card; software rendering mode is still available,
-      but as of MacOSX 10.4 is substandard (and untested) compared to OpenGL</li>
-    <li>Xcode 3.2 is required to compile the Stella source code (SDL 1.2.14 also
-      required to compile the 64-bit version)</li>
+    <li>PPC G4/G5 or Intel processor</li>
+    <li>OpenGL capable video card</li>
+    <li>Xcode 3.1 and SDL 1.2.14 required to compile a  10.4 compatible Universal Binary version;
+      Xcode 3.2 and SDL 1.2.15 required to compile the Intel/64-bit version</li>
     <li>The 64-bit version requires at minimum Snow Leopard (10.6) and Intel CPU/architecture</li>
   </ul>
 
@@ -353,8 +356,7 @@
   with the following:</p>
 
   <ul>
-    <li>Pentium class machine required; OpenGL accelerated video card highly
-      recommended</li>
+    <li>OpenGL accelerated video card highly recommended</li>
     <li>64-bit port has been tested on Windows Vista/7 only; it may work on
       WinXP64 as well, but isn't a priority</li>
     <li>Visual C++ 2005 is required to compile the Stella source code for Windows 98 and 2000</li>
@@ -366,7 +368,7 @@
   <h3><b><u>Other</u></b></h3>
 
   <p>Stella is extremely portable, and in its lifetime has been ported to almost every
-  platform where the SDL library exists.  It is 32/64 bit clean in Linux/Unix, MacOSX
+  platform where the SDL library exists.  It is 32/64-bit and endian clean in Linux/Unix, MacOSX
   and Windows.  The Stella Team is interested in hearing about any problems you may
   encounter with diverse operating systems and CPU types.</p>
   </blockquote>
@@ -1265,6 +1267,21 @@
     </tr>
   </table>
 
+  <p><b>CompuMate Controller (cannot be remapped)</b></p>
+
+  <table BORDER=2 cellpadding=5>
+    <tr><th>CompuMate</th> <th>Key</th></tr>
+    <tr><td>0 - 9 </td><td>0 - 9 </td></tr>
+    <tr><td>A - Z </td><td>A - Z </td></tr>
+    <tr><td>Comma </td><td>Comma </td></tr>
+    <tr><td>Period </td><td>Period </td></tr>
+    <tr><td>Func </td><td>Control (left or right) </td></tr>
+    <tr><td>Shift </td><td>Shift (left or right) </td></tr>
+    <tr><td>Enter </td><td>; or Return/Enter </td></tr>
+    <tr><td>Space </td><td>/ or Space </td></tr>
+    <tr><td>Func-Space </td><td>Backspace </td></tr>
+  </table>
+
   <a name="DeveloperKeys"></a>
   <p><b>Developer Keys in TIA mode (cannot be remapped)</b></p>
 
@@ -1472,6 +1489,12 @@
     </tr>
 
     <tr>
+      <td>Swap Stelladaptor/2600-daptor port ordering</td>
+      <td>Control + 1</td>
+      <td>Control + 1</td>
+    </tr>
+
+    <tr>
       <td>Reload current ROM (singlecart ROM, TIA mode)<br>
         Load next game in ROM (multicart ROM, TIA mode)</td>
       <td>Control + r</td>
@@ -1599,10 +1622,10 @@
     <tr>
       <th> Keyboard</th>
       <td> &#x2713;</td>
-      <td> &#x2713;</td>
+      <td> &#x2713; (+ extra)</td>
       <td> &#x2715;</td>
       <td> &#x2715;</td>
-      <td> &#x2715;</td>
+      <td> &#x2713; (2600-daptor II)</td>
     </tr>
     <tr>
       <th> Driving</th>
@@ -1618,6 +1641,14 @@
       <td> &#x2715;</td>
       <td> &#x2713;</td>
       <td> &#x2713; (axis ignored)</td>
+      <td> &#x2715;</td>
+    </tr>
+    <tr>
+      <th> CompuMate</th>
+      <td> &#x2713;</td>
+      <td> &#x2715;</td>
+      <td> &#x2715;</td>
+      <td> &#x2715;</td>
       <td> &#x2715;</td>
     </tr>
     <tr>
@@ -1901,13 +1932,10 @@
     </tr>
 
     <tr>
-      <td><pre>-sa1 &lt;left|right&gt;</pre></td>
-      <td>Stelladaptor/2600-daptor 1 emulates specified joystick port.</td>
-    </tr>
-
-    <tr>
-      <td><pre>-sa2 &lt;left|right&gt;</pre></td>
-      <td>Stelladaptor/2600-daptor 2 emulates specified joystick port.</td>
+      <td><pre>-saport &lt;lr|rl&gt;</pre></td>
+      <td>Determines how to enumerate the Stelladaptor/2600-daptor devices in the
+      order they are found: 'lr' means first is left port, second is right port,
+      'rl' means the opposite.</td>
     </tr>
 
     <tr>
@@ -2469,7 +2497,7 @@
       <td valign="top">
         <table border="1" cellpadding="4">
           <tr><th>Item</th><th>Brief description</th><th>For more information,<br>see <a href="#CommandLine">CommandLine</a></th></tr>
-          <tr><td>Stelladaptor X is</td><td>Specifies which virtual port each Stelladaptor/2600-daptor uses (See <b>Advanced Configuration - <a href="#Adaptor">Stelladaptor/2600-daptor Support</a></b>)</td><td>-sa1 &amp; -sa2</td></tr>
+          <tr><td>Stelladaptor X is</td><td>Specifies which virtual port each Stelladaptor/2600-daptor uses (See <b>Advanced Configuration - <a href="#Adaptor">Stelladaptor/2600-daptor Support</a></b>)</td><td>-saport</td></tr>
           <tr><td>AVox serial port</td><td>Described in further detail in <b>Advanced Configuration - <a href="#AtariVox">AtariVox/SaveKey Support</a></b> </td><td>-avoxport</td></tr>
           <tr><td>Joy deadzone size</td><td>Deadzone area for axes on joysticks/gamepads</td><td>-joydeadzone</td></tr>
           <tr><td>Digital paddle sensitivity</td><td>Sensitvity used when emulating a paddle using a digital device</td><td>-dsense</td></tr>
@@ -2640,16 +2668,18 @@
   <ul>
     <li>The first device found will act as the <b>left game port</b>
     on a real Atari.  Depending on the device, Stella will detect it as
-    either the left joystick, paddles 0 & 1, or the left driving controller.</li>
+    either the left joystick, paddles 0 & 1, the left driving controller,
+    left keypad, etc.</li>
 
     <li>The second device found will act as the <b>right game port</b>
     on a real Atari.  Depending on the device, Stella will detect it as
-    either the right joystick, paddles 2 & 3, or the right driving controller.</li>
+    either the right joystick, paddles 2 & 3, the right driving controller,
+    right keypad, etc.</li>
 
     <li>Any other devices will be ignored.</li>
 
     <li>The assignment ordering of Stelladaptor/2600-daptor to port can be redefined with
-    'sa1' and 'sa2' (see description in 'Starting a Game').</li>
+    'saport' (see description in 'Starting a Game').</li>
   </ul>
   </blockquote>
 
@@ -3066,6 +3096,7 @@ Ms Pac-Man (Stella extended codes):
         <tr><td>4A50 </td><td>64K 4A50 + ram </td></tr>
         <tr><td>4K </td><td>4K Atari </td></tr>
         <tr><td>AR </td><td>Supercharger </td></tr>
+        <tr><td>CM &#185;</td><td>Spectravideo CompuMate </td></tr>
         <tr><td>CV </td><td>Commavid extra ram </td></tr>
         <tr><td>DPC </td><td>Pitfall II </td></tr>
         <tr><td>DPC+</td><td>Enhanced DPC </td></tr>
@@ -3137,6 +3168,7 @@ Ms Pac-Man (Stella extended codes):
       AtariVox</a></td><td>A SpeakJet based unlimited-vocabulary speech / sound synthesizer with 32K EEPROM.</td></tr>
         <tr><td><a href="http://www.vectrex.biz/MemCard.htm">SaveKey</a></td><td>A 32K EEPROM for saving high scores, etc (the EEPROM portion of an AtariVox).</td></tr>
         <tr><td>Genesis </td><td>Sega Genesis controller, which can be used similar to a BoosterGrip, giving an extra button.</td></tr>
+        <tr><td>CompuMate </td><td>Spectravideo CompuMate (if either left or right is set, CompuMate is used for both).</td></tr>
       </table></td>
     </tr>
 

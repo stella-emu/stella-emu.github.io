@@ -12,6 +12,40 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>March 16, 2012</H4>
+Stella release 3.6 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added support for <a href="http://www.2600-daptor.com">2600-daptor II</a>
+    device, including native support
+    for 7800 controllers, BoosterGrip and Keypad controllers.  Special
+    thanks go to Tom Hafner for a complimentary test sample of this
+    device, and also for donating a BoosterGrip controller.</li>
+
+<li>Added ability to dynamically swap the port order of Stelladaptor/
+    2600-daptor devices with the 'Control-1' key combo (useful if you
+    have only one 2600-daptor and want to use it as a left port
+    normally, but as a right port for Star Raiders, etc).</li>
+
+<li>Added CompuMate bankswitching/controller support to the emulation
+    core; the Spectravideo CompuMate ROMs (NTSC and PAL) now work.
+    Frequently used keys on the CompuMate are directly mapped to your
+    keyboard (ie, Func-Space for backspace is mapped to Backspace, etc).
+    Loading/saving from the cassette player is not yet supported, and
+    will come in a future release.</li>
+
+<li>Fixed bug in BoosterGrip controller emulation; the functionality
+    of the booster and trigger buttons was reversed.  Related to this,
+    renamed these actions in the Event Mapping dialog to be more clear.</li>
+
+<li>Reverted to SDL 1.2.14 for the Windows 98/2k release, since SDL
+    1.2.15 isn't supported in that environment.</li>
+
+<li>Updated included PNG library to latest stable version.</li>
+</ul>
+
+Have Fun!
+
+
 <H4>February 4, 2012</H4>
 Stella release 3.5.5 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -72,8 +106,6 @@ Stella release 3.5.5 for Linux, MacOS X and Windows is now available.
 
 <li>Updated included PNG library to latest stable version.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>December 29, 2011</H4>

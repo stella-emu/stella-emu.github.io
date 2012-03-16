@@ -21,7 +21,7 @@
 </tr>
 
 <tr>
-	<td BGCOLOR="#CCCCCC"><a href="bankswitching-methods.pdf">Kevin&nbsp;Horton's Bankswitching&nbsp;Document</a></td>
+	<td BGCOLOR="#CCCCCC"><a href="http://blog.kevtris.org/blogfiles/Atari%202600%20Mappers.txt">Kevin&nbsp;Horton's Bankswitching&nbsp;Document</a></td>
 	<td BGCOLOR="#FFCC99">Kevin Horton's definitive 2600 bank switching document.
 		If you need to know the bank switching scheme a cartridge uses this is the document to read</td>
 </tr>
