@@ -55,12 +55,12 @@
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.5-1_i386.deb?download">stella_3.5-1_i386.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.6-1_i386.deb?download">stella_3.6-1_i386.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu 11.10 (Oneiric Ocelot)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.5-1_amd64.deb?download">stella_3.5-1_amd64.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.6-1_amd64.deb?download">stella_3.6-1_amd64.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu 11.10 (Oneiric Ocelot)</td>
 	</tr>
 
