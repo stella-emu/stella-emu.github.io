@@ -12,6 +12,16 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>March 30, 2012</H4>
+Stella release 3.6.1 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Extended FA2 bankswitch scheme to handle 28K ROMs (in addition to
+    the previously supported 24K ROMs).</li>
+</ul>
+
+Have Fun!
+
+
 <H4>March 16, 2012</H4>
 Stella release 3.6 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -42,8 +52,6 @@ Stella release 3.6 for Linux, MacOS X and Windows is now available.
 
 <li>Updated included PNG library to latest stable version.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>February 4, 2012</H4>

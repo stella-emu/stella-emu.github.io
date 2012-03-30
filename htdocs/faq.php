@@ -92,7 +92,8 @@ cables, etc to diagnose the problem.</p>
 <br>
 
 <h3>After starting a ROM, there can sometimes be a delay of up to 5-10 seconds
-before the game starts playing.</h3>
+before the game starts playing.  Or after exiting Stella, there is sometimes a
+similar delay.</h3>
 <p>This could be caused by several issues, but most of them are related to a
 'timeout' in some way.  If your ROMs are stored on a network drive, accessing
 them may be slow if your network is slow.  This one is outside the scope of

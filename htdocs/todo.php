@@ -31,8 +31,8 @@
         Eventually when I move to SDL 2.0, it will be available for any
         accelerated backend (Direct3D, OpenGL, OpenGLES, etc).</li>
 
-        <li>Add support for esoteric controllers.  KidVid support is almost done;
-        still TODO are Mindlink and Lightgun.</li>
+        <li>Add support for esoteric controllers.  CompuMate is mostly complete, Mindlink
+        and KidVid support is almost done.  Still TODO is Lightgun support.</li>
 
         <li>Add more debugger features, improve graphics access tracking, improve
         GUI, etc.</li>
