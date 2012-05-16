@@ -27,12 +27,11 @@
         no longer have to maintain separate software and OpenGL renderers
         within Stella; SDL will handle it all behind the scenes.</li>
 
-        <li>Add Blargg NTSC TV filters.  This will be OpenGL only for now.
-        Eventually when I move to SDL 2.0, it will be available for any
-        accelerated backend (Direct3D, OpenGL, OpenGLES, etc).</li>
+        <li>Improve Blargg TV filters.  In particular, implement better 'phosphor'
+        emulation and integrate with Blargg filtering.</li>
 
-        <li>Add support for esoteric controllers.  CompuMate is mostly complete, Mindlink
-        and KidVid support is almost done.  Still TODO is Lightgun support.</li>
+        <li>Add support for remaining esoteric controllers (KidVid and Lightgun),
+        and improve CompuMate emulation (accessing standalone cassette player).</li>
 
         <li>Add more debugger features, improve graphics access tracking, improve
         GUI, etc.</li>

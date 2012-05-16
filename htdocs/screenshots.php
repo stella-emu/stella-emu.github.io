@@ -12,12 +12,12 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
-	<center><p><b><font size=+2>Emulation Snapshots (Software Mode)</font></b></center>
+	<center><p><b><font size=+2>Emulation Snapshots (Normal rendering)</font></b></center>
 	<center>
 		<table border="0" cellpadding="5">
 			<tr>
 				<td><img src="game-images/chopper_command.png"></td>
-				<td><img src="game-images/Mac_keystone.png"></td>
+				<td><img src="game-images/keystone.png"></td>
 			</tr>
 			<tr>
 				<td><center><i>Chopper Command</i></center></td>
@@ -27,7 +27,7 @@
 	</center>
 
 	<br>
-	<center><p><b><font size=+2>Emulation Snapshots (OpenGL Mode)</font></b></center>
+	<center><p><b><font size=+2>Emulation Snapshots (Blargg OpenGL Mode)</font></b></center>
 	<center>
 		<table border="0" cellpadding="5">
 			<tr>

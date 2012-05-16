@@ -12,14 +12,63 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>May 18, 2012</H4>
+Stella release 3.7 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added <a href="http://slack.net/~ant/libs/ntsc.html">Blargg TV effects</a>,
+    with presets for Composite, S-video, RGB,
+    and badly adjusted TV, and well as a custom mode with full
+    configurability of contrast, brightness, gamma, etc.  Many
+    keyboard shortcuts and commandline arguments were added to support
+    this; see the documentation for a detailed explanation.  These
+    effects are OpenGL-only.  Special thanks to Ian Bogost and the
+    Georgia Tech Atari Team for the preliminary implementation.</li>
+
+<li>Updated the CompuMate keyboard handler to recognize more keys on an
+    actual keyboard, instead of having to remember the weird combinations
+    used on the original CompuMate keyboard (although those original keys
+    will continue to work).  Related to this, fixed bug whereby
+    'ghost keys' would be detected by the CompuMate, particularly after
+    pressing 'Enter' to start a game from the ROM launcher.</li>
+
+<li>Added emulation for MindLink controller using the mouse; the 'Bionic
+    Breakthrough' and 'Telepathy' ROMs now work.</li>
+
+<li>Updated FA2 bankswitch scheme (Star Castle) to emulate load/save
+    high score functionality to the Harmony cart flash RAM.</li>
+
+<li>Added ability for ROM launcher to 'descend' into ZIP files when it
+    contains more than one ROM file.  This means you no longer have to unzip
+    a multi-file archive before using each ROM.  Thanks go to Roland
+    Schabenberger (webOS maintainer) for this idea and sample code.</li>
+
+<li>Replaced commandline argument 'uselauncher' with 'exitlauncher'.  The
+    new option specifies the behaviour of the ROM launcher when exiting
+    a ROM (always exit to launcher, or only when the launcher was actually
+    used).  This setting can now be changed in the GUI.</li>
+
+<li>Several updates to the internal properties database:
+    <ul>
+      <li>'Juno First' ROMs now use an AtariVox/SaveKey when possible</li>
+      <li>'Astroblast' ROMs now use the paddles by default</li></ul></li>
+
+<li>Changed key-combo for enabling TIA objects and collisions to be
+    toggled on and off with the Alt-period and Shift-Alt-period (instead
+    of having two separate keys to turn them on and off).</li>
+
+<li>Updated included PNG library to latest stable version.</li>
+
+</ul>
+
+Have Fun!
+
+
 <H4>March 30, 2012</H4>
 Stella release 3.6.1 for Linux, MacOS X and Windows is now available.
 <ul>
 <li>Extended FA2 bankswitch scheme to handle 28K ROMs (in addition to
     the previously supported 24K ROMs).</li>
 </ul>
-
-Have Fun!
 
 
 <H4>March 16, 2012</H4>
