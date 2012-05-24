@@ -71,7 +71,7 @@
       <td>Contributed code for the 'CRT simulation' OpenGL filters.  The Winter 2009
       team members are Edward Booth, Michael Cook, Justin Dobbs, William Rowland
       and Prince Yang.<br>Also contributed <a href="http://slack.net/~ant/libs/ntsc.html">Blargg filtering</a>
-      code, a version of which will eventually be integrated into Stella.
+      code, a version of which was integrated into Stella 3.7.
       </td>
     </tr>
 
@@ -314,6 +314,11 @@
       <th>Raul&nbsp;Silva</td>
       <td>Helped with design and graphics for an early version of the Stella
       web site</td>
+    </tr>
+
+    <tr>
+      <th>James Smith</td>
+      <td>Generously donated a monetary contribution</td>
     </tr>
 
     <tr>
