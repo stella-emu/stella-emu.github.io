@@ -12,7 +12,7 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
-<H4>May 18, 2012</H4>
+<H4>May 25, 2012</H4>
 Stella release 3.7 for Linux, MacOS X and Windows is now available.
 <ul>
 <li>Added <a href="http://slack.net/~ant/libs/ntsc.html">Blargg TV effects</a>,
@@ -42,6 +42,17 @@ Stella release 3.7 for Linux, MacOS X and Windows is now available.
     a multi-file archive before using each ROM.  Thanks go to Roland
     Schabenberger (webOS maintainer) for this idea and sample code.</li>
 
+<li>Fixed bug in disassembly of zero-page code; addresses no longer have
+    their high-byte truncated, and system equates (TIA and I/O registers)
+    are now properly marked as such.</li>
+
+<li>Fixed bug in EFSC bankswitch scheme state saving; the Superchip RAM
+    wasn't actually being loaded and saved to state files.</li>
+
+<li>Improved speed of loading and saving state files, as well as slightly
+    reducing their size.  Because of this, old state files will not work
+    with this release.</li>
+
 <li>Replaced commandline argument 'uselauncher' with 'exitlauncher'.  The
     new option specifies the behaviour of the ROM launcher when exiting
     a ROM (always exit to launcher, or only when the launcher was actually
@@ -53,11 +64,11 @@ Stella release 3.7 for Linux, MacOS X and Windows is now available.
       <li>'Astroblast' ROMs now use the paddles by default</li></ul></li>
 
 <li>Changed key-combo for enabling TIA objects and collisions to be
-    toggled on and off with the Alt-period and Shift-Alt-period (instead
-    of having two separate keys to turn them on and off).</li>
+    toggled on and off with the Alt-period and Shift-Alt-period
+    respectively (instead of having two separate keys to turn them on
+    and off).</li>
 
 <li>Updated included PNG library to latest stable version.</li>
-
 </ul>
 
 Have Fun!
