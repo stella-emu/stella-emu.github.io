@@ -227,7 +227,8 @@ only useful on monitors with a 60Hz refresh rate (all current LCDs).
 Also, it looks much more authentic to use square rather than rectangular
 pixels.  Of course, you can't change the pixel size on your monitor, but
 you can simulate it with 'GL aspect ratio'.  I find a setting of 87-89
-for NTSC mode looks the best.  Finally, there are some NTSC TV effects
+for NTSC mode looks the best.  Finally, there are some
+<a href="http://slack.net/~ant/libs/ntsc.html">Blargg TV effects</a>
 that you might find interesting.  Overall, to get more authentic looking
 emulation video-wise, you need to use OpenGL mode.  If your computer
 doesn't properly support OpenGL, consider upgrading your video card
