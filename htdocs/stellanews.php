@@ -12,7 +12,7 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
-<H4>May 25, 2012</H4>
+<H4>June 1, 2012</H4>
 Stella release 3.7 for Linux, MacOS X and Windows is now available.
 <ul>
 <li>Added <a href="http://slack.net/~ant/libs/ntsc.html">Blargg TV effects</a>,
@@ -42,9 +42,19 @@ Stella release 3.7 for Linux, MacOS X and Windows is now available.
     a multi-file archive before using each ROM.  Thanks go to Roland
     Schabenberger (webOS maintainer) for this idea and sample code.</li>
 
-<li>Fixed bug in disassembly of zero-page code; addresses no longer have
-    their high-byte truncated, and system equates (TIA and I/O registers)
-    are now properly marked as such.</li>
+<li>Several improvements to the debugger/disassembler:
+  <ul>
+    <li>The 'resolvedata', 'showaddr' and 'gfxformat' commandline
+        arguments are renamed to start with 'dis', indicating that
+        they're used with the built-in disassembler.</li>
+    <li>Zero-page code addresses no longer have their high-byte
+        truncated, and system equates (TIA and I/O registers) are now
+        properly marked as such.</li>
+    <li>The Distella '-r' option (Relocate calls out of address range)
+        is no longer the default, resulting in output more consistent
+        with normal usage of Distella.  Related to this, added the
+        '-dis.relocate' commandline argument (and associated UI item)
+        to toggle this dynamically.</li></ul></li>
 
 <li>Fixed bug in EFSC bankswitch scheme state saving; the Superchip RAM
     wasn't actually being loaded and saved to state files.</li>
@@ -59,7 +69,7 @@ Stella release 3.7 for Linux, MacOS X and Windows is now available.
     used).  This setting can now be changed in the GUI.</li>
 
 <li>Several updates to the internal properties database:
-    <ul>
+  <ul>
       <li>'Juno First' ROMs now use an AtariVox/SaveKey when possible</li>
       <li>'Astroblast' ROMs now use the paddles by default</li></ul></li>
 
