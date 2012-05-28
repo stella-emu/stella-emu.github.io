@@ -78,6 +78,12 @@ Stella release 3.7 for Linux, MacOS X and Windows is now available.
     respectively (instead of having two separate keys to turn them on
     and off).</li>
 
+<li>When working on the commandline, relative filenames are now
+    correctly handled (current working directory is used).</li>
+
+<li>The Windows 98/ME/2000 builds have been discontinued, due to code and
+    features that are only available on Windows XP/SP3 and later.</li>
+
 <li>Updated included PNG library to latest stable version.</li>
 </ul>
 

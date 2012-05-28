@@ -35,16 +35,6 @@
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7_98_2k-win32.exe?download">Stella-3.7_98_2k-win32.exe</a></td>
-		<td BGCOLOR="#FFCC99">Binary installer (exe) for 32-bit Windows 98/2000</td>
-	</tr>
-
-	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7_98_2k-windows.zip?download">Stella-3.7_98_2k-windows.zip</a></td>
-		<td BGCOLOR="#FFCC99">Binary ZIP for 32-bit Windows 98/2000</td>
-	</tr>
-
-	<tr>
 		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7-macosx.dmg?download">Stella-3.7-macosx.dmg</a></td>
 		<td BGCOLOR="#FFCC99">Binary DMG for MacOS X (32-bit Universal Binary, version 10.4 and higher)</td>
 	</tr>
@@ -103,21 +93,6 @@
 	<tr>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
-	</tr>
-
-	<tr>
-		<td><b>Old / Unmaintained&nbsp;Releases</b></td>
-		<td>&nbsp;</td>
-	</tr>
-
-	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.3.5-gp2x.zip?download">stella-2.3.5-gp2x.zip</a></td>
-		<td BGCOLOR="#FFCC99">Binary ZIP for GP2X</td>
-	</tr>
-
-	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-2.3.5-wince.zip?download">stella-2.3.5-wince.zip</a></td>
-		<td BGCOLOR="#FFCC99">Binary ZIP for WinCE devices (PocketPC and Smartphones)</td>
 	</tr>
 
 </table>
