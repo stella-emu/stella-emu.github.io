@@ -71,7 +71,8 @@ Stella release 3.7 for Linux, MacOS X and Windows is now available.
 <li>Several updates to the internal properties database:
   <ul>
       <li>'Juno First' ROMs now use an AtariVox/SaveKey when possible</li>
-      <li>'Astroblast' ROMs now use the paddles by default</li></ul></li>
+      <li>'Astroblast' ROMs now use the paddles by default</li>
+      <li>'Star Castle 2600' ROMs added</li></ul></li>
 
 <li>Changed key-combo for enabling TIA objects and collisions to be
     toggled on and off with the Alt-period and Shift-Alt-period
