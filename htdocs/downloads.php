@@ -20,17 +20,17 @@
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7-win32.exe?download">Stella-3.7-win32.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7a-win32.exe?download">Stella-3.7a-win32.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for 32-bit Windows XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7-x64.exe?download">Stella-3.7-x64.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7a-x64.exe?download">Stella-3.7a-x64.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for 64-bit Windows XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7-windows.zip?download">Stella-3.7-windows.zip</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7a-windows.zip?download">Stella-3.7a-windows.zip</a></td>
 		<td BGCOLOR="#FFCC99">Binary ZIP (32-bit and 64-bit) for Windows XP/Vista/7</td>
 	</tr>
 

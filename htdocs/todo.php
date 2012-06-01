@@ -45,14 +45,6 @@
         <li>Probably a thousand other things that I've forgotten.</li>
       </ul>
 
-<!--
-      <?php
-          $a=file_get_contents('http://minbar.org/stella-todo.html');
-          if(empty($a))
-              $a = "<ul><li>No items at this time</li></ul>";
-          echo $a;
-      ?>
--->
       <p>As always, if you feel you can contribute to this list in any way (either with suggestions
       or actual implementation), please <a href="mailto:stephena@users.sourceforge.net">contact me by email</a>.</p>
 
