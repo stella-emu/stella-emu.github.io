@@ -18,13 +18,41 @@
       are several outstanding requests that come up from time to time, which I'd like to get to
       eventually.  Some of them are as follows:</p>
 
+      <ul>
+        <li>Convert code to SDL-1.3/2.0.  The next major revision of SDL hasn't
+        been released yet, but I'm already in the process of working with
+        beta versions.  The main reason for this change is to have hardware-
+        accelerated Direct3D support in Windows (which currently uses
+        OpenGL, and isn't as fast as it is on other systems).  As well, I'll
+        no longer have to maintain separate software and OpenGL renderers
+        within Stella; SDL will handle it all behind the scenes.</li>
+
+        <li>Improve Blargg TV filters.  In particular, implement better 'phosphor'
+        emulation and integrate with Blargg filtering.</li>
+
+        <li>Add support for remaining esoteric controllers (KidVid and Lightgun),
+        and improve CompuMate emulation (accessing standalone cassette player).</li>
+
+        <li>Add more debugger features, improve graphics access tracking, improve
+        GUI, etc.</li>
+
+        <li>Fix final remaining bugs in the TIA emulation.</li>
+
+        <li>Add rewind support to the entire emulation, not just in the debugger.</li>
+
+        <li>Look into adding movie recording or net play.</li>
+
+        <li>Probably a thousand other things that I've forgotten.</li>
+      </ul>
+
+<!--
       <?php
           $a=file_get_contents('http://minbar.org/stella-todo.html');
           if(empty($a))
               $a = "<ul><li>No items at this time</li></ul>";
           echo $a;
       ?>
-
+-->
       <p>As always, if you feel you can contribute to this list in any way (either with suggestions
       or actual implementation), please <a href="mailto:stephena@users.sourceforge.net">contact me by email</a>.</p>
 
