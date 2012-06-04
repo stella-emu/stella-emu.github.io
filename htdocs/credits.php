@@ -45,6 +45,11 @@
     </tr>
 
     <tr>
+      <th>Eugenio "TrekMD" Angueira<br>(<a href="https://plus.google.com/107727417793046863603</a>)</th>
+      <td>Generously donated several 7800 games to help with development</td>
+    </tr>
+
+    <tr>
       <th>Ant<br>(<a href="http://aqfl.net">http://aqfl.net</a>)</th>
       <td>Provided much feedback and testing which eventually led to a fix
       for the infamous ATI OpenGL 'red screen' issue</td>
@@ -174,6 +179,11 @@
     </tr>
 
     <tr>
+      <th>Alexandre&nbsp;Liduario</th>
+      <td>Generously donated Atari PAL-M console to help in testing ROMs on a real system</td>
+    </tr>
+
+    <tr>
       <th>Richard&nbsp;Kennehan</th>
       <td>Generously donated Atari light-sixer, various controllers, and several games to help
         in testing ROMs on a real system</td>
@@ -182,6 +192,11 @@
     <tr>
       <th>Sandro de Oliveira Maia</th>
       <td>Generously donated several monetary contributions, and provided words of support</td>
+    </tr>
+
+    <tr>
+      <th>Donald Maley</th>
+      <td>Generously donated a monetary contribution to help with CompuMate development</td>
     </tr>
 
     <tr>
