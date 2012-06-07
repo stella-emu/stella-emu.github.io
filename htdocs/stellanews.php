@@ -12,6 +12,38 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>June 8, 2012</H4>
+Stella release 3.7.1 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Note: because of TIA changes, the state file format has changed again,
+          and old state files will not work with this release.<li>
+
+<li>Improved TIA emulation with ROMs that have too few or too many
+    scanlines; the output is now more accurate compared to a real TV.
+    Special thanks to Omegamatrix of AtariAge for test ROMs in this area.<li>
+
+<li>Modified hotkey for "Change console palette" (Control-f) to also
+    change the display properties of the TIA.  This allows you to switch
+    between NTSC/PAL/SECAM (and variant) modes dynamically.  Related to
+    this, added Shift-Control-f key to step backwards through the
+    available modes.<li>
+
+<li>Added '64in1' and '128in1' multicart bankswitching schemes, which work
+    the same as the 2in1/4in1/etc ones (Control-r switches to each
+    consecutive game in the ROM).<li>
+
+<li>Fixed several bugs in DPC+ bankswitching scheme, including ability
+    to load and save state files.  As well, ROMs now work correctly after
+    console format autodetection.<li>
+
+<li>Fixed bugs in handling relative filenames on the commandline,
+    introduced in the last release.  The new functionality should be much
+    more robust.<li>
+</ul>
+
+Have Fun!
+
+
 <H4>June 1, 2012</H4>
 Stella release 3.7 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -87,8 +119,6 @@ Stella release 3.7 for Linux, MacOS X and Windows is now available.
 
 <li>Updated included PNG library to latest stable version.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>March 30, 2012</H4>
