@@ -12,6 +12,16 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>June 10, 2012</H4>
+Stella release 3.7.2 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Fixed bug in handling filenames with the '~' character, as is used
+    extensively by RomHunter rom-sets.<li>
+</ul>
+
+Have Fun!
+
+
 <H4>June 8, 2012</H4>
 Stella release 3.7.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -40,8 +50,6 @@ Stella release 3.7.1 for Linux, MacOS X and Windows is now available.
     introduced in the last release.  The new functionality should be much
     more robust.<li>
 </ul>
-
-Have Fun!
 
 
 <H4>June 1, 2012</H4>

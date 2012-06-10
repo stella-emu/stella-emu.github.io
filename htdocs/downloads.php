@@ -15,57 +15,57 @@
 <table BORDER=0 CELLPADDING=6 WIDTH="100%">
 
 	<tr>
-		<td><b>Latest&nbsp;Release (v/ 3.7.1)</b></td>
+		<td><b>Latest&nbsp;Release (v/ 3.7.2)</b></td>
 		<td>&nbsp;</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.1-win32.exe?download">Stella-3.7.1-win32.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.2-win32.exe?download">Stella-3.7.2-win32.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for 32-bit Windows XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.1-x64.exe?download">Stella-3.7.1-x64.exe</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.2-x64.exe?download">Stella-3.7.2-x64.exe</a></td>
 		<td BGCOLOR="#FFCC99">Binary installer (exe) for 64-bit Windows XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.1-windows.zip?download">Stella-3.7.1-windows.zip</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.2-windows.zip?download">Stella-3.7.2-windows.zip</a></td>
 		<td BGCOLOR="#FFCC99">Binary ZIP (32-bit and 64-bit) for Windows XP/Vista/7</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.1-macosx.dmg?download">Stella-3.7.1-macosx.dmg</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.2-macosx.dmg?download">Stella-3.7.2-macosx.dmg</a></td>
 		<td BGCOLOR="#FFCC99">Binary DMG for MacOS X (32-bit Universal Binary, version 10.4 and higher)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.1_intel-macosx.dmg?download">Stella-3.7.1_intel-macosx.dmg</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/Stella-3.7.2_intel-macosx.dmg?download">Stella-3.7.2_intel-macosx.dmg</a></td>
 		<td BGCOLOR="#FFCC99">Binary DMG for MacOS X (32/64-bit, Intel CPU/10.6+ only)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.7.1-1_i386.deb?download">stella_3.7.1-1_i386.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.7.2-1_i386.deb?download">stella_3.7.2-1_i386.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit DEB for Ubuntu 12.04 (Precise Pangolin)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.7.1-1_amd64.deb?download">stella_3.7.1-1_amd64.deb</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella_3.7.2-1_amd64.deb?download">stella_3.7.2-1_amd64.deb</a></td>
 		<td BGCOLOR="#FFCC99">Binary 64-bit DEB for Ubuntu 12.04 (Precise Pangolin)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.7.1-2.i386.rpm?download">stella-3.7.1-2.i386.rpm</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.7.2-2.i386.rpm?download">stella-3.7.2-2.i386.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Binary 32-bit RPM for Linux (tested in Fedora)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.7.1-2.x86_64.rpm?download">stella-3.7.1-2.x86_64.rpm</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.7.2-2.x86_64.rpm?download">stella-3.7.2-2.x86_64.rpm</a></td>
 		<td BGCOLOR="#FFCC99">Binary 64-bit RPM for Linux (tested in Fedora)</td>
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.7.1-src.tar.gz?download">stella-3.7.1-src.tar.gz</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-3.7.2-src.tar.gz?download">stella-3.7.2-src.tar.gz</a></td>
 		<td BGCOLOR="#FFCC99">Source code tarball for all systems</td>
 	</tr>
 
