@@ -45,8 +45,8 @@
     </tr>
 
     <tr>
-      <th>Eugenio "TrekMD" Angueira<br>(<a href="https://plus.google.com/107727417793046863603</a>)</th>
-      <td>Generously donated several 7800 games to help with development</td>
+      <th>Eugenio&nbsp;"TrekMD"&nbsp;Angueira<br>(<a href="https://plus.google.com/107727417793046863603">plus.google.com/107727417793046863603</a>)</th>
+      <td>Generously donated several 7800 games in appreciation of the project</td>
     </tr>
 
     <tr>
@@ -94,6 +94,11 @@
     <tr>
       <th>Piero&nbsp;Cavina</th>
       <td>Allowed "Oystron" to be included in the Stella distribution</td>
+    </tr>
+
+    <tr>
+      <th>John&nbsp;Champeau&nbsp(Champ&nbsp;Games)</th>
+      <td>Generously donated a monetary contribution</td>
     </tr>
 
     <tr>
