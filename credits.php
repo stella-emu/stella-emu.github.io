@@ -97,7 +97,7 @@
     </tr>
 
     <tr>
-      <th>John&nbsp;W.&nbsp;Champeau,&nbsp(Champ&nbsp;Games)</th>
+      <th>John&nbsp;W.&nbsp;Champeau,&nbsp;Champ&nbsp;Games</th>
       <td>Generously donated a monetary contribution</td>
     </tr>
 
