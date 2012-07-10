@@ -19,7 +19,7 @@
 
   <p><table class="shaded_content" BORDER=0 CELLPADDING=6 WIDTH="100%">
     <tr>
-      <th>Bradford W. Mott<br>(<a href="http://www.bradfordmott.com">http://www.bradfordmott.com</a>)</th>
+      <th>Bradford W. Mott (retired)<br>(<a href="http://www.bradfordmott.com">http://www.bradfordmott.com</a>)</th>
       <td>Original author and creator of Stella.  The inspiration for the entire project,
       it goes without saying that without Brad, there would be no Stella project at all.</td>
     </tr>
