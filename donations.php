@@ -80,7 +80,8 @@
       carts, etc for testing.</p>
 
       <p>If you're interested in making a Paypal donation, my Paypal address is
-      <a href="mailto:stephena@users.sourceforge.net">stephena@users.sourceforge.net</a>.
+      <a href="mailto:stephena@users.sourceforge.net">stephena@users.sourceforge.net</a>.  If using Paypal, please
+      mark the contribution as a <b>gift</b> to save fees on my end (under "Send Money", select 'Personal', then 'Gift').
       Otherwise, if you have something to ship, please contact me at the same address for shipping
       details.  Note that I'm located in Canada, so your location in the world might cause some
       shipping issues.  Also, let me know how you'd like to be credited in the <a href="credits.php">Credits List</a>
