@@ -37,3 +37,5 @@ body#atarilinks a#atarilinks  { color: black; background: white url(menucurrent.
 body#homebrew a#homebrew  { color: black; background: white url(menucurrent.gif) no-repeat right top }
 table.shaded_content th { text-align: left; font-weight: normal; font-size: 12pt; background-color: #CCCCCC } 
 table.shaded_content td { font-size: 12pt; background-color: #FFCC99 } 
+table.shaded_content th.nocolor { text-align: left; font-weight: bold; font-size: 12pt; background-color: #FFFFFF } 
+table.shaded_content td.nocolor { font-size: 12pt; background-color: #FFFFFF } 
