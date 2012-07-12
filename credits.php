@@ -18,6 +18,12 @@
       incomplete) list of the people who have played a part in bringing Stella to you:
 
   <p><table class="shaded_content" BORDER=0 CELLPADDING=6 WIDTH="100%">
+
+  <tr>
+    <th class="nocolor">Main Developers</th>
+    <td class="nocolor">&nbsp;</td>
+  </tr>
+
     <tr>
       <th>Bradford W. Mott (retired)<br>(<a href="http://www.bradfordmott.com">http://www.bradfordmott.com</a>)</th>
       <td>Original author and creator of Stella.  The inspiration for the entire project,
@@ -35,9 +41,112 @@
     </tr>
 
     <tr>
-      <th>&nbsp;</td>
-      <td>&nbsp;</td>
+      <th>Eckhard&nbsp;Stolberg<br>(<a href="http://home.arcor.de/estolberg">http://home.arcor.de/estolberg</a>)</th>
+      <td>Provided a description of the TIA bug that produces the star field
+      effect in Cosmic Ark, provided the PAL television palette, and
+      participated in a helpful discussion on understanding the TIA's RESPx
+      multi-sprite trick.  Provided the Commavid, Megaboy, 4A50 and X07 support
+      for Stella as well as some improved Supercharger BIOS code.</td>
     </tr>
+
+    <tr>
+      <th>Brian&nbsp;Watson (retired)</th>
+      <td>Helped with getting the illegal CPU instruction support working with Stella.
+      Brian also submitted a number of other changes, such as debugger support, which
+      have been finally integrated into the 2.0 release of Stella.  Without
+      a doubt, there would be no debugger support in Stella if not for the
+      tireless work of Brian.</td>
+    </tr>
+
+    <tr>
+      <th class="nocolor">&nbsp;</td>
+      <td class="nocolor">&nbsp;</td>
+    </tr>
+
+  <tr>
+    <th class="nocolor">Special Thanks</th>
+    <td class="nocolor">&nbsp;</td>
+  </tr>
+
+    <tr>
+      <th>Ian&nbsp;Bogost and the Georgia&nbsp;Tech&nbsp;Atari&nbsp;Team<br>
+      (<a href="http://www.bogost.com/games/a_television_simulator.shtml">CRT Simulation Project</a>)</th>
+      <td>Contributed code for the 'CRT simulation' OpenGL filters.  The Winter 2009
+      team members are Edward Booth, Michael Cook, Justin Dobbs, William Rowland
+      and Prince Yang.<br>Also contributed <a href="http://slack.net/~ant/libs/ntsc.html">Blargg filtering</a>
+      code, a version of which was integrated into Stella 3.7.
+      </td>
+    </tr>
+
+    <tr>
+      <th>Tom&nbsp;Hafner<br>
+      (<a href="http://2600-daptor.com">http://2600-daptor.com</a>)</th>
+      <td>Generously donated a 2600-daptor, 2600-daptor II and BoosterGrip controllers,
+      as well as sample code to help with development</td>
+    </tr>
+
+    <tr>
+      <th>Richard&nbsp;Hutchinson</th>
+      <td>Generously donated an AtariVox USB adaptor to help with AVox development</td>
+    </tr>
+
+    <tr>
+      <th>Thomas&nbsp;Jentzsch (ADD Boulderdash info)</th>
+      <td>Provided updated NTSC palette and many ideas</td>
+    </tr>
+
+    <tr>
+      <th>Andrew&nbsp;Kator<br>(<a href="http://www.katorlegaz.com">http://www.katorlegaz.com</a>)</th>
+      <td>Provided PHP and CSS code for a major update to the Stella website</td>
+    </tr>
+
+    <tr>
+      <th>Alexandre&nbsp;Liduario</th>
+      <td>Generously donated Atari PAL-M console to help in testing ROMs on a real system</td>
+    </tr>
+
+    <tr>
+      <th>Richard&nbsp;Kennehan</th>
+      <td>Generously donated Atari light-sixer, various controllers, and several games to help
+        in testing ROMs on a real system</td>
+    </tr>
+
+    <tr>
+      <th>James&nbsp;Randall (aka&nbsp;'toymailman')</th>
+      <td>Generously donated a 7800 console and several games and manuals to help
+      with development</td>
+    </tr>
+
+    <tr>
+      <th>Fred X. Quimby (aka 'batari')<br>(<a href="http://bataribasic.com/">Batari Basic</a>)</th>
+      <td>Generously donated several Melody and Harmony Cartridges to help with
+      development, and also donated a collectors edition of the Harmony Cart (release
+      version including the cart, CD, SD card, etc)</td>
+    </tr>
+
+    <tr>
+      <th>Darrell&nbsp;Spice&nbsp;Jr.<br>
+      (<a href="http://spiceware.org">http://spiceware.org</a>)</th>
+      <td>Author of the OS/2 version of Stella<br>Also generously donated 'Medieval Mayhem'
+      and 'Stellas Stocking' cartridges</td>
+    </tr>
+
+    <tr>
+      <th>Albert&nbsp;Yarusso<br>
+      (<a href="http://atariage.com">http://atariage.com</a>)</th>
+      <td>Provided helpful feedback for the MacOSX port, and generously
+        donated an AtariVox device to help with development</td>
+    </tr>
+
+    <tr>
+      <th class="nocolor">&nbsp;</td>
+      <td class="nocolor">&nbsp;</td>
+    </tr>
+
+  <tr>
+    <th class="nocolor">Contributors</th>
+    <td class="nocolor">&nbsp;</td>
+  </tr>
 
     <tr>
       <th>8-Bit Classics<br>(<a href="http://www.8bitclassics.com">http://www.8bitclassics.com</a>)</th>
@@ -68,16 +177,6 @@
     <tr>
       <th>Alexander&nbsp;Bilstein</th>
       <td>Provided "A Brief History of the Atari 2600" for this manual</td>
-    </tr>
-
-    <tr>
-      <th>Ian&nbsp;Bogost and the Georgia&nbsp;Tech&nbsp;Atari&nbsp;Team<br>
-      (<a href="http://www.bogost.com/games/a_television_simulator.shtml">CRT Simulation Project</a>)</th>
-      <td>Contributed code for the 'CRT simulation' OpenGL filters.  The Winter 2009
-      team members are Edward Booth, Michael Cook, Justin Dobbs, William Rowland
-      and Prince Yang.<br>Also contributed <a href="http://slack.net/~ant/libs/ntsc.html">Blargg filtering</a>
-      code, a version of which was integrated into Stella 3.7.
-      </td>
     </tr>
 
     <tr>
@@ -146,13 +245,6 @@
     </tr>
 
     <tr>
-      <th>Tom&nbsp;Hafner<br>
-      (<a href="http://2600-daptor.com">http://2600-daptor.com</a>)</th>
-      <td>Generously donated a 2600-daptor, 2600-daptor II and BoosterGrip controllers,
-      as well as sample code to help with development</td>
-    </tr>
-
-    <tr>
       <th>Mark&nbsp;Hahn</th>
       <td>Allowed "Elk Attack" to be included in the Stella distribution and
       provided help with the TIA HMOVE blank bug</td>
@@ -166,32 +258,6 @@
     <tr>
       <th>Kevin&nbsp;Horton</th>
       <td>Author of the definitive Atari 2600 bank-switching document</td>
-    </tr>
-
-    <tr>
-      <th>Richard&nbsp;Hutchinson</th>
-      <td>Generously donated an AtariVox USB adaptor to help with AVox development</td>
-    </tr>
-
-    <tr>
-      <th>Thomas&nbsp;Jentzsch</th>
-      <td>Provided updated NTSC palette and many ideas</td>
-    </tr>
-
-    <tr>
-      <th>Andrew&nbsp;Kator<br>(<a href="http://www.katorlegaz.com">http://www.katorlegaz.com</a>)</th>
-      <td>Provided PHP and CSS code for a major update to the Stella website</td>
-    </tr>
-
-    <tr>
-      <th>Alexandre&nbsp;Liduario</th>
-      <td>Generously donated Atari PAL-M console to help in testing ROMs on a real system</td>
-    </tr>
-
-    <tr>
-      <th>Richard&nbsp;Kennehan</th>
-      <td>Generously donated Atari light-sixer, various controllers, and several games to help
-        in testing ROMs on a real system</td>
     </tr>
 
     <tr>
@@ -280,19 +346,6 @@
     </tr>
 
     <tr>
-      <th>James&nbsp;Randall (aka&nbsp;'toymailman')</th>
-      <td>Generously donated a 7800 console and several games and manuals to help
-      with development</td>
-    </tr>
-
-    <tr>
-      <th>Fred X. Quimby (aka 'batari')<br>(<a href="http://bataribasic.com/">Batari Basic</a>)</th>
-      <td>Generously donated several Melody and Harmony Cartridges to help with
-      development, and also donated a collectors edition of the Harmony Cart (release
-      version including the cart, CD, SD card, etc)</td>
-    </tr>
-
-    <tr>
       <th>RomHunter<br>(<a href="http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html">RomHunter ROMs</a>)</th>
       <td>Provides an updated database of ROM information on a regular basis</td>
     </tr>
@@ -353,24 +406,8 @@
     </tr>
 
     <tr>
-      <th>Darrell&nbsp;Spice&nbsp;Jr.<br>
-      (<a href="http://spiceware.org">http://spiceware.org</a>)</th>
-      <td>Author of the OS/2 version of Stella<br>Also generously donated 'Medieval Mayhem'
-      and 'Stellas Stocking' cartridges</td>
-    </tr>
-
-    <tr>
       <th>John&nbsp;Stiles</th>
       <td>Maintained the Macintosh version of Stella until release 1.2</td>
-    </tr>
-
-    <tr>
-      <th>Eckhard&nbsp;Stolberg</th>
-      <td>Provided a description of the TIA bug that produces the star field
-      effect in Cosmic Ark, provided the PAL television palette, and
-      participated in a helpful discussion on understanding the TIA's RESPx
-      multi-sprite trick.  Provided the Commavid, Megaboy, 4A50 and X07 support
-      for Stella as well as some improved Supercharger BIOS code.</td>
     </tr>
 
     <tr>
@@ -408,15 +445,6 @@
     </tr>
 
     <tr>
-      <th>Brian&nbsp;Watson</th>
-      <td>Helped with getting the illegal CPU instruction support working with Stella.
-      Brian also submitted a number of other changes, such as debugger support, which
-      have been finally integrated into the 2.0 release of Stella.  Without
-      a doubt, there would be no debugger support in Stella if not for the
-      tireless work of Brian.</td>
-    </tr>
-
-    <tr>
       <th>Keith&nbsp;Wilkins</th>
       <td>Maintained the DOS version of Stella until release 0.7</td>
     </tr>
@@ -424,13 +452,6 @@
     <tr>
       <th>Jeff&nbsp;Wisnia</th>
       <td>Provided technical data sheet for the 6532 RIOT chip</td>
-    </tr>
-
-    <tr>
-      <th>Albert&nbsp;Yarusso<br>
-      (<a href="http://atariage.com">http://atariage.com</a>)</th>
-      <td>Provided helpful feedback for the MacOSX port, and generously
-        donated an AtariVox device to help with development</td>
     </tr>
 
     <tr>
