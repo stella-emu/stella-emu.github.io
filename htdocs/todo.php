@@ -19,6 +19,8 @@
       eventually.  Some of them are as follows:</p>
 
       <ul>
+        <li>Fix final remaining bugs in the TIA emulation.</li>
+
         <li>Convert code to SDL-1.3/2.0.  The next major revision of SDL hasn't
         been released yet, but I'm already in the process of working with
         beta versions.  The main reason for this change is to have hardware-
@@ -36,11 +38,12 @@
         <li>Add more debugger features, improve graphics access tracking, improve
         GUI, etc.</li>
 
-        <li>Fix final remaining bugs in the TIA emulation.</li>
-
         <li>Add rewind support to the entire emulation, not just in the debugger.</li>
 
-        <li>Look into adding movie recording or net play.</li>
+        <li>Look into adding movie recording or net play, and/or interface better
+        with 3rd-party recorders.</li>
+
+        <li>Improve ROM Audit functionality. </li>
 
         <li>Probably a thousand other things that I've forgotten.</li>
       </ul>
