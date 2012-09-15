@@ -91,8 +91,8 @@
     </tr>
 
     <tr>
-      <th>Thomas&nbsp;Jentzsch (ADD Boulderdash info)</th>
-      <td>Provided updated NTSC palette and many ideas</td>
+      <th>Thomas&nbsp;Jentzsch</th>
+      <td>Provided updated NTSC palette and many ideas </td>
     </tr>
 
     <tr>
