@@ -12,14 +12,44 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>October 26, 2012</H4>
+Stella release 3.7.3 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Note: because of TIA/RIOT changes, the state file format has changed
+          again, and old state files will not work with this release.</li>
+
+<li>Improved handling of 'illegal' VSYNC signals, which sometimes created
+    'short' frames that caused massive flickering.  Also improved
+    related behaviour when VSYNC isn't used at all.</li>
+
+<li>Improved sound generation with ROMs that have irregular scanline
+    counts.  This fixes many demo ROMs as well as Quadrun, where
+    previously there would be 'gaps' in the sound output.</li>
+
+<li>Improved emulation of RIOT chip, in particular the behaviour of
+    reading from TIMINT.  Also, D6 of the Interrupt Flag register is now
+    properly set on active transition of the PA7 pin.</li>
+
+<li>Fixed bug in DPC+ bankswitch scheme; the music in "Stay Frosty 2"
+    wasn't playing correctly.</li>
+
+<li>The ROM properties database now uses 'Auto' instead of 'Auto-select'
+    everywhere.  This makes for less typing when running from the
+    commandline.</li>
+
+<li>Updated included PNG library to latest stable version.</li>
+
+</ul>
+
+Have Fun!
+
+
 <H4>June 10, 2012</H4>
 Stella release 3.7.2 for Linux, MacOS X and Windows is now available.
 <ul>
 <li>Fixed bug in handling filenames with the '~' character, as is used
     extensively by RomHunter rom-sets.</li>
 </ul>
-
-Have Fun!
 
 
 <H4>June 8, 2012</H4>
