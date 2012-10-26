@@ -92,7 +92,7 @@
 
     <tr>
       <th>Thomas&nbsp;Jentzsch</th>
-      <td>Provided updated NTSC palette and many ideas </td>
+      <td>Provided updated NTSC palette, many bug reports and debugger feedback </td>
     </tr>
 
     <tr>
@@ -208,6 +208,11 @@
     <tr>
       <th>Joe&nbsp;D'Andrea</th>
       <td>Author of the IRIX port of Stella until release 1.2</td>
+    </tr>
+
+    <tr>
+      <th><a href="http://electronicsentimentalities.com">Electronic&nbsp;Sentimentalities</a></th>
+      <td>Generously donated a "7800 AV Mod Board"</td>
     </tr>
 
     <tr>
@@ -419,6 +424,13 @@
       <th>Joel&nbsp;Sutton</th>
       <td>Author of the FreeBSD version of Stella</td>
     </tr>
+
+    <tr>
+      <th>thegoldenband and toiletunes (on AtariAge)</th>
+      <td>The former for creating a cartridge auction and donating the proceeds,
+      and the latter for winning the auction</td>
+    </tr>
+
 
     <tr>
       <th>Greg&nbsp;Troutman</th>
