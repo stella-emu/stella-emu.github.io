@@ -79,6 +79,12 @@
     </tr>
 
     <tr>
+      <th>Andrew&nbsp;Davie and Thomas&nbsp;Jentzsch<br>
+      (<a href="http://www.atariage.com/store/index.php?l=product_detail&p=999">Boulder Dash)</a></th>
+      <td>Generously donated a Boulder Dash cartridge, and specifically mentioned Stella in its manual </td>
+    </tr>
+
+    <tr>
       <th>Tom&nbsp;Hafner<br>
       (<a href="http://2600-daptor.com">http://2600-daptor.com</a>)</th>
       <td>Generously donated a 2600-daptor, 2600-daptor II and BoosterGrip controllers,
