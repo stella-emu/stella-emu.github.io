@@ -12,6 +12,16 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>October 31, 2012</H4>
+Stella release 3.7.4 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Fixed screen blanking regression in 'Video Chess', and improved
+    behaviour of ROMs that don't use VSYNC.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>October 26, 2012</H4>
 Stella release 3.7.3 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -40,8 +50,6 @@ Stella release 3.7.3 for Linux, MacOS X and Windows is now available.
 <li>Updated included PNG library to latest stable version.</li>
 
 </ul>
-
-Have Fun!
 
 
 <H4>June 10, 2012</H4>
