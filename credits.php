@@ -69,6 +69,11 @@
   </tr>
 
     <tr>
+      <th>Stephen&nbsp;Ahrens (aka&nbsp;'Amstari')</th>
+      <td>Generously donated a PAL CompuMate to help with cassette load/save functionality</td>
+    </tr>
+
+    <tr>
       <th>Ian&nbsp;Bogost and the Georgia&nbsp;Tech&nbsp;Atari&nbsp;Team<br>
       (<a href="http://www.bogost.com/games/a_television_simulator.shtml">CRT Simulation Project</a>)</th>
       <td>Contributed code for the 'CRT simulation' OpenGL filters.  The Winter 2009
@@ -107,27 +112,28 @@
     </tr>
 
     <tr>
-      <th>Alexandre&nbsp;Liduario</th>
-      <td>Generously donated Atari PAL-M console to help in testing ROMs on a real system</td>
-    </tr>
-
-    <tr>
       <th>Richard&nbsp;Kennehan</th>
       <td>Generously donated Atari light-sixer, various controllers, and several games to help
         in testing ROMs on a real system</td>
     </tr>
 
     <tr>
-      <th>James&nbsp;Randall (aka&nbsp;'toymailman')</th>
-      <td>Generously donated a 7800 console and several games and manuals to help
-      with development</td>
+      <th>Alexandre&nbsp;Liduario</th>
+      <td>Generously donated Atari PAL-M console to help in testing ROMs on a real system</td>
     </tr>
+
 
     <tr>
       <th>Fred X. Quimby (aka 'batari')<br>(<a href="http://bataribasic.com/">Batari Basic</a>)</th>
       <td>Generously donated several Melody and Harmony Cartridges to help with
       development, and also donated a collectors edition of the Harmony Cart (release
       version including the cart, CD, SD card, etc)</td>
+    </tr>
+
+    <tr>
+      <th>James&nbsp;Randall (aka&nbsp;'toymailman')</th>
+      <td>Generously donated a 7800 console and several games and manuals to help
+      with development</td>
     </tr>
 
     <tr>
