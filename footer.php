@@ -2,4 +2,4 @@
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>, 
 <a href="http://minbar.org">Stephen Anthony</a> and 
 <a href="theteam.php">The Stella Team</a>
-<br />	Site Updated December 22, 2012</p>
+<br />	Site Updated January 4, 2013</p>

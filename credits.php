@@ -70,7 +70,7 @@
 
     <tr>
       <th>Stephen&nbsp;Ahrens (aka&nbsp;'Amstari')</th>
-      <td>Generously donated a PAL CompuMate to help with cassette load/save functionality</td>
+      <td>Generously donated a PAL CompuMate to help with cassette load/save functionality.</td>
     </tr>
 
     <tr>
@@ -86,40 +86,40 @@
     <tr>
       <th>Andrew&nbsp;Davie and Thomas&nbsp;Jentzsch<br>
       (<a href="http://www.atariage.com/store/index.php?l=product_detail&p=999">Boulder Dash)</a></th>
-      <td>Generously donated a Boulder Dash cartridge, and specifically mentioned Stella in its manual </td>
+      <td>Generously donated a Boulder Dash cartridge, and specifically mentioned Stella in its manual. </td>
     </tr>
 
     <tr>
       <th>Tom&nbsp;Hafner<br>
       (<a href="http://2600-daptor.com">http://2600-daptor.com</a>)</th>
       <td>Generously donated a 2600-daptor, 2600-daptor II and BoosterGrip controllers,
-      as well as sample code to help with development</td>
+      as well as sample code to help with development.</td>
     </tr>
 
     <tr>
       <th>Richard&nbsp;Hutchinson</th>
-      <td>Generously donated an AtariVox USB adaptor to help with AVox development</td>
+      <td>Generously donated an AtariVox USB adaptor to help with AVox development.</td>
     </tr>
 
     <tr>
       <th>Thomas&nbsp;Jentzsch</th>
-      <td>Provided updated NTSC palette, many bug reports and debugger feedback </td>
+      <td>Provided updated NTSC palette, many bug reports and debugger feedback. </td>
     </tr>
 
     <tr>
       <th>Andrew&nbsp;Kator<br>(<a href="http://www.katorlegaz.com">http://www.katorlegaz.com</a>)</th>
-      <td>Provided PHP and CSS code for a major update to the Stella website</td>
+      <td>Provided PHP and CSS code for a major update to the Stella website.</td>
     </tr>
 
     <tr>
       <th>Richard&nbsp;Kennehan</th>
       <td>Generously donated Atari light-sixer, various controllers, and several games to help
-        in testing ROMs on a real system</td>
+        in testing ROMs on a real system.</td>
     </tr>
 
     <tr>
       <th>Alexandre&nbsp;Liduario</th>
-      <td>Generously donated Atari PAL-M console to help in testing ROMs on a real system</td>
+      <td>Generously donated Atari PAL-M console to help in testing ROMs on a real system.</td>
     </tr>
 
 
@@ -127,20 +127,28 @@
       <th>Fred X. Quimby (aka 'batari')<br>(<a href="http://bataribasic.com/">Batari Basic</a>)</th>
       <td>Generously donated several Melody and Harmony Cartridges to help with
       development, and also donated a collectors edition of the Harmony Cart (release
-      version including the cart, CD, SD card, etc)</td>
+      version including the cart, CD, SD card, etc).</td>
     </tr>
 
     <tr>
       <th>James&nbsp;Randall (aka&nbsp;'toymailman')</th>
       <td>Generously donated a 7800 console and several games and manuals to help
-      with development</td>
+      with development.</td>
     </tr>
 
     <tr>
       <th>Darrell&nbsp;Spice&nbsp;Jr.<br>
       (<a href="http://spiceware.org">http://spiceware.org</a>)</th>
       <td>Author of the OS/2 version of Stella<br>Also generously donated 'Medieval Mayhem'
-      and 'Stellas Stocking' cartridges</td>
+      and 'Stellas Stocking' cartridges.</td>
+    </tr>
+
+    <tr>
+      <th>D.&nbsp;Scott&nbsp;Williamson<br>
+      (<a href="http://starcastle2600.blogspot.ca/p/star-castle-2600-story.html">Star Castle 2600</a>)</th>
+      <td>Generously donated a copy of Star Castle 2600 CIB, and (as promised on the Kickstarter
+        webpage) a <B>very</B> generous portion of the CD proceeds. Also specifically mentioned Stella in its manual.
+        Thanks for all the support!</td>
     </tr>
 
     <tr>
