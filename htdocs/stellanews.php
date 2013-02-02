@@ -54,8 +54,8 @@ Stella release 3.7.3 for Linux, MacOS X and Windows is now available.
     reading from TIMINT.  Also, D6 of the Interrupt Flag register is now
     properly set on active transition of the PA7 pin.</li>
 
-<li>Fixed bug in DPC+ bankswitch scheme; the music in "Stay Frosty 2"
-    wasn't playing correctly.</li>
+<li>Fixed bug in DPC+ bankswitch scheme; the music in several ROMS wasn't
+    playing correctly.</li>
 
 <li>The ROM properties database now uses 'Auto' instead of 'Auto-select'
     everywhere.  This makes for less typing when running from the
