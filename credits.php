@@ -276,6 +276,11 @@
     </tr>
 
     <tr>
+      <th>Ulrik&nbsp;Hansen</th>
+      <td>Generously donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>Alex&nbsp;Herbert</th>
       <td>Provided much information on AtariVox and SaveKey functionality</td>
     </tr>
@@ -286,7 +291,12 @@
     </tr>
 
     <tr>
-      <th>Sandro de Oliveira Maia</th>
+      <th>Austin&nbsp;Mackert</th>
+      <td>Generously donated a monetary contribution</td>
+    </tr>
+
+    <tr>
+      <th>Sandro&nbsp;de&nbsp;Oliveira&nbsp;Maia</th>
       <td>Generously donated several monetary contributions, and provided words of support</td>
     </tr>
 
