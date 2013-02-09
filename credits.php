@@ -231,6 +231,11 @@
     </tr>
 
     <tr>
+      <th>Joe&nbsp;Durnavich</th>
+      <td>Generously donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th><a href="http://electronicsentimentalities.com">Electronic&nbsp;Sentimentalities</a></th>
       <td>Generously donated a "7800 AV Mod Board"</td>
     </tr>
