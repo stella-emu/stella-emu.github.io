@@ -200,6 +200,11 @@
     </tr>
 
     <tr>
+      <th><a href="http://www.blackumbrelladesign.com">Black Umbrella Design</a></th>
+      <td>Generously donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>Dan&nbsp;Boris</th>
       <td>Provided technical information on the Supercharger</td>
     </tr>
