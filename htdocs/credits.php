@@ -185,6 +185,11 @@
     </tr>
 
     <tr>
+      <th>ArgentStar</th>
+      <td>Generously donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>David&nbsp;Aspell</th>
       <td>Ported release 0.7 of Stella to Java</td>
     </tr>
