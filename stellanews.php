@@ -12,6 +12,84 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>February 21, 2013</H4>
+Stella release 3.8 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Huge changes to the sound system:
+  <ul>
+    <li>The sound code now uses 16-bit signed samples instead of 8-bit
+        unsigned samples, making it more compatible with a wider variety of
+        systems.</li>
+    <li>Improved sound output for several ROMs, including "Space Rocks"
+        (the 'heartbeat' sound can now be clearly heard).</li>
+    <li>The 'volume clipping' option has been removed, since in 16-bit
+        mode it's no longer needed.</li>
+    <li>The 'Tia freq' option has been removed.</li>
+    <li>Selecting more common sample rates (other than 31400) now works
+        much better, but there are still a few ROMS (like Quadrun) where
+        31400Hz still works best.</li>
+  </ul>
+</li>
+
+<li>Many changes to handling ZIP archives:
+  <ul>
+    <li>Files in multiple levels are now recognized.  This fixes issues
+        in Windows where such files couldn't be loaded at all, and in all
+        systems where ROMs with the same name (but in different
+        directories) weren't being recognized.</li>
+    <li>ZIP contents are now handled more intelligently.  Archives
+        containing only one ROM are automatically loaded, whereas those
+        with multiple files are treated as directories.</li>
+    <li>Opening an archive from the commandline now works as in the UI,
+        where opening a multi-ROM archive will pop up the UI and show the
+        archive contents (as a directory).</li>
+    <li>The ZIP code behind the scenes is now much faster by making use
+        of caching (the old code was actually from 1998!).</li>
+    <li>This new 'archive' infrastructure may eventually lead to 7-Zip
+        support, as well as 'virtual' formats (such as showing the list
+        of files for 2in1/4in1/8in1/etc within the UI).</li>
+  </ul>
+</li>
+
+<li>Improved bankswitch autodetection for FA2 ROMs; 29K and 32K versions
+    (meant for Harmony cart) are now recognized.</li>
+
+<li>Improved bankswitch autodetection for X07 ROMs (although there's only
+    two known ROMs in existence, so the detection probably isn't robust).</li>
+
+<li>Tweaked bankswitch autodetection for the 0840, F8 and FE schemes;
+    several homebrews that didn't run before now work correctly.</li>
+
+<li>Fixed regression in RIOT INTIM reads; at least one known ROM
+    (Mr. Roboto Berzerk hack) wasn't working properly.</li>
+
+<li>Fixed bug in the debugger with RIOT INTIM/TIMINT display; reads
+    were being done multiple times, changing the state of the
+    registers and resulting in incorrect emulation.</li>
+
+<li>Worked around bug in debugger disassembly of zero-page RAM; for now,
+    the resolving of address vs. data sections is turned off in such a
+    case.  This fixes lockups in 'Meltdown' ROM.</li>
+
+<li>Added support for different directories for saving/loading PNG
+    files.  These are set with the 'snapsavedir' and 'snaploaddir'
+    commandline arguments (which replace the old 'snapdir'), and are
+    also available within the UI.</li>
+
+<li>Changed 'eepromdir' commandline argument to 'nvramdir', and changed
+    the default location to BASEDIR/nvram (where BASEDIR depends on your
+    OS).  This means all your EEPROM and Flash files will have to be
+    manually moved to this new directory.  This affects developers, and
+    those people playing ROMs with AtariVox/SaveKey support as well as
+    the newer 'Star Castle' FA2 ROMs.</li>
+
+<li>Updated included PNG and ZLIB libraries to latest stable version.</li>
+
+</ul>
+
+-Have fun!
+
+
 <H4>December 22, 2012</H4>
 Stella release 3.7.5 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -24,8 +102,6 @@ Stella release 3.7.5 for Linux, MacOS X and Windows is now available.
     as the build number, platform architecture, TV effects in use, etc.</li>
 
 </ul>
-
--Have fun!
 
 
 <H4>October 31, 2012</H4>
