@@ -12,6 +12,10 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>February 23, 2013</H4>
+Added an expanded explanation for first-time developers to the <B>Development</B>
+section of the Stella webpage.
+
 <H4>February 21, 2013</H4>
 Stella release 3.8 for Linux, MacOS X and Windows is now available.
 <ul>
