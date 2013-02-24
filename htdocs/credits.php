@@ -486,7 +486,7 @@
       <th>Robert&nbsp;Tuccitto</th>
       <td>Provided valuable bugtesting and feedback which finally helped in fixing
       a long-standing lockup which occurred after Stella has been running for
-      71 minutes.</td>
+      71 minutes, and generously donated a monetary contribution.</td>
     </tr>
 
     <tr>
