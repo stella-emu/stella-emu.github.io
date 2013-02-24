@@ -39,3 +39,17 @@ table.shaded_content th { text-align: left; font-weight: normal; font-size: 12pt
 table.shaded_content td { font-size: 12pt; background-color: #FFCC99 } 
 table.shaded_content th.nocolor { text-align: left; font-weight: bold; font-size: 12pt; background-color: #FFFFFF } 
 table.shaded_content td.nocolor { font-size: 12pt; background-color: #FFFFFF } 
+
+div.con {
+  margin-left : 20px;
+  margin-right : 20px;
+  padding-top : 5px;
+  padding-bottom : 5px;
+  padding-left : 10px;
+  padding-right : 10px;
+  display : block;
+  border : thin rgb(10,10,10) solid;
+  font-family: monospace;
+  background: rgb(230,230,250);
+  white-space: pre;
+}
