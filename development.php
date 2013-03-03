@@ -24,7 +24,8 @@ following is a description of how to do this for the three major platforms.
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs g++ (version 4.x), make and SDL development libraries installed.  OpenGL, ZLib and PNG
+  <p>Stella needs g++ (version 4.x), make and <a href="http://libsdl.org">SDL</a>
+  development libraries installed.  OpenGL, ZLib and PNG
   libraries are optional.  For the latter two, Stella will use built-in versions if none
   are installed system-wide, but OpenGL development libraries will need to be installed
   if you want OpenGL rendering (which is <B>greatly</B> recommended).  All of these packages
