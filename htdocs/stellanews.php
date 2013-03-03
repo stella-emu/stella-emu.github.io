@@ -12,9 +12,29 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>March 3, 2013</H4>
+Stella release 3.8 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added support for TIA RSYNC writes, thanks to Omegamatrix of AtariAge.
+    This allows the recently released "Extra Terrestrials" ROM to run, as
+    well as improving emulation of "Fatal Run" and several other test ROMs.</li>
+
+<li>Fixed typo in TIA HMOVE writes, thanks to Thomas Jentzsch.  This fixes
+    the constant collision issues in "Kool-Aid Man", and several other
+    homebrew ROMs.</li>
+
+<li>Fixed sound issues on OSX PPC machines (all sound was in little-endian
+    format, but PPC is big-endian).</li>
+
+<li>The OSX DMG archive now contains proper modification dates.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>February 23, 2013</H4>
-Added an expanded explanation for first-time developers to the <B>Development</B>
-section of the Stella webpage.
+Added an expanded explanation for first-time developers to the
+<a href="development.php"><B>Development</B></a> section of the Stella webpage.
 
 <H4>February 21, 2013</H4>
 Stella release 3.8 for Linux, MacOS X and Windows is now available.
@@ -90,8 +110,6 @@ Stella release 3.8 for Linux, MacOS X and Windows is now available.
 <li>Updated included PNG and ZLIB libraries to latest stable version.</li>
 
 </ul>
-
--Have fun!
 
 
 <H4>December 22, 2012</H4>
