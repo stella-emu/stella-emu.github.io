@@ -13,7 +13,7 @@
 
 <!---------------------------------------------------------------->
 <H4>March 3, 2013</H4>
-Stella release 3.8 for Linux, MacOS X and Windows is now available.
+Stella release 3.8.1 for Linux, MacOS X and Windows is now available.
 <ul>
 <li>Added support for TIA RSYNC writes, thanks to Omegamatrix of AtariAge.
     This allows the recently released "Extra Terrestrials" ROM to run, as
