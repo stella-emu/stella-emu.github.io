@@ -396,6 +396,11 @@
     </tr>
 
     <tr>
+      <th>Brent&nbsp;Robbins (aka&nbsp;'Schizophretard')</th>
+      <td>Donated a <I>very</I> generous monetary contribution :)</td>
+    </tr>
+
+    <tr>
       <th>RomHunter<br>(<a href="http://www.atarimania.com/rom_collection_archive_atari_2600_roms.html">RomHunter ROMs</a>)</th>
       <td>Provides an updated database of ROM information on a regular basis</td>
     </tr>
