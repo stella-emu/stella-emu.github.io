@@ -12,6 +12,12 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>March 13, 2013</H4>
+The Subversion repository used by Stella has been changed.  All developers
+will need to checkout again from trunk, or relocate their current directory
+to the new system.
+
+
 <H4>March 3, 2013</H4>
 Stella release 3.8.1 for Linux, MacOS X and Windows is now available.
 <ul>

@@ -41,7 +41,7 @@ following is a description of how to do this for the three major platforms.
   <p>The source for the latest release can always be found under "Stable Releases" on the
   main webpage.  However, you'd be better off working with the most recent code, located
   in a Subversion repository.  The following command will <I>checkout</I> this code:
-  <div class="con">svn co https://stella.svn.sourceforge.net/svnroot/stella/trunk stella</div>
+  <div class="con">svn co https://svn.code.sf.net/p/stella/code/trunk stella</div>
   <p>This will checkout from trunk for local modifications.  However, you won't be able to
   commit changes unless you've been added to the Stella project.  In those cases, it's best
   to use the following command to generate a <I>diff</I> file, which can be sent to the
@@ -99,7 +99,7 @@ rpmbuild -ba stella.spec</div>
   <p>The source for the latest release can always be found under "Stable Releases" on the
   main webpage.  However, you'd be better off working with the most recent code, located
   in a Subversion repository.  The following command will <I>checkout</I> this code:
-  <div class="con">svn co https://stella.svn.sourceforge.net/svnroot/stella/trunk stella</div>
+  <div class="con">svn co https://svn.code.sf.net/p/stella/code/trunk stella</div>
   <p>This will checkout from trunk for local modifications.  However, you won't be able to
   commit changes unless you've been added to the Stella project.  In those cases, it's best
   to use the following command to generate a <I>diff</I> file, which can be sent to the
