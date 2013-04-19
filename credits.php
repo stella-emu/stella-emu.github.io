@@ -175,7 +175,7 @@
 
     <tr>
       <th>Eugenio&nbsp;"TrekMD"&nbsp;Angueira<br>(<a href="https://plus.google.com/107727417793046863603">plus.google.com/107727417793046863603</a>)</th>
-      <td>Generously donated several 7800 games in appreciation of the project</td>
+      <td>Donated several 7800 games in appreciation of the project</td>
     </tr>
 
     <tr>
@@ -186,7 +186,7 @@
 
     <tr>
       <th>ArgentStar</th>
-      <td>Generously donated a monetary contribution</td>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
@@ -206,7 +206,7 @@
 
     <tr>
       <th><a href="http://www.blackumbrelladesign.com">Black Umbrella Design</a></th>
-      <td>Generously donated a monetary contribution</td>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
@@ -217,7 +217,7 @@
     <tr>
       <th>"Uncle"&nbsp;Carmine<br>
       (<a href="http://www.carmine.com">http://www.carmine.com</a>)</th>
-      <td>Generously donated several 2600 games and manuals to help with development</td>
+      <td>Donated several 2600 games and manuals to help with development</td>
     </tr>
 
     <tr>
@@ -227,7 +227,7 @@
 
     <tr>
       <th>John&nbsp;W.&nbsp;Champeau,&nbsp;Champ&nbsp;Games</th>
-      <td>Generously donated a monetary contribution</td>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
@@ -242,12 +242,12 @@
 
     <tr>
       <th>Joe&nbsp;Durnavich</th>
-      <td>Generously donated a monetary contribution</td>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
       <th><a href="http://electronicsentimentalities.com">Electronic&nbsp;Sentimentalities</a></th>
-      <td>Generously donated a "7800 AV Mod Board"</td>
+      <td>Donated a "7800 AV Mod Board"</td>
     </tr>
 
     <tr>
@@ -267,7 +267,7 @@
 
     <tr>
       <th>Goldenegg (on AtariAge)</th>
-      <td>Generously donated a monetary contribution, and provided feedback/testing
+      <td>Donated a monetary contribution, and provided feedback/testing
       for OSX versions</td>
     </tr>
 
@@ -281,7 +281,7 @@
     <tr>
       <th>Sean&nbsp;Green (Bliss-Box)<br>
       (<a href="http://spawnlinux.dyndns.org/Bliss-Box">http://spawnlinux.dyndns.org/Bliss-Box/</a>)</th>
-      <td>Generously donated a Bliss-Box adaptor to help with development</td>
+      <td>Donated a Bliss-Box adaptor to help with development</td>
     </tr>
 
     <tr>
@@ -292,7 +292,7 @@
 
     <tr>
       <th>Ulrik&nbsp;Hansen</th>
-      <td>Generously donated a monetary contribution</td>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
@@ -307,17 +307,17 @@
 
     <tr>
       <th>Austin&nbsp;Mackert</th>
-      <td>Generously donated a monetary contribution</td>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
       <th>Sandro&nbsp;de&nbsp;Oliveira&nbsp;Maia</th>
-      <td>Generously donated several monetary contributions, and provided words of support</td>
+      <td>Donated several monetary contributions, and provided words of support</td>
     </tr>
 
     <tr>
       <th>Donald Maley</th>
-      <td>Generously donated a monetary contribution to help with CompuMate development</td>
+      <td>Donated a monetary contribution to help with CompuMate development</td>
     </tr>
 
     <tr>
@@ -418,7 +418,7 @@
 
     <tr>
       <th>Glenn&nbsp;Saunders</th>
-      <td>Generously donated a Supercharger to help with Stella's development</td>
+      <td>Donated a Supercharger to help with Stella's development</td>
     </tr>
 
     <tr>
@@ -446,7 +446,7 @@
 
     <tr>
       <th>James Smith</th>
-      <td>Generously donated a monetary contribution</td>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
@@ -456,7 +456,7 @@
 
     <tr>
       <th>Spacedueler (on AtariAge)</th>
-      <td>Generously donated several homemade 'spinners' to help with testing
+      <td>Donated several homemade 'spinners' to help with testing
       the mouse "specific axis" mode</td>
     </tr>
 
@@ -491,7 +491,7 @@
       <th>Robert&nbsp;Tuccitto</th>
       <td>Provided valuable bugtesting and feedback which finally helped in fixing
       a long-standing lockup which occurred after Stella has been running for
-      71 minutes, and generously donated a monetary contribution.</td>
+      71 minutes, and donated a monetary contribution.</td>
     </tr>
 
     <tr>
@@ -514,6 +514,11 @@
     <tr>
       <th>Jeff&nbsp;Wisnia</th>
       <td>Provided technical data sheet for the 6532 RIOT chip</td>
+    </tr>
+
+    <tr>
+      <th>Gareth&nbsp;Woodham</th>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
