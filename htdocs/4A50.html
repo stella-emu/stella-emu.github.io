@@ -1,0 +1,436 @@
+<h1>4A50 bank-switching specification (semi-final)</h1>
+<h2>Introduction</h2>
+
+The 4A50 bank-switching method provides new and previously-unavailable 
+programming flexibility to the Atari 2600.  It allows programs to use 64K of 
+ROM and 32K of RAM with previously-unparalleled flexibility.  The hardware 
+address space of the cartridge is divided into six primary regions: 
+
+<table border=1>
+
+<tr><td>0071-007F, 00F4-00FF
+
+<td>Zero-page hotspots.  Bank-switch modes may be selected by reading or
+writing addresses in this range.
+
+<tr><td>0400-0FFF
+
+<td>Soft-switch hotspots.  A read access to any of these addresses will
+trigger a mode switch *IF* the last byte fetched before the read was $60-$6F.
+Note that when using most addressing modes, this effectively means that the
+hotspots will appear at $6400-$6FFF but not at any other "mirrors" of those
+addresses.  Not all addresses in this range are used; access to any unused
+address in the $6400-$6FFF range is forbidden.  Although the cartridge will
+respond to the $6400-$6FFF hotspots, it will not output any data on the bus,
+so the data read will be likely be meaningless.
+
+
+<tr><td>1000-17FF
+
+<td>This 2K region may access any 2K region of RAM, or of the first 32K of ROM.
+
+<tr><td>1800-1DFF
+
+<td>This 1.5K region may access the first 1.5K of any 2K region of RAM, or of 
+the last 32K of ROM.
+
+<tr><td>1E00-1EFF
+
+<td>This 256-byte region may point to any 256-byte page of RAM or ROM.
+
+<tr><td>1F00-1FFF
+
+<td>This 256-byte region will always access the last 256 bytes of ROM.  If 
+accessed at addresses $7F00-$7FFF, these addresses will also act as a "hi-res
+helper" hotspots.
+
+</table>
+
+<b>Note that some actions are listed as "forbidden".  It is recommended that
+emulators trap on these conditions, as there is no guarantee that they will
+be implemented consistently on future revisions of the cartridge.</b>
+
+<h2>Identification</h2>
+The NMI vector (bytes $1FFA-$1FFB) of any 4A50-bankswitched cartridge should
+point to address $4A50.  Since this would never be used for any normal
+cartridge, this should provide an effective means of identifying carts that
+require $4A50 bankswitching.  Addresses $FFF8-$FFF9 should contain the sub-
+version of the scheme required.  First revision is $0001, stored LSB first.
+
+<h2>Memory Access</h2>
+
+Most memory accesses work as would be expected subject to the notes above.
+Unlike most 2600 RAM+carts, RAM may be read and written at the same address
+without restriction.  Soft-switch hotspots, however, operate somewhat 
+unusually: for a soft-switch hotspot access to register, it must be preceded by a memory 
+access which is not in the usual hotspot range and which fetches a byte value of 
+011xxxxx.  This has two useful effects: 
+
+<ol>
+
+<li>A BIT instruction which hits a hotspot won't trigger it unless the MSB of 
+the address is $60-$7F.  This reduces the risk of triggering a hotspot by 
+accident when using BIT to skip over instructions. 
+
+<li>When accessing hotspots with indexed addressing modes, page 
+crossings will not advance from one hotspot range to the next.  For example, the 
+instruction "CMP $6CF0,y" with Y=32 will hit the hotspot at $6C10 and will not 
+hit the hotspot at $6D10.  Note that the instruction in that case will take a 
+cycle longer than in the non-page-crossing case.
+
+</ol> 
+
+<h2>Bank-switching hotspots</h2> 
+
+<table border=1>
+
+<tr><td colspan=2><b>Address-triggered: switch upper bank</b>
+<tr><td>$6C00-$6CFF
+<td>Enable page 0-255 of ROM at $1E00-$1EFF
+<tr><td>$6D00-$6D7F
+<td>Enable page 0-127 of RAM at $1E00-$1EFF
+
+<tr><td colspan=2><b>Address-triggered: switch lower bank</b>
+<tr><td>$6E00-$6E0F
+<td>Enable block 0-15 of ROM at $1000-$17FF
+<tr><td>$6E40-$6E4F
+<td>Enable block 0-15 of RAM at $1000-$17FF
+<tr><td>Other $6Exx
+<td>Forbidden.
+<tr><td colspan=2><b>Address-triggered: switch middle bank
+<tr><td>$6F10-$6F1F
+<td>Enable block 16-31 of ROM at $1800-$1DFF
+<tr><td>$6F40-$6F4F
+<td>Enable block 0-15 of RAM at $1800-$1DFF
+<tr><td>Other $6Fxx
+<td>Forbidden.
+<tr><td colspan=2><b>Address-triggered hires helper functions</b>
+
+<tr><td>$7F00-$7FFF
+<td>Copy bit 3 of address into A11 of first block address and bits 4-6 of 
+address into A8-A10 of first block address.  Bits 0-2 and 7 are ignored.
+<tr><td colspan=2><b>Address-triggered Stella helper functions</b><br>
+Note that these functions shadow the TIA or low-RAM addresses, so these bank
+switches may be performed simultaneous with a TIA or low-RAM read or write.  
+Note that zero-page hotspots will not be triggered by these accesses.
+<tr><td>$6400-$64FF
+<td>Toggle bit A11 of the lower block address
+<tr><td>$6500-$65FF
+<td>Toggle bit A12 of the lower block address
+<tr><td>$6800-$68FF
+<td>Toggle bit A11 of the middle block address
+<tr><td>$6900-$69FF
+<td>Toggle bit A12 of the middle block address
+<tr><td colspan=2><b>Data-based zero-page bankswitch functions</b><br>
+These are the only hotspots that use the written data.  Unlike the other
+hotspots, these locations may not be protected against stray accesses so
+use caution.  The $00Fx addresses may be read or written freely; the $7x
+ones may be written only.  The last value read or written will be the one
+that's used.
+<tr><td>$F4,$F6,$FC,$FE
+
+<td>Select the specified page of flash to appear at address $1E00.
+<tr><td>$F5,$F7,$FD,$FF
+<td>Select the specified page of RAM to appear at address $1E00.
+<tr><td>$F8,$F9,$FA,$FB
+<td>
+If data is 0000nnnn: Select block 0nnnn of flash into lower address block<br>
+If data is 0100nnnn: Select block nnnn of RAM into lower address block<br>
+If data is 1001nnnn: Select block 1nnnn of flash into middle address block<br>
+If data is 1100nnnn: Select block nnnn of RAM into middle address block
+<tr><td>$74-$7F
+<td>Write-only addresses trigger the same bank switches as the addresses
+$0080 bytes higher, but without affecting the preset RAM.  It is recommended
+that only $7B, $7C, and $7D be used.
+<tr><td colspan=2><b>Optional LED control</b><br>
+If the optional LEDs are installed, any read or write from these addresses will 
+switch them on or off as indicated.
+
+<tr><td>$0071<td>Turn both LEDs off
+<tr><td>$0072<td>Turn the red LED on and the green LED off
+<tr><td>$0073<td>Turn the green LED on and the red LED off
+</table>
+
+<h2>Memory "presets"</h2>
+There are three types of memory preset hotspots.  Addresses $F4,$F6, $FC, and
+$FE will switch the upper address bank to the flash page specified by the value 
+read/written.  $F5, $F7, $FD, and $FF will swith the upper address bank to the
+RAM page specified by the value read/written.  $F4-$F7 will switch the lower or
+middle memory block based upon the value read/written (bit 7 of the value
+indicates whether to switch the lower or middle memory block; bit 6 indicates
+whether to select a flash or RAM block; the lower bits indicate which block to
+select).  When selecting ROM for the lower address block, one must select 
+blocks 0-15; for the middle address block, one must select blocks 16-31.  
+Selecting other blocks may have unpredictable results.<p>
+
+Each of the memory presets will function both as a bank-switch trigger and as
+a byte of normal RAM.  Because of this dual functionality, it's possible to
+switch among a small group of banks fairly quickly--simply store their page
+or block addresses into the hotspots first, then read them via the "NOP zp"
+instruction to select them.  The four addresses within each group will behave
+interchangeably as far as bank-switching is concerned, but are 'backed' by
+four different bytes of RAM.<p>
+
+Note that accessing these bytes of RAM will trigger bankswitches only if the
+accesses are done in page zero (or, more precisely, when A8-A12 are all zero,
+since the cartridge can't see A13-A15).  Thus, it is possible to store values
+into these RAM locations without triggering bank switching by storing at a
+shadow address ($01F4-$01FF is the recommended choice).  The CLEAN_START macro
+commonly used with DASM actually does its stores in the $0100-$01FF range, and
+will thus not trigger any bankswitching.
+
+
+<h2>1E00 page wrap</h2>
+
+Instructions which cross pages from $1Exx to $1Fxx (e.g. LDA $1EFF,x with X not 
+equal to zero) will trigger the $1Fxx bank switch if and only if the byte value 
+at $1Exx happens to be $6x or $7x.  Such page crossing should generally be 
+avoided.
+
+<h2>The BIT/skip instruction</h2>
+
+Because the BIT instruction $2C is frequently used to skip other 
+instructions, and will generate a memory fetch whose address corresponds to 
+the instructions skipped, it is important to add this caution: <i>Do not use 
+BIT to skip over an instruction whose second byte is in the range $60-$7F.</i>.
+If I had the logic, I would have harmlessly disabled the BIT absolute
+instruction from causing any bank switching, and in future cart revisions I may 
+do so.  Thus, use of bit absolute instructions with an address of $6000-$7FFF is 
+forbidden.  If you wish to trigger a bank switch without affecting any other 
+registers, use the "NOP abs" instruction (or, if you prefer, "NOP abs,x") 
+
+<h2>Using the hires helpers</h2>
+The 4A50 bankswitching contains a couple of special hotspot ranges that are 
+optimized for use with Stella-Sketch-style graphics.  Assuming that each 
+column of data occupies a single page, and that the even columns are in one 
+bank and the odd colums in another, one may draw very quickly by placing the 
+proper data at $7F00-$7FF7 and using the following code.  X coordinates are
+assumed to run $0000-$0077, with the visible portion being $0010-$006F (this
+allows for graphics to slightly overrun the visible screen on either side
+without ill effect).<p>
+
+<b>Table setup</b><br>
+
+<tt>$7F00: Sixteen 00 bytes, then 12 copies of (01 02 04 08 10 20 40 80), 
+then eight 00 bytes, then eight code bytes (see below).<br>
+$7F80: Sixteen FF bytes, then 12 copies of (FE FD FB F7 EF DF BF 7F), 
+then eight 00 bytes, then eight bytes for vectors etc.</tt><p>
+
+<b>Pixel plotting/erasure</b><br>
+<pre>; Plot pixel at X,Y
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+
+; Erase pixel at X,Y
+  lda $7F80,x
+  and $1E00,y
+  sta $1E00,y</pre>
+
+Note that plotted pixels will go into pages 1-6 of a 2K bank; if the X 
+coordinate stays within the range 0-119, pages 0 and 7 will be unaffected.  
+
+<h2>Code at $1E00-$1FFF</h2>
+It is recommended that a minimal amount of code be stored in the last page.
+Running code from this region may cause the region from $1E00-$1EFF to be
+bank-switched, so the status of that page should not be relied upon.  The
+recommended use of the last page is to put the format version and vectors 
+at $FFF8, and put the startup code at $FF78.  The code there should simply
+be a read of a bank-switch address to set the lower or middle block to point
+to a known ROM bank, followed by a JMP to the start of user code in that
+other block.<p>
+
+Code may be run from $1E00-$1EFF, but such code should not make any access to
+the $1F00-$1FFF memory page, whether at the hotspot address or not.
+
+
+<h2>Compatibility notes</h2>
+
+Because I'm trying to fit everything into a Xilinx XC9536XL, I had to leave
+off some features I would have liked to include.  It's possible a future
+version of the cart based upon a different chip may include these features.
+If software is written properly, it should work correctly with or without
+them.  In particular:
+
+<dl>
+<dt>Lower and middle bank address MSB
+<dd>I had to leave off the MSB of the flash address for the lower and middle
+bank; the lower bank has it hard-coded as "0"; the middle bank has it as "1".
+Future versions of the chip may allow the full address to be set.  Thus, for
+compatibility, programs should always act as though the upper bit will be
+meaningful.  When setting a flash address using $7C, for example, always set
+the MSB even though the present cartridge design ignores it.  Then the code
+will work even if a future cartridge design uses it.
+<dt>BIT instruction
+<dd>I would have liked to prevent any bank-switching from occurring in response 
+to a "BIT abs" instruction, but didn't have the chip resources to do that.  If
+I  do implement such protection, the only time a hotspot will respond will be
+if (1) the third-to-last memory access as NOT a $2C, or (2) if the hot-spot in
+question was a zero-page hotspot and the last memory byte fetched was a
+$F4-$FF.  This would allow the BIT instruction to be used to skip over any 
+two bytes, without restriction.  To prevent this from causing compatibility 
+problems with future versions of the bank-switching scheme, do not use "BIT
+abs" to trigger a bank switch.  Use "NOP abs" instead.  Note that there is no 
+restriction on use of BIT zero-page instructions.
+<dt>Zero-page hotspots and absolute mode
+<dd>The zero-page hotspots will presently respond to address $x071-$x07F and
+$x0F4-$x0FF (with 'x' being even).  This may change in a future version.  They 
+should be used with zero-page direct addressing mode only; future versions may 
+enforce this. 
+<dt>Zero-page indexed addressing
+<dd>When performing zero-page indexed operations, the 6502 will perform an
+'unindexed' read prior to operating at the correct address.  If the address
+specified in the instruction was a hotspot, this could trigger an unwanted bank 
+switch.  Future cartridges may protect against this behavior, so it should not 
+be relied upon.
+</dl>
+
+<h2>Other code samples</h2>
+
+To illustrate some other aspects of the 4A50's flexibility, compare these code
+samples with what would be required on other carts:<p>
+<b>Bulk memory copying</b><p>
+Although for some purposes, the larger banks are convenient, the 256-byte size 
+of the smaller page can often be an asset in its own way.
+<pre>; Copy some pages of data from flash to RAM.
+; The MSB of the source address is in X
+; The MSB of the destination address is in Y
+; The number of pages is in the accumulator.
+
+        stx $FE
+        sty $FF
+        sec
+        bcs entry2
+loop1:
+        ldx #0
+        pha
+loop2:
+        nop $FE ; Use source page
+        lda $1E00,x
+        ldy $1E80,x
+        nop $FF ; Use destination page
+        sta $1E00,x
+        sty $1E80,x
+        inx
+        bpl loop2
+        pla
+        inc $FE
+        inc $FF
+entry2:
+        sbc #1
+        bcs loop1
+</pre>
+Perhaps the most interesting thing to note here is that the bank switches were 
+performed without having to load the page addresses into registers.  There are 
+twelve zero-page bank-switching hotspots; one may freely switch banks using them 
+merely by reading them.<p>
+
+It should be noted that the hotspots $00F4-$00FF use the same RAM as
+$01F4-$01FF, but reads or writes to the latter range of addresses will not 
+trigger hotspots.  Thus, if a programmer wishes to use only the top six hotspot 
+addresses, the stack pointer may safely be set to $F9.  Pushes and pops to/from 
+addresses $01F4-$01F9 will not trigger bank switching.<p>
+
+<b>High-resolution shape drawing</b><p>
+These simple code bits for drawing/erasing pixels may easily be used to draw 
+larger shapes.  The following, for example, might be used to draw explosions in 
+a Stella-sketch-kernel missile defense game (this code is quite similar to what 
+I use in my Minigame entry, except that I call subroutines for pixel plotting).
+<pre>; Draw a hexagon with diagonal sides of length 'size' and vertical sides of
+; length 'size'*2.  Assumes X,Y is at center.
+
+; First find a few y values we'll need and then move to the bottom
+  tya
+  sec
+  sbc size
+  sta temp2
+  sbc size
+  sta temp3
+  tya
+  clc
+  adc size
+  sta temp1
+  adc size
+  sta temp4
+  tay
+; Now draw up bottom-right edge
+lp1:
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  dey
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  inx
+  cpy temp1
+  bne lp1
+; Now draw up right-hand side
+lp2:
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  dey
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  dey
+  cpy temp2
+  bne lp2
+; Now draw up the top-right edge
+lp3:
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  dey
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  dex
+  cpy temp3
+  bne lp3
+; Now draw down top-left edge
+lp4:
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  iny
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  dex
+  cpy temp2
+  bne lp4
+; Now draw down left-hand side
+lp5:
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  iny
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  iny
+  cpy temp1
+  bne lp5
+; Now draw down bottom-left edge
+lp6:
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  iny
+  lda $7F00,x
+  ora $1E00,y
+  sta $1E00,y
+  inx
+  cpy temp4
+  bne lp6
+
+</pre>
+Not sure if I got all the terminating cases right, but examination of the code 
+will reveal that it's pretty simple for a polygon-draw procedure WITH NO
+SUBROUTINE CALLS.  The code moves from one point to the next with nothing more
+than an 'iny', 'inx', 'dey', or 'dex.  Makes rapid drawing of shapes a snap.
+
+      
+
