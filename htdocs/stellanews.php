@@ -12,6 +12,95 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>June 27, 2013</H4>
+Stella release 3.9 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Greatly extended functionality of the debugger disassembly:
+  <ul>
+      <li>There is now a new tab which lists information specific to the
+        cartridge bankswitching scheme in use.  This includes the ability
+        to modify internal state even for esoteric ROMs which don't
+        follow the standard layout of 4K per bank.</li>
+
+      <li>The debugger now generates DASM-compatible disassembled code,
+        which can be saved to an external file.  This disassembly is
+        based on both a static and runtime analysis, and is extremely
+        accurate.  It also automatically differentiates between
+        CODE/PGFX/GFX/DATA/ROW areas, whereas normal Distella
+        only differentiates between CODE/GFX/ROW.  For now, only
+        single-bank (4K and smaller) ROMs are supported; support for
+        multi-bank ROMs will come in a future release.</li>
+
+      <li>The disassembly now recognizes various TIA/RIOT read/write
+        mirrors, and marks them as such (for example, INPT4|$30 instead
+        of INPT4 for address $3C).  Special thanks to Omegamatrix for
+        sample code and idea for this feature.</li>
+
+      <li>ROMS less than 2K in size (so called 'Sub2K' ROMs) now show only
+        the actual data in the binary.  This means, for example, that a
+        256 byte ROM will show only 256 bytes in the disassembly, instead
+        of padding duplicated data to 2K boundary.</li>
+
+      <li>Fixed bug when entering patched bytes; the current number base
+        wasn't being used.</li>
+
+      <li>Fixed labelling in ROW directives; it wasn't accurately setting
+        a label in the case where it occurred in the middle of the data.</li>
+
+      <li>Added a new dialog for changing Distella settings, located by
+        right-clicking the disassembly code.</li>
+
+      <li>The commandline option 'dis.resolvedata' has been renamed to
+        'dis.resolve', with new usage (see manual for further details).</li>
+    </ul></li>
+
+<li>Fixed regression in handling ZIP files (as compared to version 3.7.5)
+    created with newer versions of the ZIP program.  Related to this, added
+    better error messages for invalid/missing/unreadable ROM files.</li>
+
+<li>Added 'snapname' commandline argument and associated UI item, for
+    specifying whether snapshots should be saved using either the internal
+    ROM database name or the actual ROM filename.  This feature was
+    present in older releases of Stella, and due to popular demand it's
+    now back again.  Related to this, added a new dialog specifically for
+    the numerous snapshot-related items.</li>
+
+<li>Fixed bug in Linux/OSX versions when starting Stella for the first
+    time; it was previously creating mislabeled directories to store
+    settings, snapshots, etc.</li>
+
+<li>Fixed redundant "New console created" message when entering the same
+    ROM multiple times from the ROM launcher.</li>
+
+<li>Updated profile database for "BasketBall" ROMs; the joysticks are now
+    swapped by default, which allows one and two-player games to work
+    correctly.</li>
+
+<li>SuperCharger/AR ROMs now ignore the 'ramrandom' setting, and start with
+    RAM containing all zeroes.  This seems to fix issues with Dragonstomper
+    always starting in exactly the same state.</li>
+
+<li>Fixed issue when debugging CompuMate ROMs; keystrokes entered while
+    debugging would be interpreted as typing on the CompuMate keyboard.</li>
+
+<li>Changed colour of the 'current PC indicator' in the debugger to
+    match the one used for line selection.  This makes it easier to
+    see for those with problems seeing lighter colours.</li>
+
+<li>Improved functionality of the various pop-up dialogs and context
+    menus in the UI; they can now be navigated more fully by the keyboard
+    and mouse.</li>
+
+<li>Updated internal ROM properties database to ROM-Hunter version 9
+    (thanks go to RomHunter for his tireless research in this area).
+    Related to this, updated the snapshot collection.</li>
+
+<li>Updated included PNG and ZLIB libraries to latest stable version.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>March 13, 2013</H4>
 The Subversion repository used by Stella has been changed.  All developers
 will need to checkout again from trunk, or relocate their current directory
@@ -34,8 +123,6 @@ Stella release 3.8.1 for Linux, MacOS X and Windows is now available.
 
 <li>The OSX DMG archive now contains proper modification dates.</li>
 </ul>
-
--Have fun!
 
 
 <H4>February 23, 2013</H4>
