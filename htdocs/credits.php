@@ -241,6 +241,11 @@
     </tr>
 
     <tr>
+      <th>Daniel&nbsp;Delorme</th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>Joe&nbsp;Durnavich</th>
       <td>Donated a monetary contribution</td>
     </tr>
