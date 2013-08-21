@@ -62,6 +62,10 @@ feature that no other 2600 debugger has; it's <b>completely</b> cross-platform.<
 		including automatically loading symbol files if they're named
 		romname.sym</li>
 
+	<li>Support for DASM list files (created with DASM's -l option),
+		including automatically loading list files if they're named
+		romname.lst</li>
+
 	<li>Built-in VCS.H symbols, if no symbol file is loaded.</li>
 
 	<li>Symbolic names in disassembly.</li>
@@ -143,11 +147,12 @@ or right arrow keys cycles between tabs from right-to-left and left-to-right,
 respectively.  Pressing Tab cycles between widgets in the current tab (except
 for in the Prompt area, where 'tab' is used for something else).</p>
 
-<p>You can also enter the debugger at emulator startup by giving a breakpoint on the command line:
+<p>You can also enter the debugger at emulator startup by use the 'debug' command on the command line, or alternatively within the ROM launcher in 'Power-on options':
 <pre>
-  ; will enter the debugger the first time the instruction at "kernel" runs
-  stella -break kernel mygame.bin
+  ; will enter the debugger before any instructions run
+  stella -debug mygame.bin
 
+  ; alternatively, you can use 'break' to accomplish the same thing
   ; $fffc is the 6502/6507 init vector. This command will break and enter the
   ; debugger before the first 6507 instruction runs, so you can debug the
   ; startup code:
@@ -343,8 +348,7 @@ to change the meaning of an expression. The prefixes are:</p>
 		the section on "Startup").</p>
 
 		<p>Remember, you can use arbitrarily complex expressions with any
-		command that takes arguments (except the ones that take filenames,
-		like "loadsym").</p>
+		command that takes arguments.</p>
 	</li>
 </ul>
 
@@ -653,7 +657,6 @@ listfunctions - List user-defined functions
     listtraps - List traps
    loadconfig - Load Distella config file
     loadstate - Load emulator state xx (0-9)
-      loadsym - Load symbol file
             n - Negative Flag: set (0 or 1), or toggle (no arg)
            pc - Set Program Counter to address xx
          pgfx - Mark 'PGFX' range in disassembly
@@ -682,6 +685,7 @@ listfunctions - List user-defined functions
      trapread - Trap read access to address(es) xx [to yy]
     trapwrite - Trap write access to address(es) xx [to yy]
          type - Show disassembly type for address xx [to yy]
+         uhex - Toggle upper/lowercase HEX display
         undef - Undefine label xx (if defined)
             v - Overflow Flag: set (0 or 1), or toggle (no arg)
         watch - Print contents of address xx before every prompt
@@ -700,8 +704,7 @@ listfunctions - List user-defined functions
 <p><img src="graphics/debugger_tiatab.png"></p>
 
 <p>Most of the values on the TIA tab will be self-explanatory to a 2600
-programmer. The top line (with all the hex values) displays the raw
-values read from the TIA locations, as they would be seen by the CPU.<p>
+programmer.<p>
 
 <p>Many of the variables inside the TIA can only be written to by the
 6502.  The debugger lets you get inside the TIA and see the contents
@@ -799,13 +802,13 @@ as illustrated:</p>
 <p><img src="graphics/debugger_tiainfo.png"></p>
 <p>The indicators are as follows:</p>
 <ul>
-<li><b>Frame</b>: The current frame number, since this ROM was loaded or reset.</li>
-<li><b>F. Cyc</b>: The number of CPU cycles that have been executed this frame, since
+<li><b>Frame Count</b>: The current frame number, since this ROM was loaded or reset.</li>
+<li><b>Frame Cycle</b>: The number of CPU cycles that have been executed this frame, since
 VSYNC was cleared at scanline 0.</li>
 <li><b>Scanline</b>: The scanline that's currently being drawn. Scanline 0 is the one
 on which VSYNC is cleared (after being set for 3 scanlines, as per the Stella
 Programmer's Guide)</li>
-<li><b>S. Cyc</b>: The number of CPU cycles that have been executed since the beginning
+<li><b>Scan Cycle</b>: The number of CPU cycles that have been executed since the beginning
 of the current scanline.</li>
 <li><b>VSYNC &amp; VBLANK</b>: Self explanatory.</li>
 <li><b>Pixel Pos</b>: The current number of visible color clocks that have been displayed on
@@ -813,7 +816,7 @@ the current scanline, starting from the beginning of the Horizontal Blank period
 During HBLANK, this value will be negative (representing the number of clocks
 until the first visible one). Since there are 68 color clocks per HBLANK and
 160 visible clocks per scanline, the Pixel Position will range from -68 to 159.</li>
-<li><b>Color Clk</b>: The current number of total color clocks since the beginning of this
+<li><b>Color Clock</b>: The current number of total color clocks since the beginning of this
 scanline's HBLANK. This counter starts at zero, but otherwise displays the same
 information as the Pixel Position (so Color Clock will always be 68 more than Pixel
 Position, and will range from 0 to 228).</li>
