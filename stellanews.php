@@ -12,6 +12,34 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>August 31, 2013</H4>
+Stella release 3.9.2 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Improved parsing of the DASM lst file for the debugger disassembly;
+    it sometimes missed constant declarations.</li>
+
+<li>Changed 'usemouse' argument from a true/false option to accept
+    'always', 'analog' and 'never'.  This allows to use the mouse as a
+    controller under more specific circumstances.  The default is
+    'analog', which means the mouse is only used to emulate analog-like
+    devices (paddles, trackball, etc).</li>
+
+<li>Added ability to use bold fonts within the debugger window, which can
+    be set with the 'dbg.fontstyle' commandline argument as well as in the
+    debugger UI Settings dialog.  This is useful for those that find the
+    current font too narrow.</li>
+
+<li>Renamed 'debuggerres' argument to 'dbg.res'.  All future debugger-
+    specific options will start with 'dbg.'.</li>
+
+<li>The TIA 'zoom' area in the debugger now supports scrolling the
+    mouse wheel (currently up/down only, as I don't have a sideways
+    scrolling mouse to test with).</li>
+</ul>
+
+-Have fun!
+
+
 <H4>August 21, 2013</H4>
 Stella release 3.9.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -121,8 +149,6 @@ Stella release 3.9.1 for Linux, MacOS X and Windows is now available.
 
 <li>Updated included PNG library to latest stable version.</li>
 </ul>
-
--Have fun!
 
 
 <H4>June 27, 2013</H4>
