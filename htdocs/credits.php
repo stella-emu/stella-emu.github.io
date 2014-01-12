@@ -301,6 +301,11 @@
     </tr>
 
     <tr>
+      <th>Pitfall&nbsp;Harry</th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>Alex&nbsp;Herbert</th>
       <td>Provided much information on AtariVox and SaveKey functionality</td>
     </tr>
