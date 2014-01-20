@@ -12,6 +12,22 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>January 20, 2014</H4>
+Stella release 3.9.3 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added bankswitch schemes BF, BFSC, DF, DFSC and 4KSC, thanks to
+    RevEng and CPUWIZ of AtariAge.</li>
+
+<li>Updated ROM properties for several ROMs, thanks to Omegamatrix of
+    AtariAge.</li>
+
+<li>Fixed program crash when specifying a bankswitch type that Stella
+    didn't recognize; an error message is now displayed.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>August 31, 2013</H4>
 Stella release 3.9.2 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -36,8 +52,6 @@ Stella release 3.9.2 for Linux, MacOS X and Windows is now available.
     mouse wheel (currently up/down only, as I don't have a sideways
     scrolling mouse to test with).</li>
 </ul>
-
--Have fun!
 
 
 <H4>August 21, 2013</H4>
