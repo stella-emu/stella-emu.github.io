@@ -321,6 +321,16 @@
     </tr>
 
     <tr>
+      <th>Ryan&nbsp;M.&nbsp;Johnson</th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
+      <th>Erik&nbsp;Kovach</th>
+      <td>Author of the property file for release 0.7, 1.0, 1.1, and 1.2 of Stella</td>
+    </tr>
+
+    <tr>
       <th>Austin&nbsp;Mackert</th>
       <td>Donated a monetary contribution</td>
     </tr>
@@ -333,23 +343,6 @@
     <tr>
       <th>Donald Maley</th>
       <td>Donated a monetary contribution to help with CompuMate development</td>
-    </tr>
-
-    <tr>
-      <th>Nick&nbsp;Montfort and Ian&nbsp;Bogost<br>
-      (<a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=11696">Racing the Beam</a>)</th>
-      <td>Specifically mentioned Stella in their book</td>
-    </tr>
-
-    <tr>
-      <th>Kostas&nbsp;Nakos</th>
-      <td>Author/maintainer of the WinCE version of Stella from releases 2.0
-      to  2.3.5</td>
-    </tr>
-
-    <tr>
-      <th>Erik&nbsp;Kovach</th>
-      <td>Author of the property file for release 0.7, 1.0, 1.1, and 1.2 of Stella</td>
     </tr>
 
     <tr>
@@ -373,8 +366,20 @@
     </tr>
 
     <tr>
+      <th>Nick&nbsp;Montfort and Ian&nbsp;Bogost<br>
+      (<a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=11696">Racing the Beam</a>)</th>
+      <td>Specifically mentioned Stella in their book</td>
+    </tr>
+
+    <tr>
       <th>Dan&nbsp;Mowczan</th>
       <td>Provided a Supercharger to help with Stella's development</td>
+    </tr>
+
+    <tr>
+      <th>Kostas&nbsp;Nakos</th>
+      <td>Author/maintainer of the WinCE version of Stella from releases 2.0
+      to  2.3.5</td>
     </tr>
 
     <tr>
