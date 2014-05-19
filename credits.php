@@ -261,6 +261,11 @@
     </tr>
 
     <tr>
+      <th>Sascha&nbsp;Eversmann</th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>Renato&nbsp;Ferreira</th>
       <td>Provided code to support private colormaps under Unix</td>
     </tr>
