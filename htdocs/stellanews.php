@@ -12,6 +12,49 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>July xx, 2014</H4>
+Stella release 4.0 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Ported Stella to SDL2, which brings many new features.  Among the
+    largest improvements is native hardware acceleration support for
+    Windows (Direct3D) and Linux/OSX (OpenGL).  It is also now possible
+    to port Stella to iOS and Android devices using OpenGLES.
+    Hardware acceleration is now required, which means up-to-date drivers
+    are needed.  Software rendering is still present, but is somewhat
+    unoptimized and unsupported going forward.
+
+<li>Fullscreen video modes now use the desktop resolution.  Switching
+    to fullscreen and back to windowed mode no longer rearranges icons
+    on your desktop.
+
+<li>TIA TV effects are now available in all video modes, since hardware
+    acceleration is a requirement.
+
+<li>Added a much more detailed view of cart extended RAM to a new
+    debugger tab.  Special thanks to SpiceWare for this implementation.
+
+<li>Added preliminary support for 'DASH' bankswitching scheme by A. Davie.
+
+<li>The AtariVox and SaveKey controllers now have the ability in the
+    debugger to completely erase the virtual EEPROM data.
+
+<li>Added 'savesnap' debugger prompt command, and also associated
+    context menu item to the debugger TIA output area.  This saves the
+    current TIA image to a PNG file.
+
+<li>Added 'hidecursor' commandline option, which allows to completely
+    disable showing the mouse cursor (useful on systems that don't have
+    a mouse).
+
+<li>Removed 'uipalette' option, as the original palette is no longer
+    supported.
+
+<li>Updated included PNG library to latest stable version.
+</ul>
+
+-Have fun!
+
+
 <H4>January 20, 2014</H4>
 Stella release 3.9.3 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -24,8 +67,6 @@ Stella release 3.9.3 for Linux, MacOS X and Windows is now available.
 <li>Fixed program crash when specifying a bankswitch type that Stella
     didn't recognize; an error message is now displayed.</li>
 </ul>
-
--Have fun!
 
 
 <H4>August 31, 2013</H4>

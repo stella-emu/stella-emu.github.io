@@ -24,13 +24,10 @@ following is a description of how to do this for the three major platforms.
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs g++ (version 4.x), make and <a href="http://libsdl.org">SDL</a>
-  development libraries installed.  OpenGL, ZLib and PNG
-  libraries are optional.  For the latter two, Stella will use built-in versions if none
-  are installed system-wide, but OpenGL development libraries will need to be installed
-  if you want OpenGL rendering (which is <B>greatly</B> recommended).  All of these packages
-  are likely available through your distribution repository.  Consult your specific
-  distribution for an explanation of installing new packages.
+  <p>Stella needs g++ 4.x or Clang++, make and <a href="http://www.libsdl.org/download-2.0.php">SDL2</a>
+  development libraries installed.  ZLib and PNG libraries are optional; Stella will use built-in versions if none
+  are installed system-wide. These packages are likely available through your distribution repository.
+  Consult your specific distribution for an explanation of installing new packages.
   <p>Other packages may be needed depending on the distribution you use.  The best thing
   to do is try the compile, note any missing packages, and then install them through your
   distribution repository.
@@ -84,14 +81,9 @@ rpmbuild -ba stella.spec</div>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs Xcode 3 for compilation (preferrably the very latest version, 3.2.6).
-  Note that most newer systems from 10.7 onwards will have Xcode 4.x only.  Stella currently
-  isn't compatible with this new version.  However, Xcode 3 can be safely installed on these
-  newer systems; both versions will co-exist and not interfere with the other.  Work is
-  being done to convert Stella to Xcode 4.x, and will be accomplished sometime in 2013.
-  <p>You will also need the SDL development libraries, located at
-  <a href="http://www.libsdl.org/download-1.2.php">libsdl.org</a>.  You will need
-  to download <B>SDL-1.2.15.dmg</B> (or newer, if available).
+  <p>Stella needs Xcode 5 for compilation.  You will also need the SDL2 development libraries,
+  located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.  You will need
+  to download <B>SDL2-2.0.3.dmg</B> (or newer, if available).
   
   <br/>
 
@@ -115,22 +107,17 @@ rpmbuild -ba stella.spec</div>
 
   <li><p>Compiling the source code:
   <p><ol>
-    <li>There are two Xcode projects: one for Intel-only machines (10.6+) containing builds
-    for both 32 and 64-bit versions, and one for Universal Binary (10.4+) for Intel and PPC 
-    in 32-bit version only.  The former is located in <I>src/macosx/stella_intel.xcodeproj</I>, and
-    the latter in <I>src/macosx/stella.xcodeproj</I>.  Choose whichever suits your system.
+    <li>The Xcode project is located at <I>src/macosx/stella.xcodeproj</I> and is for 32/64-bit Intel-only
+    machines running 10.5 or greater.  There is currently no support for older OSX versions or for PPC builds.
     </li>
 
-    <li><p>Place the <I>SDL.framework</I> bundle (located in the <B>SDL-1.2.15.dmg</B> file
-    you downloaded earlier) into the <I>src/macosx</I> directory.
+    <li><p>Place the <I>SDL.framework</I> bundle (located in the <B>SDL2-2.0.3.dmg</B> file
+    you downloaded earlier) into the <I>/Library/Frameworks</I> directory.
     </li>
 
-    <li><p>Open the desired project file using Xcode 3.  You can open the build window by
-    pressing Shift-Cmd-b, and the console window by pressing Shift-Cmd-r.
-    </li>
+    <li><p>Open the project file using Xcode 5.</li>
 
-    <li><p>Build the project by pressing Cmd-b, and run by pressing Cmd-r.
-    </li>
+    <li><p>Build the project by pressing Cmd-b, and run by pressing Cmd-r.</li>
 
     <li><p><B>Optional:</B> creating a DMG for release:
     <p><div class="con">cd 'location of stella source code'/src/macosx
@@ -149,13 +136,9 @@ rpmbuild -ba stella.spec</div>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs Visual Studio C++ 2010/2012.  Main development is done using 2012
-  Professional, but the (free) Express versions are also known to work fine.
-  <p>You will also need the SDL development libraries, located at
-  <a href="http://www.libsdl.org/download-1.2.php">libsdl.org</a>.  Since Windows actually
-  needs parts of several different downloads, for your convenience all the required files
-  are available at <a href="http://minbar.org/SDL-windows.zip">SDL-windows.zip</a>.  The  
-  remainder of the instructions will assume you're using this download.
+  <p>Stella needs Visual Studio C++ 2012/2013.  Main development is done using 2013
+  Professional, but the (free) Express versions are also known to work fine.  You will also need
+  the SDL2 development libraries, located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.
   <p><B>Note:</B> It may be possible to build Stella using MinGW/Msys, but this appoach hasn't been
   supported since Stella version 3.0.  You're free to try this option, but it isn't supported,
   and I can't help with any problems you may encounter.  If you manage to get it working,
@@ -187,28 +170,31 @@ rpmbuild -ba stella.spec</div>
   <li><p>Compiling the source code:
   <p>Before compiling the code for the first time, Visual Studio must be set up as follows:
   <ol>
-    <li><p>Open the Visual Studio 2012 project, located in REPO_DIR\src\win32, as in the following:
+    <li><p>Open the Visual Studio 2013 project, located in REPO_DIR\src\windows, as in the following:
       <p><blockquote><img src="images/vs_open.png"/></blockquote>
-    <li><p>Unzip the <a href="http://minbar.org/SDL-windows.zip">SDL-windows.zip</a> you downloaded
-      above.
+    <li><p>Unzip the <B>SDL2-devel-2.0.3-VC.zip</B> file you downloaded above somewhere on your system.
+      Make note of where these files are located.
     <li><p>Go to "PROJECT -> Stella Properties" menu (or click Alt-F7); this will create a window
       as follows: <p><blockquote><img src="images/vs_props.png"/></blockquote>
     <li><p>Notice the bolded text <B>"C:\Users\stephen\Source\sdl\include"</B> and
-      <B>"C:\Users\stephen\Source\sdl\lib32"</B>?  You will need to add locations specific to your
+      <B>"C:\Users\stephen\Source\sdl\lib\x64"</B>?  You will need to add locations specific to your
       system which points to the SDL files.  These locations are to directories within the
-      SDL-windows.zip archive, which you unzipped earlier.
-    <li><p>For building and running the 32-bit version you need the path to point at lib32 in
-      <B>both</B> the <I>Debug</I> and <I>Release</I> versions.
-    <li><p>For building and running the 64-bit version you need the path to point at lib64 in
-      <B>both</B> the <I>Debug</I> and <I>Release</I> versions.
+      SDL2 zip archive, which you unzipped earlier.
+    <li><p>For building and running the 32-bit version you need the path to point at <B>lib\x86</B> in
+      <u>both</u> the <I>Debug</I> and <I>Release</I> versions.
+    <li><p>For building and running the 64-bit version you need the path to point at <B>lib\x64</B> in
+      <u>both</u> the <I>Debug</I> and <I>Release</I> versions.
     <li><p>Build the project; it should run to completion, perhaps with some warnings.
     <li><p>If you try to run at this point, it will probably complain that it can't find
-      SDL.dll.  Manually copy this file from SDL-windows.zip to one of the following locations:
+      SDL2.dll.  Manually copy this file from SDL2 zip archive to one of the following locations:
       <blockquote><pre>
-For the 32-bit version, you have to copy lib32/SDL.dll into the Release and Debug folders.
-For the 64-bit version, you have to copy lib64/SDL.dll into the x64\Release and x64\Debug folders.
-      </pre></blockquote>
-
+For the 32-bit version, you have to copy <B>lib\x86\SDL2.dll</B> into the <I>Release</I> and <I>Debug</I> folders.
+For the 64-bit version, you have to copy <B>lib\x64\SDL2.dll</B> into the <I>x64\Release</I> and <I>x64\Debug</I> folders.
+</pre></blockquote>
+    <li>You may also get an error that the libraries <B>msvcp120.dll</B> and/or <B>msvcr120.dll</B> are not available.
+      If so, you will need to download them from
+      <a href="http://www.microsoft.com/en-ca/download/details.aspx?id=40784">Visual C++ Redistributable Packages for Visual Studio 2013</a>
+    </li>
     </ol>
   </li>
 

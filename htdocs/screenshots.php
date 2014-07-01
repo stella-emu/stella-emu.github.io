@@ -27,7 +27,7 @@
 	</center>
 
 	<br>
-	<center><p><b><font size=+2>Emulation Snapshots (Blargg OpenGL Mode)</font></b></center>
+	<center><p><b><font size=+2>Emulation Snapshots (Blargg TV Effects)</font></b></center>
 	<center>
 		<table border="0" cellpadding="5">
 			<tr>

@@ -37,7 +37,7 @@ settings file, and restart the application.  The
 settings file is stored in different places depending on the operating system
 you're using:</p>
 <ul>
-  <li><b>Windows 2000/XP/Vista/7:</b>&nbsp;&nbsp;Open Windows Explorer and type
+  <li><b>Windows XP/Vista/7/8:</b>&nbsp;&nbsp;Open Windows Explorer and type
 '%appdata%\stella' into the address bar. This will bring you to
 the directory where Stella stores its settings.  Find and delete/rename
 the file named 'stella.ini'.</li>
@@ -195,52 +195,35 @@ type, which is much faster than navigating the UI.</p>
 <h3>When Stella exits from fullscreen mode, the icons or windows
 on my desktop are re-arranged.  Similarly, exiting from external
 'frontends' sometimes causes the display to be repositioned/shifted.</h3>
-<p>This problem occurs under the following conditions:</p>
-<ul>
-<li>you're using Windows (any version)</li>
-<li>you switch from fullscreen to windowed mode, or quit the application
-while in fullscreen mode</li>
-<li>the fullscreen resolution used for Stella is smaller than your
-desktop resolution</li>
-</ul>
-<p>This problem is caused by the version of SDL that Stella uses, and
-unfortunately cannot be fixed.  Newer versions of SDL no longer have
-this problem, and when a stable release is available, Stella will move
-to the newer version.  For now, there is a workaround:</p>
-<ul>
-<li>turn on OpenGL rendering</li>
-<li>set Stella's fullscreen resolution to match your desktop resolution</li>
-<li>make sure that the emulation output is stretched to fill the screen
-(using the 'GL FS Stretch' option)</li>
-</ul>
-<p>Following these steps will fix the icon/window/frontend shifting, and
-also eliminate black borders around the emulation video output.</p>
+<p>This problem has been fixed in version 4.0, which uses SDL2 behind the
+scenes.  Stella will now use the desktop resolution when switching to
+fullscreen mode, so a video mode change never actually happens.</p>
 
 <br>
 
 <h3>What options should I use to get the most authentic emulation
 possible?</h3>
-<p>In my experience, using OpenGL rendering mode with vertical sync
+<p>In my experience, using Direct3D/OpenGL rendering mode with vertical sync
 enabled will result in smooth graphical performance.  Of course, this
 is only true if your system supports vertical sync, and in general is
 only useful on monitors with a 60Hz refresh rate (all current LCDs).
 Also, it looks much more authentic to use square rather than rectangular
 pixels.  Of course, you can't change the pixel size on your monitor, but
-you can simulate it with 'GL aspect ratio'.  I find a setting of 87-89
+you can simulate it with 'TIA aspect ratio'.  I find a setting of 87-89
 for NTSC mode looks the best.  Finally, there are some
 <a href="http://slack.net/~ant/libs/ntsc.html">Blargg TV effects</a>
 that you might find interesting.  Overall, to get more authentic looking
-emulation video-wise, you need to use OpenGL mode.  If your computer
-doesn't properly support OpenGL, consider upgrading your video card
-to one that does :)</p>
+emulation video-wise, you need to use a hardware-accelerated video mode
+(Direct3D/OpenGL/ES). If your video card doesn't properly support hardware
+acceleration, consider upgrading it to one that does :)</p>
 <p>In terms of sound, try setting the fragment size as small as possible
 while not introducing any distortion.  The smaller the size, the more
 accurate the audio 'resolution'.</p>
 <p>In terms of controllers, consider using actual 2600 controllers.
-Several options exist, such as the <a href="http://www.stelladaptor.com">
+Several options exist, such as the <a href="http://www.grandideastudio.com/portfolio/stelladaptor-2600">
 Stelladaptor</a>, <a href="http://www.2600-daptor.com">
-2600-daptor</a>, <a href="http://spawnlinux.dyndns.org/Bliss-Box">Bliss-box</a>
-or <a href="http://www.legacyengineer.com/storefront">USB joysticks</a>.</p>
+2600-daptor</a>, <a href="http://bliss-box.net/Bliss-Box">Bliss-Box</a>
+or <a href="http://www.syzygycompany.com/store">USB joysticks</a>.</p>
 
 
 <!---------------------------------------------------------------->
