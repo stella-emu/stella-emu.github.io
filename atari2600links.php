@@ -26,10 +26,6 @@
 		including ROMs, snapshots and instructions, user guides, and more</td>
 </tr>
 
-<tr>
-	<td BGCOLOR="#CCCCCC"><a href="http://jstella.sourceforge.net">JStella</a></td>
-	<td BGCOLOR="#FFCC99">A Java port of Stella which can be run in a web page</td>
-</tr>
 <!--
 <tr>
 	<td BGCOLOR="#CCCCCC"><a href="http://www.tripoint.org/kevtris/misc/texts.html">Kevin&nbsp;Horton's documents</a></td>

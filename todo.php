@@ -21,14 +21,6 @@
       <ul>
         <li>Fix final remaining bugs in the TIA emulation.</li>
 
-        <li>Convert code to SDL-1.3/2.0.  The next major revision of SDL hasn't
-        been released yet, but I'm already in the process of working with
-        beta versions.  The main reason for this change is to have hardware-
-        accelerated Direct3D support in Windows (which currently uses
-        OpenGL, and isn't as fast as it is on other systems).  As well, I'll
-        no longer have to maintain separate software and OpenGL renderers
-        within Stella; SDL will handle it all behind the scenes.</li>
-
         <li>Improve Blargg TV filters.  In particular, implement better 'phosphor'
         emulation and integrate with Blargg filtering.</li>
 
