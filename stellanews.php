@@ -12,7 +12,7 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
-<H4>July xx, 2014</H4>
+<H4>July 1, 2014</H4>
 Stella release 4.0 for Linux, MacOS X and Windows is now available.
 <ul>
 <li>Ported Stella to SDL2, which brings many new features.  Among the
