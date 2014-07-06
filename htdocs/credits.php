@@ -155,7 +155,7 @@
       <th>Albert&nbsp;Yarusso<br>
       (<a href="http://atariage.com">http://atariage.com</a>)</th>
       <td>Provided helpful feedback for the MacOSX port, and generously
-        donated an AtariVox device to help with development</td>
+        donated hardware and monetary contributions over the years.</td>
     </tr>
 
     <tr>
@@ -385,6 +385,11 @@
       <th>Kostas&nbsp;Nakos</th>
       <td>Author/maintainer of the WinCE version of Stella from releases 2.0
       to  2.3.5</td>
+    </tr>
+
+    <tr>
+      <th>Eric Nikolaisen</th>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
