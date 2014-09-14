@@ -12,6 +12,20 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>September 14, 2014</H4>
+Stella release 4.1.1 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Re-added 'uipalette' option due to popular demand (of at least one
+    person :)).</li>
+
+<li>Fixed bug in Windows port where pressing 'Alt' key combos resulted in
+    an annoying system beep.  Currently this is fixed by patching the SDL2
+    library and including a modified version with Stella.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>September 1, 2014</H4>
 Stella release 4.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -40,8 +54,6 @@ Stella release 4.1 for Linux, MacOS X and Windows is now available.
 <li>The UNIX configure script now supports newer versions of Hurd.
     Special thanks to Stephen Kitt for the patch.</li>
 </ul>
-
--Have fun!
 
 
 <H4>July 1, 2014</H4>
