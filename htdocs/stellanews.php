@@ -12,6 +12,41 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>October 28, 2014</H4>
+Stella release 4.2 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Text input from non-US keyboard layouts is now supported.  Note that
+    all text in Stella is still ASCII-only, but at least it can now be
+    entered using a native layout.</li>
+
+<li>Related to the text input changes, the debugger Alt-combo shortcuts
+    have been changed; they now use the same key but with Control instead
+    of Alt (Control-F for frame advance, etc).</li>
+
+<li>Controllers are now detected dynamically by Stella.  This means that
+    you can plug/unplug joysticks/paddles/etc while Stella is running,
+    and they will be added and removed automatically.  Also fixed is
+    a bug whereby sometimes custom joystick mappings weren't being saved.</li>
+
+<li>The 'cpurandom' option is now broken down by register type, so you
+    can selectively enable/disable randomization for each one.  The
+    default is to disable randomization for all registers.</li>
+
+<li>Fixed 'MDM' scheme to trigger bankswitching on writes to hotspots
+    (previously it only triggered on reads).  Also, the scheme has been
+    modified as originally designed by E. Blink; hotspots are now in the
+    range $800-$BFF instead of $800-$FFF.</li>
+
+<li>The OSX app-icon now includes 32x32 and 16x16 versions, so 'small'
+    icons will be viewable in 'Finder', 'Get Info', etc.</li>
+
+<li>The Linux port now uses an app-icon; this seems to be needed for
+    some window managers.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>September 14, 2014</H4>
 Stella release 4.1.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -22,8 +57,6 @@ Stella release 4.1.1 for Linux, MacOS X and Windows is now available.
     an annoying system beep.  Currently this is fixed by patching the SDL2
     library and including a modified version with Stella.</li>
 </ul>
-
--Have fun!
 
 
 <H4>September 1, 2014</H4>
