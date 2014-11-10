@@ -24,7 +24,7 @@ following is a description of how to do this for the three major platforms.
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs g++ 4.x or Clang++, make and <a href="http://www.libsdl.org/download-2.0.php">SDL2</a>
+  <p>Stella needs g++ 4.7 or Clang++ 3.3 (with up-to-date C++11 support), make and <a href="http://www.libsdl.org/download-2.0.php">SDL2</a>
   development libraries installed.  ZLib and PNG libraries are optional; Stella will use built-in versions if none
   are installed system-wide. These packages are likely available through your distribution repository.
   Consult your specific distribution for an explanation of installing new packages.
@@ -81,7 +81,7 @@ rpmbuild -ba stella.spec</div>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs Xcode 5 for compilation.  You will also need the SDL2 development libraries,
+  <p>Stella needs Xcode 5/6 for compilation.  You will also need the SDL2 development libraries,
   located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.  You will need
   to download <B>SDL2-2.0.3.dmg</B> (or newer, if available).
   
@@ -107,15 +107,15 @@ rpmbuild -ba stella.spec</div>
 
   <li><p>Compiling the source code:
   <p><ol>
-    <li>The Xcode project is located at <I>src/macosx/stella.xcodeproj</I> and is for 32/64-bit Intel-only
-    machines running 10.5 or greater.  There is currently no support for older OSX versions or for PPC builds.
+    <li>The Xcode project is located at <I>src/macosx/stella.xcodeproj</I> and is for 64-bit Intel-only
+    machines running 10.7 or greater.  There is currently no support for older OSX versions or for PPC builds.
     </li>
 
     <li><p>Place the <I>SDL.framework</I> bundle (located in the <B>SDL2-2.0.3.dmg</B> file
     you downloaded earlier) into the <I>/Library/Frameworks</I> directory.
     </li>
 
-    <li><p>Open the project file using Xcode 5.</li>
+    <li><p>Open the project file using Xcode 5/6.</li>
 
     <li><p>Build the project by pressing Cmd-b, and run by pressing Cmd-r.</li>
 
@@ -132,11 +132,11 @@ rpmbuild -ba stella.spec</div>
 </ol>
 
 <br/>
-<h3><u>Windows XP/Vista/7/8</u></h3>
+<h3><u>Windows XP_SP3/Vista/7/8</u></h3>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs Visual Studio C++ 2012/2013.  Main development is done using 2013
+  <p>Stella needs Visual Studio C++ 2013.  Main development is done using 2013
   Professional, but the (free) Express versions are also known to work fine.  You will also need
   the SDL2 development libraries, located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.
   <p><B>Note:</B> It may be possible to build Stella using MinGW/Msys, but this appoach hasn't been

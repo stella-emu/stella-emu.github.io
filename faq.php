@@ -37,7 +37,7 @@ settings file, and restart the application.  The
 settings file is stored in different places depending on the operating system
 you're using:</p>
 <ul>
-  <li><b>Windows XP/Vista/7/8:</b>&nbsp;&nbsp;Open Windows Explorer and type
+  <li><b>Windows XP_SP3/Vista/7/8:</b>&nbsp;&nbsp;Open Windows Explorer and type
 '%appdata%\stella' into the address bar. This will bring you to
 the directory where Stella stores its settings.  Find and delete/rename
 the file named 'stella.ini'.</li>
