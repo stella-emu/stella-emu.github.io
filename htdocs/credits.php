@@ -426,6 +426,11 @@
     </tr>
 
     <tr>
+      <th>David&nbsp;Racette-Campbell </th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>Brent&nbsp;Robbins (aka&nbsp;'Schizophretard')</th>
       <td>Donated a <I>very</I> generous monetary contribution :)</td>
     </tr>
