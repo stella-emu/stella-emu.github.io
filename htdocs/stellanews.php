@@ -12,6 +12,48 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>January 1, 2015</H4>
+Stella release 4.5 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>The conversion to C++11 has begun :)  From this point on, to build
+    Stella you will need a C++11 compatible compiler (Visual Studio 2013,
+    Clang 3.3, gcc 4.9, Xcode 6, etc).  Eventually, this will bring more
+    bug-free and (hopefully) faster code.</li>
+
+<li>Fixed major bug with joysticks, where mapping was being lost on reset,
+    the app would crash when plugging/unplugging certain sticks, etc.</li>
+
+<li>Added dialog which shows the internal joystick database (all the
+    joysticks that Stella knows about) and the ability to remove
+    (currently unplugged) joysticks from this database.</li>
+
+<li>Added preliminary support for 'WD' (Wickstead Design) bankswitching
+    scheme.</li>
+
+<li>The debugger 'reset' command now does a complete system reset,
+    instead of simply setting the PC to the reset vector address.</li>
+
+<li>The 'listdelay' command now accepts a value of zero, indicating that
+    list-skipping (jumping to a line in a list by keypress) is disabled.</li>
+
+<li>The 'ctrlcombo' command now has a GUI item, allowing it to be changed
+    from within the application.</li>
+
+<li>Added 'Shift-Alt/Shift-Cmd s' keyboard shortcut, to enable continuous
+    snapshot mode for each frame.  This is really only useful if you
+    save snapshots in 1x mode; using it in high-resolution mode is
+    not recommended.  Special thanks to SvOlli for the idea and code.</li>
+
+<li>The minimum supported version for the OSX port is now OSX 10.7.
+    Because of this, the 32-bit version is also discontinued, as 10.7
+    supports 64-bit Intel only apps.</li>
+
+<li>Updated included PNG library to latest stable version.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>October 28, 2014</H4>
 Stella release 4.2 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -43,8 +85,6 @@ Stella release 4.2 for Linux, MacOS X and Windows is now available.
 <li>The Linux port now uses an app-icon; this seems to be needed for
     some window managers.</li>
 </ul>
-
--Have fun!
 
 
 <H4>September 14, 2014</H4>
