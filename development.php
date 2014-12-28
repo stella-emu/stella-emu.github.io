@@ -24,7 +24,7 @@ following is a description of how to do this for the three major platforms.
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs g++ 4.7 or Clang++ 3.3 (with up-to-date C++11 support), make and <a href="http://www.libsdl.org/download-2.0.php">SDL2</a>
+  <p>Stella needs g++ 4.9 or Clang++ 3.3 (with up-to-date C++11 support), make and <a href="http://www.libsdl.org/download-2.0.php">SDL2</a>
   development libraries installed.  ZLib and PNG libraries are optional; Stella will use built-in versions if none
   are installed system-wide. These packages are likely available through your distribution repository.
   Consult your specific distribution for an explanation of installing new packages.

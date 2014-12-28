@@ -404,6 +404,11 @@
     </tr>
 
     <tr>
+      <th>Chris&nbsp;Papademetrious</th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>John&nbsp;Payson</th>
       <td>Provided EEPROM emulation code for AtariVox and SaveKey support</td>
     </tr>
