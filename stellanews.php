@@ -23,12 +23,18 @@ Stella release 4.5 for Linux, MacOS X and Windows is now available.
 <li>Fixed major bug with joysticks, where mapping was being lost on reset,
     the app would crash when plugging/unplugging certain sticks, etc.</li>
 
+<li>Fixed major (but rare) crash that could occur when state files were
+    zero'ed or corrupted.</li>
+
 <li>Added dialog which shows the internal joystick database (all the
     joysticks that Stella knows about) and the ability to remove
     (currently unplugged) joysticks from this database.</li>
 
 <li>Added preliminary support for 'WD' (Wickstead Design) bankswitching
-    scheme.</li>
+    scheme, used for a previously unreleased prototype ROM.</li>
+
+<li>Improved ZIP file handling, so that it now works as a normal
+    filesystem does (it properly shows nested files and directories).</li>
 
 <li>The debugger 'reset' command now does a complete system reset,
     instead of simply setting the PC to the reset vector address.</li>
