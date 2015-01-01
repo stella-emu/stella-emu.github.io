@@ -75,7 +75,7 @@
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-snapshots-20130626.zip?download">stella-snapshots-20130626.zip</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-snapshots-20150101.zip?download">stella-snapshots-20150101.zip</a></td>
 		<td BGCOLOR="#FFCC99">Snapshot files for use in ROM launcher/ROM Info Viewer</td>
 	</tr>
 

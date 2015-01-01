@@ -54,7 +54,11 @@ Stella release 4.5 for Linux, MacOS X and Windows is now available.
     Because of this, the 32-bit version is also discontinued, as 10.7
     supports 64-bit Intel only apps.</li>
 
-<li>Updated included PNG library to latest stable version.</li>
+<li>Updated internal ROM properties database to ROM-Hunter version 10
+    (thanks go to RomHunter for his tireless research in this area).
+    Related to this, updated the snapshot collection.</li>
+
+<li>Updated included PNG library to latest stable version.
 </ul>
 
 -Have fun!
