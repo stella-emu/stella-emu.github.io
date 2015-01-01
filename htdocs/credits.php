@@ -93,7 +93,8 @@
       <th>Tom&nbsp;Hafner<br>
       (<a href="http://2600-daptor.com">http://2600-daptor.com</a>)</th>
       <td>Generously donated a 2600-daptor, 2600-daptor II and BoosterGrip controllers,
-      as well as sample code to help with development.</td>
+      as well as sample code to help with development.  Also donated a <b>very</b> generous monetary
+      contribution.</td>
     </tr>
 
     <tr>
