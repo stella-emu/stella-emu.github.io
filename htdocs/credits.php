@@ -389,7 +389,12 @@
     </tr>
 
     <tr>
-      <th>Eric Nikolaisen</th>
+      <th>Matt&nbsp;Nicholson</th>
+      <td>Donated several 2600 CIB games and Atari 800 items</td>
+    </tr>
+
+    <tr>
+      <th>Eric&nbsp;Nikolaisen</th>
       <td>Donated a monetary contribution</td>
     </tr>
 
