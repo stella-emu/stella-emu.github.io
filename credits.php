@@ -362,6 +362,11 @@
     </tr>
 
     <tr>
+      <th>Cam&nbsp;McCormack</th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>David&nbsp;McEwen</th>
       <td>Author of the Acorn version of Stella</td>
     </tr>
@@ -519,6 +524,11 @@
     <tr>
       <th>Matthew&nbsp;Stroup</th>
       <td>Author of the Amiga version of Stella</td>
+    </tr>
+
+    <tr>
+      <th>Richard&nbsp;Summers</th>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
