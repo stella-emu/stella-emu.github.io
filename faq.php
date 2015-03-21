@@ -16,7 +16,7 @@
 seem to keep popping up on the support lists and on the AtariAge
 forums (in no particular order):</p>
 
-<h3>The are some graphical bugs in a game I'm playing, or the emulation seems to
+<h3>There are some graphical bugs in a game I'm playing, or the emulation seems to
 be inaccurate in some way.</h3>
 <p>The answer to this one should be obvious, but surprisingly enough, it isn't.
 If you think you've found a bug in the application, <b>let us know about it</b>.
@@ -28,6 +28,15 @@ in mind that reporting the bug doesn't guarantee an immediate fix; there
 may be other issues that need to be fixed first.  But we can guarantee what
 will happen if you don't report a bug, and the developer never finds out
 about it - nothing.</p>
+
+<br>
+
+<h3>In some games, the image seems to be off-center, usually pushed to the right.</h3>
+<p>Most (all?) of the time, this is caused by accurate emulation of the video processor
+in a real console.  In other words, the same thing would happen on a real TV.  Since
+Stella is all about emulating a real console as closely as possible, this is not a bug, 
+and won't be 'fixed'.  Technically, it is known as <I>HMOVE blanking</I>, the specifics
+of which you can find documented in the <a href="http://www.alienbill.com/2600/101/docs/stella.html">Stella&nbsp;Programmer's&nbsp;Guide</a>.</p>
 
 <br>
 

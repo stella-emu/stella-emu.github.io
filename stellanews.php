@@ -12,6 +12,45 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>March 21, 2015</H4>
+Stella release 4.6 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Finally fixed fullscreen rendering issues on some OpenGL
+    implementations in Linux (mostly Intel-specific).  Basically, the
+    concept of 'dirty updates' has been removed; the window is now
+    updated continuously.  This may also fix issues some people were
+    having with triple-buffering in Windows Direct3D, etc.</li>
+
+<li>Fixed sound corruption that happened when running a ROM for the
+    first time.  This was most obvious under OSX, but occasionally
+    happened on other systems too.</li>
+
+<li>Reverted some minor C++11 features (std::regex and cbegin/cend
+    iterators) in a few places, since otherwise GCC 4.9 is required to
+    compile Stella, and it isn't available on many systems yet.  These
+    changes allow Stella to be built with GCC 4.8, which is present in
+    the latest 'long term release' of Ubuntu.</li>
+
+<li>Fixed error messages on state loading; sometimes multiple messages
+    were being added together and displayed.</li>
+
+<li>Fixed bug when running ROMs using AtariVox controllers; the app would
+    crash upon exiting the ROM.</li>
+
+<li>Snapshot functionality now works while the emulation is paused.</li>
+
+<li>Certain textfields in the UI now have filtering enabled, preventing
+    insertion of illegal characters.  This will be extended throughout
+    the code in future releases.</li>
+
+<li>DataGridWidgets in the debugger now respond to keypad '+' and '-'.</li>
+
+<li>Updated included PNG library to latest stable version.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>January 1, 2015</H4>
 Stella release 4.5 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -60,8 +99,6 @@ Stella release 4.5 for Linux, MacOS X and Windows is now available.
 
 <li>Updated included PNG library to latest stable version.
 </ul>
-
--Have fun!
 
 
 <H4>October 28, 2014</H4>

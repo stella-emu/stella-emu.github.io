@@ -1,5 +1,5 @@
-<hr><p>Copyright &copy; 1996-<?php echo date("Y"); ?> 
+<hr><p>Copyright &copy; 1995-<?php echo date("Y"); ?> 
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>, 
 <a href="http://minbar.org">Stephen Anthony</a> and 
 <a href="theteam.php">The Stella Team</a>
-<br/>	Site Updated March 15, 2015</p>
+<br/>	Site Updated March 21, 2015</p>
