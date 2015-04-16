@@ -109,7 +109,8 @@
 
     <tr>
       <th>Andrew&nbsp;Kator<br>(<a href="http://www.katorlegaz.com">http://www.katorlegaz.com</a>)</th>
-      <td>Provided PHP and CSS code for a major update to the Stella website.</td>
+      <td>Provided PHP and CSS code for a major update to the Stella website, as well
+      as a monetary contribution.</td>
     </tr>
 
     <tr>
@@ -319,6 +320,11 @@
     <tr>
       <th>Alex&nbsp;Herbert</th>
       <td>Provided much information on AtariVox and SaveKey functionality</td>
+    </tr>
+
+    <tr>
+      <th>Michael&nbsp;Hewitt</th>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
