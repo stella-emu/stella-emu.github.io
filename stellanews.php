@@ -12,6 +12,18 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>April 22, 2015</H4>
+Stella release 4.6.1 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Fixed bug whereby text input could not be entered in certain widgets
+    in the debugger.</li>
+
+<li>Updated UNIX configure script to work with GCC 5.x compilers.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>March 21, 2015</H4>
 Stella release 4.6 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -47,8 +59,6 @@ Stella release 4.6 for Linux, MacOS X and Windows is now available.
 
 <li>Updated included PNG library to latest stable version.</li>
 </ul>
-
--Have fun!
 
 
 <H4>January 1, 2015</H4>
