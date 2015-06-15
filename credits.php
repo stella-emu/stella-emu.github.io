@@ -333,6 +333,11 @@
     </tr>
 
     <tr>
+      <th>Michael&nbsp;Jo</th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>Ryan&nbsp;M.&nbsp;Johnson</th>
       <td>Donated a monetary contribution</td>
     </tr>
