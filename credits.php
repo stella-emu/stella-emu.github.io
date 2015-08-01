@@ -124,6 +124,10 @@
       <td>Generously donated Atari PAL-M console to help in testing ROMs on a real system.</td>
     </tr>
 
+    <tr>
+      <th>minimoose</th>
+      <td>Donated a <B>very</B> generous monetary contribution.  Thanks for the support!</td>
+    </tr>
 
     <tr>
       <th>Fred X. Quimby (aka 'batari')<br>(<a href="http://bataribasic.com/">Batari Basic</a>)</th>
@@ -464,6 +468,11 @@
 
     <tr>
       <th>[APG]&nbsp;RoboCop</th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
+      <th>Jasen&nbsp;Rogers</th>
       <td>Donated a monetary contribution</td>
     </tr>
 
