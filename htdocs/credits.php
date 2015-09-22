@@ -268,7 +268,7 @@
 
     <tr>
       <th>Sascha&nbsp;Eversmann</th>
-      <td>Donated a monetary contribution</td>
+      <td>Donated several monetary contributions</td>
     </tr>
 
     <tr>
@@ -369,6 +369,11 @@
     <tr>
       <th>Daniel&nbsp;Marks</th>
       <td>Provided improved keyboard joystick support for Stella release 0.1</td>
+    </tr>
+
+    <tr>
+      <th>Ralf&nbsp;Matz</th>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
