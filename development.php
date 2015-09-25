@@ -132,7 +132,7 @@ rpmbuild -ba stella.spec</div>
 </ol>
 
 <br/>
-<h3><u>Windows XP_SP3/Vista/7/8</u></h3>
+<h3><u>Windows XP_SP3/Vista/7/8/10</u></h3>
 <ol>
 
   <li><p>Getting the required tools:

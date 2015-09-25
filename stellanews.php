@@ -12,6 +12,50 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>September 26, 2015</H4>
+Stella release 4.6.5 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added mappable events for toggling TV color/BW, left difficulty A/B
+    and right difficulty A/B.  This means that one key, joystick button,
+    etc. can be used to toggle each event.  Thanks to Buzbard of AtariAge
+    for the suggestion.</li>
+
+<li>Added ability to edit values in more widgets in the debugger.  For
+    now, this applies mainly to the various decimal and binary fields.
+    More widgets will be made editable in future releases.</li>
+
+<li>The TIA now emulates the jitter that occurs when scanline counts
+    are not consistent frame-over-frame.  Also, the DPC+ scheme now
+    emulates jitter that can occur when using its Fractional Datafetchers
+    if the DFxFRACINC registers are not re-initialized every frame.
+    Special thanks to SpiceWare for this implementation.</li>
+
+<li>Tweaked 'MDM' scheme autodetection to detect that the identification
+    string can be in either bank 0 or bank 1.</li>
+
+<li>Changed 'hidecursor' commandline argument (and associated UI item) to
+    'cursor'.  The new argument allows to set mouse cursor visibility
+    separately for both UI and emulation modes.</li>
+
+<li>Fixed snapshot bug most noticeable in MacOSX, where taking a snapshot
+    of a TIA image sometimes left parts of the UI onscreen (and in the
+    resulting picture).</li>
+
+<li>Fixed memory leak; the game console wasn't being closed after exiting
+    a ROM.</li>
+
+<li>For the Windows port: added an application icon for Stella in the
+    Control Panel "Add/Remove Programs" list.</li>
+
+<li>For the OSX port: Updated build scripts to be compatible with Xcode 7.</li>
+
+<li>Updated included PNG library to latest stable version.</li>
+
+</ul>
+
+-Have fun!
+
+
 <H4>April 22, 2015</H4>
 Stella release 4.6.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -20,8 +64,6 @@ Stella release 4.6.1 for Linux, MacOS X and Windows is now available.
 
 <li>Updated UNIX configure script to work with GCC 5.x compilers.</li>
 </ul>
-
--Have fun!
 
 
 <H4>March 21, 2015</H4>
