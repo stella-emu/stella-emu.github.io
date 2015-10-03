@@ -293,6 +293,11 @@
     </tr>
 
     <tr>
+      <th>David&nbsp;Gratt</th>
+      <td>Donated a generous monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>Mark&nbsp;Grebe<br>
       (<a href="http://www.atarimac.com">http://www.atarimac.com</a>)</th>
       <td>Author of the Macintosh OSX version of Stella from releases
