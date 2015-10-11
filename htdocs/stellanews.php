@@ -12,6 +12,20 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>October 11, 2015</H4>
+Stella release 4.6.6 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added 'Alt/Cmd + j' shortcut key and 'tv.jitter' commandline argument
+    to toggle the TV scanline jittering emulation added in the last
+    release.  Also, this jittering now defaults to off.</li>
+
+<li>Fixed bug in 'MDM' bankswitch scheme; bankswitching wasn't being
+    done under certain circumstances.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>September 26, 2015</H4>
 Stella release 4.6.5 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -52,8 +66,6 @@ Stella release 4.6.5 for Linux, MacOS X and Windows is now available.
 <li>Updated included PNG library to latest stable version.</li>
 
 </ul>
-
--Have fun!
 
 
 <H4>April 22, 2015</H4>
