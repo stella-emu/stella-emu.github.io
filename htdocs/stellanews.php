@@ -12,6 +12,18 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>October 28, 2015</H4>
+Stella release 4.6.7 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Fixed bug when using real paddles plugged into a Stelladaptor
+    2600-daptor device; the movement was very erratic.</li>
+
+<li>Fixed small logic error in 'MDM' bankswitching scheme.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>October 11, 2015</H4>
 Stella release 4.6.6 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -22,8 +34,6 @@ Stella release 4.6.6 for Linux, MacOS X and Windows is now available.
 <li>Fixed bug in 'MDM' bankswitch scheme; bankswitching wasn't being
     done under certain circumstances.</li>
 </ul>
-
--Have fun!
 
 
 <H4>September 26, 2015</H4>
