@@ -12,6 +12,51 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>January 25, 2016</H4>
+Stella release 4.7 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Improved paddle emulation in several ways:
+  <ul>
+  <li>Added ability to specify the maximum range of movement for paddles
+      when using a mouse or digital device to emulate the paddle.  This is
+      useful since on a real console most paddle games use very little of
+      the paddle range, and could result in moving the mouse onscreen with
+      nothing appearing to happen (when in effect it was as if you turned
+      a real paddle all the way to the end of the range).  This eliminates
+      issues in (for example) Kaboom, where there was a huge 'deadzone'
+      when moving to the left.  All applicable ROMS in the internal
+      database have been updated.</li>
+
+  <li>The range for paddle emulation now takes an integer from 1 - 20,
+      indicating how much to scale movement (ie, how fast the onscreen
+      paddle will move when you move the mouse).  The movement itself
+      is now also smoother than before.</li>
+  </ul></li>
+
+<li>Fixed bug in 'Score mode' in TIA emulation; the TIA object colours
+    were correct, but the associated priority was sometimes incorrect.</li>
+
+<li>Fixed bug in ROM launcher; selecting 'Options -> Game Properties' after
+    loading a ROM would always point to the last opened ROM, not to the one
+    currently selected.</li>
+
+<li>Fixed bug in storing ROM properties; in some cases, a copy of the
+    ROM properties was being stored in the external file when it was
+    exactly the same as the internal entry.</li>
+
+<li>Added 'CV+' bankswitching scheme, developed by myself and LS_Dracon
+    (of AtariAge).  This scheme contains RAM like the CV scheme, and
+    also switchable 2K ROM segments by writing to $3D.</li>
+
+<li>Added more C++11 updates all over the codebase, and ran Stella
+    through Coverity for the first time.  I'm proud to say that Stella
+    now has a 0.00 defect rate!</li>
+
+</ul>
+
+-Have fun!
+
+
 <H4>October 28, 2015</H4>
 Stella release 4.6.7 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -20,8 +65,6 @@ Stella release 4.6.7 for Linux, MacOS X and Windows is now available.
 
 <li>Fixed small logic error in 'MDM' bankswitching scheme.</li>
 </ul>
-
--Have fun!
 
 
 <H4>October 11, 2015</H4>
