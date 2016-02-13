@@ -12,6 +12,39 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>February 13, 2016</H4>
+Stella release 4.7.1 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Improved TV 'jitter' emulation; the recovery time can now be spread
+    over multiple frame, to simulate a real TV taking multiple frames to
+    recover.  Related to this, added new commandline argument
+    'tv.jitter_recovery' to set the recovery time.  Finally, enabling
+    the jitter effect and the recovery time are now accessible through
+    the UI.  Special thanks to SpiceWare of AtariAge for the initial idea
+    and implementation.</li>
+
+<li>Fixed bug with 'Medieval Mayhem' ROMs; the paddle range was set too
+    low, and as a result the number of players couldn't be selected.</li>
+
+<li>Fixed bug when using more than two input controllers with the same
+    name; each controller after the second one was named the same as the
+    second one.  This caused the joystick mappings to be lost, since there
+    was only information about two controllers being saved.</li>
+
+<li>Indirectly fixed issues with Stelladaptor/2600-daptor devices and
+    paddles having too large of a deadzone in Linux.  Currently, this
+    involves running an external application to set the deadzone,
+    since SDL2 does not yet expose this information.  The program is
+    called 'evdev-joystick', and will be released separately from Stella.</li>
+
+<li>Updated internal ROM properties database to ROM-Hunter version 11
+    (thanks go to RomHunter for his tireless research in this area).
+    Related to this, updated the snapshot collection.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>January 25, 2016</H4>
 Stella release 4.7 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -51,10 +84,7 @@ Stella release 4.7 for Linux, MacOS X and Windows is now available.
 <li>Added more C++11 updates all over the codebase, and ran Stella
     through Coverity for the first time.  I'm proud to say that Stella
     now has a 0.00 defect rate!</li>
-
 </ul>
-
--Have fun!
 
 
 <H4>October 28, 2015</H4>

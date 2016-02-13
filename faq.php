@@ -159,6 +159,16 @@ and is beyond the scope of this FAQ.</p>
 
 <br>
 
+<h3>There seems to be a 'deadzone' when using a Stelladaptor/2600-daptor(II) and
+real paddles in certain games when using Stella in Linux.</h3>
+<p>This problem is caused by SDL2 using 'evdev' joysticks by default, but not
+having the ability to actually change the deadzone.  An external application
+has been developed, located at <a href="http://prdownloads.sourceforge.net/stella/evdev-joystick.tar.xz?download">evdev-joystick.tar.xz</a>,
+which will let you set the deadzone to 0 and have smoother paddle movement.
+Download this application, decompress it, and follow the included instructions.</p>
+
+<br>
+
 <h3>I'm experiencing sound issues, and the emulation doesn't sound authentic
 compared to a real system.</h3>
 <p>Always make sure you try setting the sound 'fragment size' to 512 bytes
