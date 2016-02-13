@@ -60,7 +60,7 @@
 	</tr>
 
 	<tr>
-		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-4.7.1-src.tar.gz?download">stella-4.7.1-src.tar.gz</a></td>
+		<td BGCOLOR="#CCCCCC"><a href="http://prdownloads.sourceforge.net/stella/stella-4.7.1-src.tar.xz?download">stella-4.7.1-src.tar.xz</a></td>
 		<td BGCOLOR="#FFCC99">Source code tarball for all systems</td>
 	</tr>
 
