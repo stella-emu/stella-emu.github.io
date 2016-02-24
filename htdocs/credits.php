@@ -104,7 +104,8 @@
 
     <tr>
       <th>Thomas&nbsp;Jentzsch</th>
-      <td>Provided updated NTSC palette, many bug reports and debugger feedback. </td>
+      <td>Provided updated NTSC palette, many bug reports and debugger feedback.
+      <br>Also generously donated a <a href="https://atariage.com/store/index.php?l=product_detail&p=1046">Star Castle Arcade</a> cartridge.</td>
     </tr>
 
     <tr>
@@ -130,7 +131,7 @@
     </tr>
 
     <tr>
-      <th>Fred X. Quimby (aka 'batari')<br>(<a href="http://bataribasic.com/">Batari Basic</a>)</th>
+      <th>Fred X. Quimby (aka 'batari')<br>(<a href="http://bataribasic.com">Batari Basic</a>)</th>
       <td>Generously donated several Melody and Harmony Cartridges to help with
       development, and also donated a collectors edition of the Harmony Cart (release
       version including the cart, CD, SD card, etc).</td>
@@ -145,8 +146,12 @@
     <tr>
       <th>Darrell&nbsp;Spice&nbsp;Jr.<br>
       (<a href="http://spiceware.org">http://spiceware.org</a>)</th>
-      <td>Author of the OS/2 version of Stella<br>Also generously donated 'Medieval Mayhem'
-      and 'Stellas Stocking' cartridges.</td>
+      <td>Author of the OS/2 version of Stella.<br>Also generously donated
+      <a href="https://atariage.com/store/index.php?l=product_detail&p=842">Medieval Mayhem</a>,
+      <a href="https://atariage.com/store/index.php?l=product_detail&p=1031">Space Rocks</a>,
+      <a href="https://atariage.com/store/index.php?l=product_detail&p=1044">Stay Frosty 2</a> and
+      <a href="https://atariage.com/store/index.php?l=product_detail&p=897">Stella's Stocking</a>
+      cartridges.</td>
     </tr>
 
     <tr>
@@ -306,7 +311,7 @@
 
     <tr>
       <th>Sean&nbsp;Green (Bliss-Box)<br>
-      (<a href="http://spawnlinux.dyndns.org/Bliss-Box">http://spawnlinux.dyndns.org/Bliss-Box/</a>)</th>
+      (<a href="http://www.bliss-box.net/Bliss-Box">http://www.bliss-box.net/Bliss-Box</a>)</th>
       <td>Donated a Bliss-Box adaptor to help with development</td>
     </tr>
 
@@ -403,7 +408,7 @@
 
     <tr>
       <th>Nick&nbsp;Montfort and Ian&nbsp;Bogost<br>
-      (<a href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=11696">Racing the Beam</a>)</th>
+      (<a href="https://mitpress.mit.edu/books/racing-beam">Racing the Beam</a>)</th>
       <td>Specifically mentioned Stella in their book</td>
     </tr>
 
@@ -437,6 +442,11 @@
       <th>Omegamatrix</th>
       <td>Provided test ROMs which led to more accurate emulation for SWCHx/SWxCNT
       and RIOT behaviour, and for 'illegal' TIA reads</td>
+    </tr>
+
+    <tr>
+      <th>Owen&nbsp;(loltpily21)</th>
+      <td>Donated a monetary contribution</td>
     </tr>
 
     <tr>
