@@ -362,6 +362,11 @@
     </tr>
 
     <tr>
+      <th>Matthew&nbsp;Logue&nbsp;(Matalog)</th>
+      <td>Donated a monetary contribution</td>
+    </tr>
+
+    <tr>
       <th>Austin&nbsp;Mackert</th>
       <td>Donated a monetary contribution</td>
     </tr>
