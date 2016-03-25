@@ -12,6 +12,26 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>March 25, 2016</H4>
+Stella release 4.7.2 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Fixed bug when entering and exiting the debugger; sometimes the
+    character corresponding to the '`' key would be output in the
+    prompt area.</li>
+
+<li>Updated DPC+ Thumb ARM emulation code to latest from David Welch.
+    In particular, this fixes incorrect handling of the V flag when
+    adding and subtracting, but also fixes compile-time warnings that
+    I couldn't get rid of before.</li>
+
+<li>Updated UNIX configure script to work with GCC 6.x compilers, and to
+    remove references to obsolete compiler versions that can no longer
+    be used to compile Stella.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>February 13, 2016</H4>
 Stella release 4.7.1 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -41,8 +61,6 @@ Stella release 4.7.1 for Linux, MacOS X and Windows is now available.
     (thanks go to RomHunter for his tireless research in this area).
     Related to this, updated the snapshot collection.</li>
 </ul>
-
--Have fun!
 
 
 <H4>January 25, 2016</H4>
