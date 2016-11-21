@@ -12,6 +12,30 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>November 21, 2016</H4>
+Stella release 4.7.3 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added preliminary support for the 3E+ bankswitching scheme, developed
+    by Thomas Jentzsch.</li>
+
+<li>Fixed HMOVE positioning bug that occurred under certain circumstances.
+    Thanks to Omegamatrix of AtariAge for the bug report and patch to fix
+    the issue.</li>
+
+<li>Added 'trapm', 'trapreadm', 'trapwritem' commands to debugger prompt.
+    These are similar to the non-'m' versions, except that they also trap
+    on all mirrors of the given address.</li>
+
+<li>Fixed bug in debugger 'reset' command; it wasn't resetting the
+    bankswitching, so after a reset the banks were in an undefined state.</li>
+
+<li>Updated UNIX configure script to fix a bug where it fails in
+    cross-compilation under certain circumstances.  Thanks to Vlad
+    Zakharov for providing a patch to fix this issue.</li>
+</ul>
+
+-Have fun!
+
 <H4>March 25, 2016</H4>
 Stella release 4.7.2 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -28,8 +52,6 @@ Stella release 4.7.2 for Linux, MacOS X and Windows is now available.
     remove references to obsolete compiler versions that can no longer
     be used to compile Stella.</li>
 </ul>
-
--Have fun!
 
 
 <H4>February 13, 2016</H4>
