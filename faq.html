@@ -8,7 +8,7 @@
 	</head>
 	<body id="faq">
 		<div class="rightcolumn">
-			<div class="header"><?php include("header.php"); ?></div>
+			<div class="header"><img src="http://stella.sourceforge.net/title.gif" height="145" width="495"></div>
 			<div class="content">
 
 <!---------------------------------------------------------------->
@@ -34,7 +34,7 @@ about it - nothing.</p>
 <h3>In some games, the image seems to be off-center, usually pushed to the right.</h3>
 <p>Most (all?) of the time, this is caused by accurate emulation of the video processor
 in a real console.  In other words, the same thing would happen on a real TV.  Since
-Stella is all about emulating a real console as closely as possible, this is not a bug, 
+Stella is all about emulating a real console as closely as possible, this is not a bug,
 and won't be 'fixed'.  Technically, it is known as <I>HMOVE blanking</I>, the specifics
 of which you can find documented in the <a href="http://www.alienbill.com/2600/101/docs/stella.html">Stella&nbsp;Programmer's&nbsp;Guide</a>.</p>
 
@@ -71,7 +71,7 @@ is too long and I can't be bothered to read through it all.</h3>
 <p>Stella is a complex program which has many goals.  It is meant to
 be an easy-to-use emulator for those wishing to just jump in and play
 a game, but it also comes with very complex developer options.  As the
-saying goes: 'with great power comes great responsibility'.  There 
+saying goes: 'with great power comes great responsibility'.  There
 are many options to explain, and as such, the manual is necessarily
 long.</p>
 <p>That being said, recent versions of the manual are organized into
@@ -147,7 +147,7 @@ are being used with it.</h3>
 knows about (in its internal database) includes information about the controller
 type, so you normally would never need to set it manually.  Now, to see which
 controller a game is using, you can either look at 'Game Properties' in the
-user interface, or turn on 'ROM Info mode', which shows game snapshots and 
+user interface, or turn on 'ROM Info mode', which shows game snapshots and
 other useful information.  And of course, you could read the manual for the
 particular game too.</p>
 <p>OK, that's half the solution.  The other half is knowing how the controller
@@ -163,7 +163,7 @@ and is beyond the scope of this FAQ.</p>
 real paddles in certain games when using Stella in Linux.</h3>
 <p>This problem is caused by SDL2 using 'evdev' joysticks by default, but not
 having the ability to actually change the deadzone.  An external application
-has been developed, located at <a href="http://prdownloads.sourceforge.net/stella/evdev-joystick.tar.xz?download">evdev-joystick.tar.xz</a>,
+has been developed, located at <a href="evdev-joystick.tar.xz">evdev-joystick.tar.xz</a>,
 which will let you set the deadzone to 0 and have smoother paddle movement.
 Download this application, decompress it, and follow the included instructions.</p>
 
@@ -200,7 +200,7 @@ case, the default is to assume a joystick controller.</p>
 <p>If you want something other than a joystick, then you'll have to
 add custom properties for the ROM.  Go to Options -&gt; Game Properties
 -&gt; Controller, and change to the desired type.  Then click 'OK'
-and restart the ROM.  These settings are now saved, and need not be 
+and restart the ROM.  These settings are now saved, and need not be
 entered again.</p>
 <p><b>Note to developers:</b> Each time you recompile your ROM, you're
 essentially creating what Stella considers a new ROM image.  As such,
@@ -241,15 +241,56 @@ accurate the audio 'resolution'.</p>
 <p>In terms of controllers, consider using actual 2600 controllers.
 Several options exist, such as the <a href="http://www.grandideastudio.com/portfolio/stelladaptor-2600">
 Stelladaptor</a>, <a href="http://www.2600-daptor.com">
-2600-daptor</a>, <a href="http://bliss-box.net/Bliss-Box">Bliss-Box</a>
+2600-daptor</a>, <a href="http://skunx7.wixsite.com/bliss-box">Bliss-Box</a>
 or <a href="http://www.syzygycompany.com/store">USB joysticks</a>.</p>
 
 
 <!---------------------------------------------------------------->
 
 			</div>
-			<div class="footer"><?php include("footer.php"); ?></div>
+			<div class="footer"><hr><p>Copyright &copy; 1995-2017
+<a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
+<a href="http://minbar.org">Stephen Anthony</a> and
+<a href="theteam.html">The Stella Team</a>
+<br/>	Site Updated January 1, 2017</p>
+</div>
 		</div>
-		<div class="leftcolumn"><?php include("menu.html"); ?></div>
+		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
+
+<div class="menuheader">General</div>
+<ul>
+	<li><a href="index.html"       id="about"       >About Stella</a>
+	<li><a href="donations.html"   id="donations"   >DonationWare</a>
+	<li><a href="changelog.html"   id="news"        >ChangeLog</a>
+	<li><a href="screenshots.html" id="screenshots" >Screen Shots</a>
+	<li><a href="theteam.html"     id="team"        >The Team</a>
+	<li><a href="credits.html"     id="credits"     >Credits List</a>
+	<li><a href="todo.html"        id="todo"        >Todo List</a>
+</ul>
+<div class="menuheader">Documentation</div>
+<ul>
+        <li><a href="docs/index.html" id="guide">User's Guide</a>
+        <li><a href="faq.html" id="faq">FAQ (Frequently Asked Questions)</a>
+	<li><a href="http://sourceforge.net/mail/?group_id=41847" id="mailing">Mailing Lists</a>
+</ul>
+<div class="menuheader">Downloads</div>
+<ul>
+	<li><a href="downloads.html"   id="stable"      >Stable Releases</a>
+	<li><a href="development.html" id="development" >Development</a>
+</ul>
+<div class="menuheader">Important Links</div>
+<ul>
+	<li><a href="atari2600links.html" id="atarilinks"  >Atari 2600 Links</a>
+	<li><a href="homebrew.html"       id="homebrew"    >Homebrew Development</a>
+</ul>
+
+<div>&nbsp;</div>
+
+<a href="http://www.grandideastudio.com/portfolio/stelladaptor-2600"><img src="stelladaptor_logo.png" alt="Stelladaptor" /></a>
+<br/><br/>
+<a href="http://www.2600-daptor.com"><img src="2600-daptor_logo.png" alt="2600-daptor" /></a>
+<br/><br/>
+<a href="http://skunx7.wixsite.com/bliss-box"><img src="blissbox_logo.png" alt="Bliss-Box" /></a>
+</div>
 	</body>
 </html>

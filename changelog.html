@@ -8,7 +8,7 @@
 	</head>
 	<body id="news">
 		<div class="rightcolumn">
-			<div class="header"><?php include("header.php"); ?></div>
+			<div class="header"><img src="http://stella.sourceforge.net/title.gif" height="145" width="495"></div>
 			<div class="content">
 
 <!---------------------------------------------------------------->
@@ -668,7 +668,7 @@ Stella release 3.8.1 for Linux, MacOS X and Windows is now available.
 
 <H4>February 23, 2013</H4>
 Added an expanded explanation for first-time developers to the
-<a href="development.php"><B>Development</B></a> section of the Stella webpage.
+<a href="development.html"><B>Development</B></a> section of the Stella webpage.
 
 <H4>February 21, 2013</H4>
 Stella release 3.8 for Linux, MacOS X and Windows is now available.
@@ -1018,7 +1018,7 @@ Stella release 3.5.5 for Linux, MacOS X and Windows is now available.
 <H4>December 29, 2011</H4>
 Stella release 3.5 for Linux, MacOS X and Windows is now available.
 <ul>
-<li>Stella is now DonationWare!  Please see the <a href="donations.php">
+<li>Stella is now DonationWare!  Please see the <a href="donations.html">
     DonationWare link</a> on the main webpage for more information.</li>
 
 <li>Added several improvements to the joystick management code.  Joystick
@@ -1039,7 +1039,7 @@ Stella release 3.5 for Linux, MacOS X and Windows is now available.
     be activated by setting this argument to 'auto'.  Related to this,
     removed redundant 'usemouse' argument.</li>
 
-<li>Huge restructuring of the OpenGL code, making it compatible with 
+<li>Huge restructuring of the OpenGL code, making it compatible with
     OpenGL 2.x+ features (such as vertex buffer objects), while at the
     same time keeping compatibility with OpenGL 1.5 / OpenGL ES.
     Because of the required changes, TV effects were removed (they will
@@ -2571,7 +2571,7 @@ set per-ROM.</li>
 environment variable 'STELLA_BASEDIR'.  This must be done each time before
 Stella starts.</li>
 
-<li>Added '-fastscbios' commandline argument, which speeds up loading of 
+<li>Added '-fastscbios' commandline argument, which speeds up loading of
 vertical bars in Supercharger ROMs, and made it the default.</li>
 
 <li>Added '-autoslot' commandline argument, which automatically switches
@@ -2720,7 +2720,7 @@ A partial list of features is:
 			virtual port entry in stella.pro.  This means that mappings for a
 			joystick will emulate other devices when necessary.</li>
 
-		<li>Added 'sp' developer commandline argument, which sets the 
+		<li>Added 'sp' developer commandline argument, which sets the
 			"Console.SwapPorts" property and swaps the arrangement of the
 			virtual ports.  Useful for games like "Raiders of the Lost Ark",
 			where the joysticks are normally swapped.</li>
@@ -2839,10 +2839,10 @@ A partial list of features is:
 		<li>Added preliminary Cheat support.</li>
 
 		<li>Added <b>Alt/Shift-Cmd z, x, c, v, b, n</b> keys to enable/disable the
-			P0, P1, M0, M1, BL, PL bits in the TIA, respectively.</li> 
+			P0, P1, M0, M1, BL, PL bits in the TIA, respectively.</li>
 
 		<li>Added <b>Alt/Shift-Cmd .</b> key to disable all bits in the TIA.</li>
- 
+
 		<li>Added <b>Alt/Shift-Cmd /</b> key to enable all bits in the TIA.</li>
 
 		<li>Added <b>Alt/Shift-Cmd g</b> key to switch dynamically switch between
@@ -2951,7 +2951,7 @@ A partial list of features is:
 
 		<li>For the OSX port; added preference to allow user to select the directory
 			in which ROM images are stored.  This sets the default directory to start
-			the browsing for a ROM in, and doesn't preclude the user from selecting a 
+			the browsing for a ROM in, and doesn't preclude the user from selecting a
 			file outside that directory.</li>
 
 		<li>For the OSX port; fixed preferences bug where Preferences changed before
@@ -3046,7 +3046,7 @@ A partial list of features is:
 <LI>Added 3F bankswitching auto-detection routine so that homebrews and
     demos work without a stella.pro entry
 
-<LI>Updated the TIA message boxes so they look a little nicer 
+<LI>Updated the TIA message boxes so they look a little nicer
 
 <LI>Latest stella.pro file included in distribution
 
@@ -3057,7 +3057,7 @@ A partial list of features is:
     stella.pro file; X11 and SDL versions supported for now (compile option)
 
 <LI>External sound server for the X11 and SDL versions no longer required, as
-    all sound code is now integrated into the core 
+    all sound code is now integrated into the core
 
 <LI>Changed locations of the user's config files for the X11 and SDL versions;
     the user's stellarc file is now located in $HOME/.stella/stellarc, state
@@ -3078,7 +3078,7 @@ A partial list of features is:
 
 <LI>Added the developer command line options to the X11 and SDL versions,
     which are only activated in developer builds: -Dformat, -Dwidth,
-    -Dheight, -Dxstart, -Dystart, -Dmerge 
+    -Dheight, -Dxstart, -Dystart, -Dmerge
 
 <LI>Fixed window resize bug in the X11 port
 
@@ -3096,9 +3096,9 @@ A partial list of features is:
 <LI>DOS port is using a new Sound Blaster driver created by Matt Conte which
     supports auto-detection of sound cards.
 
-<LI>DOS port supports a STELLA_HOME environment variable that defines 
+<LI>DOS port supports a STELLA_HOME environment variable that defines
     the location of config files.
- 
+
 <LI>In the DOS port the stella.pro file is searched for first in the
     current working director and then in the $STELLA_HOME directory
 
@@ -3203,13 +3203,13 @@ the PowerMac is now available online in the download section.  The biggest chang
 <A HREF="mailto:dspice@houston.rr.com">Darrell Spice Jr.</A>'s port of
 Release 1.1 of Stella to OS/2 is available for downloading.
 <UL>
-  <LI> Improved throttle routines for faster systems 
-  <LI> Added PAL color palette and frame rates 
-  <LI> New game controller status (which controller needed for current cartridge) 
-  <LI> Settings dialogs 
-  <LI> Keyboard controls are now user definable 
-  <LI> Keyboard controls have changed 
-  <LI> And much more... 
+  <LI> Improved throttle routines for faster systems
+  <LI> Added PAL color palette and frame rates
+  <LI> New game controller status (which controller needed for current cartridge)
+  <LI> Settings dialogs
+  <LI> Keyboard controls are now user definable
+  <LI> Keyboard controls have changed
+  <LI> And much more...
 </UL>
 
 <H4>August 22, 2000</H4>
@@ -3227,12 +3227,12 @@ Release 1.1.3a of StellaX for Windows is available for downloading:
   <LI>Improved video detection logic
   <LI>Added DisableJoystick options to stella.ini file
   <LI>Rewrote the sound driver code - no more scratchy sound!
-  <LI>Added multiple screen shot support - first writes to stella00.bmp 
+  <LI>Added multiple screen shot support - first writes to stella00.bmp
       then stella01.bmp, etc.
   <LI>Added cool round buttons on main screen
   <LI>Added configuration dialog
   <LI>Major code cleanup and performance tuning
-  <LI>Internal ROM list should be complete - make sure your roms are in 
+  <LI>Internal ROM list should be complete - make sure your roms are in
       the ROMS directory and that each rom has the ".bin" extension
   <LI>Run on Windows 95, Windows 98, Windows NT and Windows 2000
 </UL>
@@ -3696,8 +3696,49 @@ near the end of October or beginning of November.
 <!---------------------------------------------------------------->
 
 			</div>
-			<div class="footer"><?php include("footer.php"); ?></div>
+			<div class="footer"><hr><p>Copyright &copy; 1995-2017
+<a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
+<a href="http://minbar.org">Stephen Anthony</a> and
+<a href="theteam.html">The Stella Team</a>
+<br/>	Site Updated January 1, 2017</p>
+</div>
 		</div>
-		<div class="leftcolumn"><?php include("menu.html"); ?></div>
+		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
+
+<div class="menuheader">General</div>
+<ul>
+	<li><a href="index.html"       id="about"       >About Stella</a>
+	<li><a href="donations.html"   id="donations"   >DonationWare</a>
+	<li><a href="changelog.html"   id="news"        >ChangeLog</a>
+	<li><a href="screenshots.html" id="screenshots" >Screen Shots</a>
+	<li><a href="theteam.html"     id="team"        >The Team</a>
+	<li><a href="credits.html"     id="credits"     >Credits List</a>
+	<li><a href="todo.html"        id="todo"        >Todo List</a>
+</ul>
+<div class="menuheader">Documentation</div>
+<ul>
+        <li><a href="docs/index.html" id="guide">User's Guide</a>
+        <li><a href="faq.html" id="faq">FAQ (Frequently Asked Questions)</a>
+	<li><a href="http://sourceforge.net/mail/?group_id=41847" id="mailing">Mailing Lists</a>
+</ul>
+<div class="menuheader">Downloads</div>
+<ul>
+	<li><a href="downloads.html"   id="stable"      >Stable Releases</a>
+	<li><a href="development.html" id="development" >Development</a>
+</ul>
+<div class="menuheader">Important Links</div>
+<ul>
+	<li><a href="atari2600links.html" id="atarilinks"  >Atari 2600 Links</a>
+	<li><a href="homebrew.html"       id="homebrew"    >Homebrew Development</a>
+</ul>
+
+<div>&nbsp;</div>
+
+<a href="http://www.grandideastudio.com/portfolio/stelladaptor-2600"><img src="stelladaptor_logo.png" alt="Stelladaptor" /></a>
+<br/><br/>
+<a href="http://www.2600-daptor.com"><img src="2600-daptor_logo.png" alt="2600-daptor" /></a>
+<br/><br/>
+<a href="http://skunx7.wixsite.com/bliss-box"><img src="blissbox_logo.png" alt="Bliss-Box" /></a>
+</div>
 	</body>
 </html>
