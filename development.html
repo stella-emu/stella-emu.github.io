@@ -13,8 +13,9 @@
 
 <!---------------------------------------------------------------->
 <p>The Stella project always welcomes new developers, either on a full-time basis
-or just to fix your favorite bug.  Feel free to	email <a href="mailto:sa666666@gmail.com">Stephen Anthony</a>
-if you wish to contribute in any way to the Stella project.</p>
+or just to fix your favorite bug.  Feel free to	email
+<a href="mailto:sa666666@gmail.com">Stephen Anthony</a> if you wish to contribute in any
+way to the Stella project.</p>
 
 <p>The first major hurdle for new developers is setting up a build environment, checking
 out the code, and in general actually compiling the project for the first time.  The
@@ -24,10 +25,11 @@ following is a description of how to do this for the three major platforms.
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs g++ 4.8 or Clang++ 3.3 (with up-to-date C++11 support), make and <a href="http://www.libsdl.org/download-2.0.html">SDL2</a>
-  development libraries installed.  ZLib and PNG libraries are optional; Stella will use built-in versions if none
-  are installed system-wide. These packages are likely available through your distribution repository.
-  Consult your specific distribution for an explanation of installing new packages.
+  <p>Stella needs g++ 4.8 or Clang++ 3.5 (with up-to-date C++11 support), make and
+  <a href="http://www.libsdl.org/download-2.0.php">SDL2</a> development libraries installed.
+  ZLib and PNG libraries are optional; Stella will use built-in versions if none
+  are installed system-wide. These packages are likely available through your distribution
+  repository. Consult your specific distribution for an explanation of installing new packages.
   <p>Other packages may be needed depending on the distribution you use.  The best thing
   to do is try the compile, note any missing packages, and then install them through your
   distribution repository.
@@ -37,17 +39,20 @@ following is a description of how to do this for the three major platforms.
   <li><p>Downloading the source code:
   <p>The source for the latest release can always be found under "Stable Releases" on the
   main webpage.  However, you'd be better off working with the most recent code, located
-  in a Subversion repository.  The following command will <I>checkout</I> this code:
-  <div class="con">svn co https://svn.code.sf.net/p/stella/code/trunk stella</div>
-  <p>This will checkout from trunk for local modifications.  However, you won't be able to
+  in the <a href="https://github.com/stella-emu/stella">GitHub repository</a>.  The following
+  command will <I>checkout</I> this code:
+  <div class="con">git clone https://github.com/stella-emu/stella.git</div>
+  <p>This will checkout from the <i>master branch</i> for local modifications.  However, you won't be able to
   commit changes unless you've been added to the Stella project.  In those cases, it's best
   to use the following command to generate a <I>diff</I> file, which can be sent to the
   email address above:
-  <div class="con">svn diff > mychanges.diff</div>
+  <div class="con">git diff > mychanges.diff</div>
+  <p>Alternatively, you can create a <i>pull request</i> from your local git copy.  See the Git
+  documentation for more info.
   <p>Before you start modifying code, it's best to <I>update</I> your local copy of the source code (so
   that you can see changes that others have made).  To do this, use the following command:
-  <div class="con">svn update</div>
-  <p><B>Note: </B>You may be more familiar with graphical SVN clients; these will work fine as well.
+  <div class="con">git pull</div>
+  <p><B>Note: </B>You may be more familiar with graphical Git clients; these will work fine as well.
   </li>
 
   <br/>
@@ -82,25 +87,28 @@ rpmbuild -ba stella.spec</div>
 
   <li><p>Getting the required tools:
   <p>Stella needs Xcode 5/6 for compilation.  You will also need the SDL2 development libraries,
-  located at <a href="http://www.libsdl.org/download-2.0.html">libsdl.org</a>.  You will need
-  to download <B>SDL2-2.0.3.dmg</B> (or newer, if available).
+  located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.  You will need
+  to download <B>SDL2-2.0.4.dmg</B> (or newer, if available).
 
   <br/>
 
   <li><p>Downloading the source code:
   <p>The source for the latest release can always be found under "Stable Releases" on the
   main webpage.  However, you'd be better off working with the most recent code, located
-  in a Subversion repository.  The following command will <I>checkout</I> this code:
-  <div class="con">svn co https://svn.code.sf.net/p/stella/code/trunk stella</div>
-  <p>This will checkout from trunk for local modifications.  However, you won't be able to
+  in the <a href="https://github.com/stella-emu/stella">GitHub repository</a>.  The following
+  command will <I>checkout</I> this code:
+  <div class="con">git clone https://github.com/stella-emu/stella.git</div>
+  <p>This will checkout from the <i>master branch</i> for local modifications.  However, you won't be able to
   commit changes unless you've been added to the Stella project.  In those cases, it's best
   to use the following command to generate a <I>diff</I> file, which can be sent to the
   email address above:
-  <div class="con">svn diff > mychanges.diff</div>
+  <div class="con">git diff > mychanges.diff</div>
+  <p>Alternatively, you can create a <i>pull request</i> from your local git copy.  See the Git
+  documentation for more info.
   <p>Before you start modifying code, it's best to <I>update</I> your local copy of the source code (so
   that you can see changes that others have made).  To do this, use the following command:
-  <div class="con">svn update</div>
-  <p><B>Note: </B>You may be more familiar with graphical SVN clients; these will work fine as well.
+  <div class="con">git pull</div>
+  <p><B>Note: </B>You may be more familiar with graphical Git clients; these will work fine as well.
   </li>
 
   <br/>
@@ -111,7 +119,7 @@ rpmbuild -ba stella.spec</div>
     machines running 10.7 or greater.  There is currently no support for older OSX versions or for PPC builds.
     </li>
 
-    <li><p>Place the <I>SDL.framework</I> bundle (located in the <B>SDL2-2.0.3.dmg</B> file
+    <li><p>Place the <I>SDL.framework</I> bundle (located in the <B>SDL2-2.0.4.dmg</B> file
     you downloaded earlier) into the <I>/Library/Frameworks</I> directory.
     </li>
 
@@ -132,47 +140,44 @@ rpmbuild -ba stella.spec</div>
 </ol>
 
 <br/>
-<h3><u>Windows XP_SP3/Vista/7/8/10</u></h3>
+<h3><u>Windows 7/8/10</u></h3>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs Visual Studio C++ 2013.  Main development is done using 2013
-  Professional, but the (free) Express versions are also known to work fine.  You will also need
-  the SDL2 development libraries, located at <a href="http://www.libsdl.org/download-2.0.html">libsdl.org</a>.
-  <p><B>Note:</B> It may be possible to build Stella using MinGW/Msys, but this appoach hasn't been
-  supported since Stella version 3.0.  You're free to try this option, but it isn't supported,
-  and I can't help with any problems you may encounter.  If you manage to get it working,
-  the build instructions will be the same as Linux/UNIX.
-  <p>You will also need a Subversion client: I suggest <a href="http://tortoisesvn.net">
-  TortoiseSVN</a>.
+  <p>Stella needs Visual Studio C++ 2015.  You will also need the SDL2 development libraries,
+  located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.
+  <p>You will also need a Git client; the following assumes you are using <a href="https://tortoisegit.org">
+  TortoiseGit</a>.
 
   <br/>
 
   <li><p>Downloading the source code:
   <p>The source for the latest release can always be found under "Stable Releases" on the
   main webpage.  However, you'd be better off working with the most recent code, located
-  in a Subversion repository.  To <I>checkout</I> this code, you will need to install TortoiseSVN,
-  which you downloaded above.
-  <p>Once TortoiseSVN is installed, you should right-click somewhere in Windows Explorer where
-  you wish to download the files.  This will produce a window as follows:
-  <p><blockquote><img src="images/svn_co.png"/></blockquote>
+  in the <a href="https://github.com/stella-emu/stella">GitHub repository</a>.  To <I>checkout</I>
+  this code, you will need to install TortoiseGit, which you downloaded above.
+  <p>Once TortoiseGit is installed, you should right-click somewhere in Windows Explorer where
+  you wish to download the files, right-click and select <B>Git Clone...</B>  This will produce a window as follows:
+  <p><blockquote><img src="images/git_clone.png"/></blockquote>
   <p>The <I>URL of repository</I> must be the same, but the <I>Checkout directory</I> will be
   specific to your system.
-  <p>This will checkout from trunk for local modifications.  However, you won't be able to
+  <p>This will checkout from the <i>master branch</i> for local modifications.  However, you won't be able to
   commit changes unless you've been added to the Stella project.  In those cases, it's best
   to create diff file, which can be sent to the email address above.  To do this, right-click
-  on the local repository directory and select <B>TortoiseSVN -> Create patch...</B>.
+  on the local repository directory and select <B>TortoiseGit -> Create Patch Serial...</B>
+  <p>Alternatively, you can create a <i>pull request</i> from your local git copy.  See the TortoiseGit
+  documentation for more info.
   <p>Before you start modifying code, it's best to <I>update</I> your local copy of the source code (so
   that you can see changes that others have made).  To do this, right-click
-  on the local repository directory and select <B>SVN Update</B>.
+  on the local repository directory and select <B>TortoiseGit -> Pull...</B>
   </li>
 
   <li><p>Compiling the source code:
   <p>Before compiling the code for the first time, Visual Studio must be set up as follows:
   <ol>
-    <li><p>Open the Visual Studio 2013 project, located in REPO_DIR\src\windows, as in the following:
+    <li><p>Open the Visual Studio 2015 project, located in REPO_DIR\src\windows, as in the following:
       <p><blockquote><img src="images/vs_open.png"/></blockquote>
-    <li><p>Unzip the <B>SDL2-devel-2.0.3-VC.zip</B> file you downloaded above somewhere on your system.
+    <li><p>Unzip the <B>SDL2-devel-2.0.4-VC.zip</B> file you downloaded above somewhere on your system.
       Make note of where these files are located.
     <li><p>Go to "PROJECT -> Stella Properties" menu (or click Alt-F7); this will create a window
       as follows: <p><blockquote><img src="images/vs_props.png"/></blockquote>
@@ -191,9 +196,9 @@ rpmbuild -ba stella.spec</div>
 For the 32-bit version, you have to copy <B>lib\x86\SDL2.dll</B> into the <I>Release</I> and <I>Debug</I> folders.
 For the 64-bit version, you have to copy <B>lib\x64\SDL2.dll</B> into the <I>x64\Release</I> and <I>x64\Debug</I> folders.
 </pre></blockquote>
-    <li>You may also get an error that the libraries <B>msvcp120.dll</B> and/or <B>msvcr120.dll</B> are not available.
+    <li>You may also get an error that the libraries <B>msvcp140.dll</B> and/or <B>msvcr140.dll</B> are not available.
       If so, you will need to download them from
-      <a href="http://www.microsoft.com/en-ca/download/details.aspx?id=40784">Visual C++ Redistributable Packages for Visual Studio 2013</a>
+      <a href="https://www.microsoft.com/en-ca/download/details.aspx?id=48145">Visual C++ Redistributable Packages for Visual Studio 2015</a>
     </li>
     </ol>
   </li>
