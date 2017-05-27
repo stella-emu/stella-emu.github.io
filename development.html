@@ -27,7 +27,7 @@ following is a description of how to do this for the three major platforms.
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs g++ 4.8 or Clang++ 3.5 (with up-to-date C++11 support), make and
+  <p>Stella needs g++ 5 or Clang++ 3.9 (with up-to-date C++11 support), make and
   <a href="http://www.libsdl.org/download-2.0.php">SDL2</a> development libraries installed.
   ZLib and PNG libraries are optional; Stella will use built-in versions if none
   are installed system-wide. These packages are likely available through your distribution
@@ -105,7 +105,7 @@ rpmbuild -ba stella.spec</div>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs Xcode 5/6 for compilation.  You will also need the SDL2 development libraries,
+  <p>Stella needs Xcode 7/8 for compilation.  You will also need the SDL2 development libraries,
   located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.  You will need
   to download <B>SDL2-2.0.4.dmg</B> (or newer, if available).
 
@@ -178,7 +178,7 @@ rpmbuild -ba stella.spec</div>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs Visual Studio C++ 2015.  You will also need the SDL2 development libraries,
+  <p>Stella needs Visual Studio C++ 2017.  You will also need the SDL2 development libraries,
   located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.
   <p>You will also need a Git client; the following assumes you are using <a href="https://tortoisegit.org">
   TortoiseGit</a>.
@@ -202,7 +202,7 @@ rpmbuild -ba stella.spec</div>
   <li><p>Compiling the source code:
   <p>Before compiling the code for the first time, Visual Studio must be set up as follows:
   <ol>
-    <li><p>Open the Visual Studio 2015 project, located in REPO_DIR\src\windows, as in the following:
+    <li><p>Open the Visual Studio 2017 project, located in REPO_DIR\src\windows, as in the following:
       <p><blockquote><img src="images/vs_open.png"/></blockquote>
     <li><p>Unzip the <B>SDL2-devel-2.0.4-VC.zip</B> file you downloaded above somewhere on your system.
       Make note of where these files are located.
