@@ -10,7 +10,7 @@
   <br><br>
   <center><h2><b>A multi-platform Atari 2600 VCS emulator</b></h2></center>
 
-  <center><h4><b>Release 4.7.3</b></h4></center>
+  <center><h4><b>Release 5.0</b></h4></center>
   <br><br>
 
   <center><h2><b>User's Guide</b></h2></center>
@@ -54,7 +54,7 @@
 
   <br><br><br>
 
-  <center><b>February 1999 - November 2016</b></center>
+  <center><b>February 1999 - July 2017</b></center>
     <center><b>The Stella Team</b></center>
   <center><b><a href="https://stella-emu.github.io">Stella Homepage</a></b></center>
 
@@ -245,6 +245,9 @@
 
   <ul>
     <li>High speed emulation using optimized C++11 code</li>
+    <li>Supports high quality TIA emulation using the TIA core from
+      <a href="https://github.com/6502ts/6502.ts">6502.ts</a> by
+      Christian Speckner</li>
     <li>Supports high quality sound emulation using code derived from Ron Fries'
       TIA Sound Emulation library, including stereo sound support</li>
     <li>Emulates the Atari 2600 Joystick Controllers using your computer's keyboard,
@@ -258,7 +261,7 @@
       joysticks or mouse</li>
     <li>Emulates the Sega Genesis Controller using your computer's keyboard,
       joysticks or mouse</li>
-    <li>Emulates CX-22 / CX-80 style trackballs and Amiga Mouse using your
+    <li>Emulates CX22/CX80 style trakballs and Amiga/Atari Mouse using your
       computer's mouse</li>
     <li>Emulates <a href="http://en.wikipedia.org/wiki/CompuMate">Spectravideo CompuMate</a> system using your computer's keyboard,
       including mapping of CompuMate 'Backspace', 'Space' and 'Enter' functionality to
@@ -335,7 +338,7 @@
     <li>OpenGL capable video card</li>
     <li>Other architectures (MIPS, PPC, PPC64, etc) have been confirmed to work,
       but aren't as well tested as i386/x86_64</li>
-    <li>GNU g++ v/4.8 or Clang v/3.3 (with C++11 support) and the make utility are required for compiling the Stella source code</li>
+    <li>GNU g++ v/5 or Clang v/3.5 (with C++11 support) and the make utility are required for compiling the Stella source code</li>
   </ul>
 
   <p>
@@ -347,7 +350,7 @@
     <li>MacOSX 10.7 (Lion) or above</li>
     <li>64-bit Intel processor</li>
     <li>OpenGL capable video card</li>
-    <li>Xcode 5.0/6.0 is required to compile the Stella source code</li>
+    <li>Xcode 8.0 is required to compile the Stella source code</li>
   </ul>
 
   <p>
@@ -359,8 +362,9 @@
   <ul>
     <li>Direct3D or OpenGL capable video card</li>
     <li>64-bit port has been tested on Windows Vista and above only</li>
-    <li>Visual C++ 2013 Professional/Express is required to compile the Stella source code</li>
-    <li>(*) Note: Support for Windows XP is problematic on some systems, and will probably be discontinued in a future release</li>
+    <li>Visual C++ 2017 Community is required to compile the Stella source code</li>
+    <li>(*) Note: Support for Windows XP is problematic on some systems, and will
+        probably be discontinued in a future release</li>
   </ul>
 
   <p>
@@ -1445,8 +1449,8 @@
 
     <tr>
       <td>Toggle TV 'jitter' effect</td>
-      <td>Shift-Alt + j</td>
-      <td>Shift-Cmd + j</td>
+      <td>Alt + j</td>
+      <td>Cmd + j</td>
     </tr>
   </table>
 
@@ -1548,6 +1552,18 @@
       <td>Toggle 'phosphor' effect</td>
       <td>Alt + p</td>
       <td>Cmd + p</td>
+    </tr>
+
+    <tr>
+      <td>Decrease 'phosphor' blend in phosphor mode</td>
+      <td>Alt + i</td>
+      <td>Cmd + i</td>
+    </tr>
+
+    <tr>
+      <td>Increase 'phosphor' blend in phosphor mode</td>
+      <td>Alt + o</td>
+      <td>Cmd + o</td>
     </tr>
 
     <tr>
@@ -1667,7 +1683,7 @@
       <td> &#x2713;</td>
     </tr>
     <tr>
-      <th> Trackball/mouse</th>
+      <th> Trakball/mouse</th>
       <td> &#x2715;</td>
       <td> &#x2715;</td>
       <td> &#x2713;</td>
@@ -1850,6 +1866,39 @@
     </tr>
 
     <tr>
+      <td><pre>-tia.dbgcolors &lt;roygbp&gt;</pre></td>
+      <td>Assigns the colours (R)ed, (O)range, (Y)ellow, (G)reen, (B)lue and (P)urple
+        to each graphical register P0/M0/P1/M1/PF/BL, respectively.  Currently,
+        these change be changed around to apply different colours to the
+        respective register.
+      </td>
+    </tr>
+
+    <tr>
+      <td><pre>-tv.filter &lt;1 - 6&gt;</pre></td>
+      <td>Blargg TV effects, 0 is disabled, next numbers in
+        sequence represent presets for 'Composite', 'S-Video', 'RGB', 'Bad Adjust',
+        and 'Custom' modes.</td>
+    </tr>
+
+    <tr>
+      <td><pre>-tv.phosphor &lt;always|byrom&gt;</pre></td>
+      <td>Determines how phosphor mode is enabled.  If 'always', then the
+        ROM properties entry is ignored, and phosphor mode is always turned
+        on.  Otherwise, the ROM properties determine whether phosphor mode
+        is used for each ROM.
+      </td>
+    </tr>
+
+    <tr>
+      <td><pre>-tv.phosblend &lt;0 - 100&gt;</pre></td>
+      <td>Enable default phosphor blending level; 0 implies no mixing, and 100
+        is full mixing (not recommended).  Note that this doesn't actually
+        enable phosphor mode; that is done for each ROM in the ROM properties.
+      </td>
+    </tr>
+
+    <tr>
       <td><pre>-tv.jitter &lt;1|0&gt;</pre></td>
       <td>Enable TV jitter/roll effect, when there are too many or too few scanlines
         per frame.</td>
@@ -1859,13 +1908,6 @@
       <td><pre>-tv.jitter_recovery &lt;1 - 20&gt;</pre></td>
       <td>When TV jitter/roll effect is enabled, determines how long to delay recovery
         time (recovery spread over multiple frames).</td>
-    </tr>
-
-    <tr>
-      <td><pre>-tv.filter &lt;1 - 6&gt;</pre></td>
-      <td>Blargg TV effects, 0 is disabled, next numbers in
-        sequence represent presets for 'Composite', 'S-Video', 'RGB', 'Bad Adjust',
-        and 'Custom' modes.</td>
     </tr>
 
     <tr>
@@ -1975,7 +2017,7 @@
       <td><pre>-usemouse &lt;always|analog|never&gt;</pre></td>
       <td>Use mouse as a controller as specified by ROM properties in specific case.
       Always and never are self-explanatory, analog means only for analog-type devices
-      (paddles, trackball, etc).</td>
+      (paddles, trakball, etc).</td>
     </tr>
 
     <tr>
@@ -2423,9 +2465,12 @@
       <td valign="top">
         <table border="1" cellpadding="4">
           <tr><th>Item</th><th>Brief description</th><th>For more information,<br>see <a href="#CommandLine">CommandLine</a></th></tr>
+          <tr><td>TV Mode</td><td>disable TV effects, or select TV preset</td><td>-tv.filter</td></tr>
+          <tr><td>TV Phosphor</td><td>enable phosphor mode under what conditions</td><td>-tv.phosphor</td></tr>
+          <tr><td>Phosphor (Default)</td><td>default blend level to use in phosphor mode<br/>
+                (needs to be manually set for your particular hardware)</td><td>-tv.phosblend</td></tr>
           <tr><td>Jitter/Roll effect</td><td>emulate screen roll with inconsistent scanline count</td><td>-tv.jitter</td></tr>
           <tr><td>Jitter/Roll recovery</td><td>determines recovery time for screen rolling</td><td>-tv.jitter_recovery</td></tr>
-          <tr><td>TV Mode</td><td>disable TV effects, or select TV preset</td><td>-tv.filter</td></tr>
           <tr><td>Scanline Intensity</td><td>sets scanline black-level intensity</td><td>-tv.scanlines</td></tr>
           <tr><td>Scanline Interpolation</td><td>smooth/blend scanlines into image</td><td>-tv.scaninter</td></tr>
           <tr><td>Adjustable sliders</td><td>set specific attribute in 'Custom' mode</td><td>-tv.contrast, tv.hue, etc.</td></tr>
@@ -2434,6 +2479,23 @@
           <tr><td>Clone RGB</td><td>copy 'RGB' attributes to 'Custom' sliders</td><td>&nbsp;</td></tr>
           <tr><td>Clone Bad Adjust</td><td>copy 'Bad Adjust' attributes to 'Custom' sliders</td><td>&nbsp;</td></tr>
           <tr><td>Revert</td><td>revert attribute sliders to saved 'Custom' settings</td><td>&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <p><b>Video Settings</b> dialog (Debug Colors):</p>
+  <table border="5" cellpadding="2" frame="box" rules="none">
+    <tr>
+      <td><img src="graphics/options_video_dbgcolors.png"></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td valign="top">
+        <table border="1" cellpadding="4">
+          <tr><th>Item</th><th>Brief description</th><th>For more information,<br>see <a href="#CommandLine">CommandLine</a></th></tr>
+          <tr><td>Player 0 <br/>Missile 0 <br/>Player 1 <br/>
+            Missile 1 <br/>Playfield <br/>Ball </td>
+          <td>Set color for specific object in debug colors mode</td><td>-tia.dbgcolors</td></tr>
         </table>
       </td>
     </tr>
@@ -2963,7 +3025,7 @@
   <p><table cellpadding="5" border="1">
     <tr>
       <td><b>Linux/Unix</b></td>
-      <td><i>$HOME/.stella/stellarc</i></td>
+      <td><i>$HOME/.config/stella/stellarc</i></td>
     </tr>
     <tr>
       <td><b>Macintosh</b></td>
@@ -3062,7 +3124,7 @@ Ms Pac-Man (Stella extended codes):
   <p><table cellpadding="5" border="1">
     <tr>
       <td><b>Linux/Unix</b></td>
-      <td><i>$HOME/.stella/stella.cht</i></td>
+      <td><i>$HOME/.config/stella/stella.cht</i></td>
     </tr>
     <tr>
       <td><b>Macintosh</b></td>
@@ -3229,6 +3291,8 @@ Ms Pac-Man (Stella extended codes):
         <tr><td>AR </td><td>Supercharger </td></tr>
         <tr><td>BF </td><td>CPUWIZ 256K </td></tr>
         <tr><td>BFSC </td><td>CPUWIZ 256K + ram</td></tr>
+        <tr><td>BUS </td><td>Experimental</td></tr>
+        <tr><td>CDF </td><td>Chris, Darrell, Fred</td></tr>
         <tr><td>CM &#185;</td><td>Spectravideo CompuMate </td></tr>
         <tr><td>CTY &#185;&#178;</td><td>CDW - Chetiry </td></tr>
         <tr><td>CV </td><td>Commavid extra ram </td></tr>
@@ -3301,9 +3365,9 @@ Ms Pac-Man (Stella extended codes):
         <tr><td>Paddles_IAxDr </td><td>Same as Paddles, except both the axes and direction of movement is inverted.</td></tr>
         <tr><td>Driving </td><td>Looks like a paddle, but allows 360' movement. Only one unit per connector, unlike paddles which were sold in pairs.</td></tr>
         <tr><td>Keyboard </td><td>Also known as the Star Raiders controller, functionally identical to the Kid's Controller and Keyboard Controller. Game included an overlay with commands, for use with Star Raiders.</td></tr>
-        <tr><td>Trackball22 </td><td>Standard Atari 2600 CX-22 trackball controller.</td></tr>
-        <tr><td>Trackball80 </td><td>Atari ST CX-80 trackball controller.</td></tr>
         <tr><td>AmigaMouse</td><td>Commodore Amiga computer mouse.</td></tr>
+        <tr><td>AtariMouse </td><td>Atari ST computer mouse.</td></tr>
+        <tr><td>Trakball </td><td>Standard Atari 2600 CX22/CX80 trakball controller.</td></tr>
         <tr><td><a href="http://atariage.com/store/index.php?l=product_list&c=98">
       AtariVox</a></td><td>A SpeakJet based unlimited-vocabulary speech / sound synthesizer with 32K EEPROM.</td></tr>
         <tr><td><a href="http://www.vectrex.biz/MemCard.htm">SaveKey</a></td><td>A 32K EEPROM for saving high scores, etc (the EEPROM portion of an AtariVox).</td></tr>
@@ -3361,7 +3425,9 @@ Ms Pac-Man (Stella extended codes):
     <tr>
       <td VALIGN="TOP"><i>Display.YStart:</i></td>
       <td>Indicates the scan-line to start displaying at.
-      The value must be <i>n</i> such that 0 &lt;= <i>n</i> &lt;= 64.</td>
+      The value must be <i>n</i> such that 0 &lt;= <i>n</i> &lt;= 64.
+      Setting <i>n</i> to zero will enable ystart autodetection, which
+      should work fine for the vast majority of ROMs.</td>
     </tr>
 
     <tr>
@@ -3396,7 +3462,7 @@ Ms Pac-Man (Stella extended codes):
   <p><table cellpadding="5" border="1">
     <tr>
       <td><b>Linux/Unix</b></td>
-      <td><i>$HOME/.stella/stella.pro</i></td>
+      <td><i>$HOME/.config/stella/stella.pro</i></td>
     </tr>
     <tr>
       <td><b>Macintosh</b></td>
@@ -3461,7 +3527,7 @@ Ms Pac-Man (Stella extended codes):
   <p><table cellpadding="5" border="1">
     <tr>
       <td><b>Linux/Unix</b></td>
-      <td><i>$HOME/.stella/stella.pal</i></td>
+      <td><i>$HOME/.config/stella/stella.pal</i></td>
     </tr>
     <tr>
       <td><b>Macintosh</b></td>

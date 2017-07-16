@@ -14,6 +14,195 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>July 16, 2016</H4>
+Stella release 5.0 for Linux, MacOS X and Windows is now available.
+<ul>
+<li><b>Note: because of major TIA/6502/RIOT changes, the state file format
+          has changed, and old state files will not work with this release.</b></li>
+
+<li>Stella has moved from Sourceforge to Github.</li>
+
+<li>Completely new TIA core is now available, ported from
+    <a href="https://github.com/6502ts/6502.ts">6502ts</a> by
+    Christian Speckner (DirtyHairy). This new core is extremely accurate,
+    and matches real hardware in almost every test we've performed.
+    New features include:
+  <ul>
+    <li>Meltdown emulates correct</li>
+    <li>The lap number in Pole Positions displays correctly</li>
+    <li>Artifacts in the mountains on Snoopy and the Red baron are gone
+    <li>Line artifacts in Title Match Pro Wrestling and Realsports Boxing
+       are fixed</li>
+    <li>The spurious line at the left border of Video Chess now displays
+       correctly</li>
+    <li>All 32 char text demos from AtariAge now work perfectly (Stella 4
+       shows artifacts on several of these)</li>
+    <li>Stella is now the only emulator to display the "Mega Bitmap Demo"
+       (atext.bin) from AtariAge correctly</li>
+    <li>Improved starfield effect for missiles (still TODO for ball and
+       players)</li>
+    <li>RSYNC emulation has improved, all testcases now match real
+       hardware</li>
+    <li>Several other ROMs that have never worked in any emulator are now
+       emulated correctly</li>
+    <li>RDY behavior with respect to write cycles is accurate</li>
+    <li>Optional YStart autodetect and more robust frame handling</li>
+    <li>NUSIZ during player draw matches hardware</li>
+    <li>RESMx during missile draw matches hardware</li>
+    <li>Paddle emulation is slightly more accurate. As a consequence, the
+       "paddle feel" may be slightly different from Stella 4</li>
+    <li>Fixed debug colors can now be set for each graphical object, from
+       a choice of 'red', 'orange', 'yellow', 'green', 'blue' and
+       'purple'.  This is accessible through the new 'tia.dbgcolors'
+       commandline argument and within the UI.</li>
+    </ul></li>
+
+<li>Implemented new phosphor emulation mode, which is much closer to real
+    TV output.  Related to this, added ability to change the default
+    phosphor blend level in the UI and through the new 'tv.phosblend'
+    commandline argument.  Special thanks to Thomas Jentzsch for the idea
+    and implementation.</li>
+
+<li>TV phosphor effect can now be force-enabled for all ROMs, instead
+    of manually setting ROM properties for each ROM.  This is accessible
+    in the UI and through the 'tv.phosphor' commandline argument, and
+    defaults to being off (or enabled per-ROM).</li>
+
+<li>PAL color-loss and Blargg TV effects can now be enabled at the same
+    time.  Previously, when Blargg effects were enabled, PAL color-loss
+    couldn't be shown.  Related to this, the Blargg effects now use much
+    less memory and in some cases run faster than before.</li>
+
+<li>Much improved RIOT timer emulation never before seen in any emulator.
+    Special thanks to Christian Speckner (DirtyHairy) for the
+    implementation, and alex_79 for finding documentation that finally
+    describes in more detail how the M6532 chip actually works.</li>
+
+<li>Added BUS (experimental) and CDF bankswitching schemes, and also
+    ARM Timer 1 support; special thanks to SpiceWare for the code.</li>
+
+<li>Fixed bug with SaveKey and AtariVox not properly closing their memory
+    files before starting another instance of the same ROM, when the ROM
+    was opened in the ROM launcher.</li>
+
+<li>Various improvements to the debugger and command prompt:
+  <ul>
+    <li>The 'cls' command now only clears the screen, not the history</li>
+    <li>The 'help' command now accepts other commands, and gives extra
+      information about the command (ie, 'help breakif' prints extended
+      information about the breakif command)</li>
+    <li>Added 'palette' command, which shows a color swatch of the
+      currently active TIA palette</li>
+    <li>Added 'debugcolors' command, which shows a legend for 'fixed debug
+      colors' mode</li>
+    <li>The previous trap'm' commands now work when setting TIA read
+      addresses; previously they only worked for write addresses</li>
+    <li>The previous trap'm' commands are now renamed 'trap', 'trapread'
+      and 'trapwrite'</li>
+    <li>The TIA tab now shows 'old' contents of player and ball registers</li>
+    <li>Various UI items are crossed out when disabled, to more clearly
+      indicate their current state</li>
+    <li>Various UI items that previously required a double-click to toggle
+      (pixel and bit widgets) now require only a single-click.</li>
+    <li>Command completion now works with internal functions and pseudo-ops
+      (basically, anything starting with the '_' character)</li>
+    <li>System labels (aka, register names, etc) can now be typed in lower-
+      case.  Previously, these labels always had to be uppercase.</li>
+    <li>In general, input error checking is much more strictly enforced</li>
+    <li>Read-only UI items now have a different background color, to
+      clearly indicate if an item can be modified.</li>
+    <li>Debugger '.lst' and '.sym' files are now searched based on the name
+      of the ROM file, and not on the internal properties name.</li>
+    <li>Snapshots can now be saved by pressing the F12 key (the various
+      other ways to save snapshots still exist).</li>
+  </ul></li>
+
+<li>Mouse grabbing is now enabled in windowed mode only when the ROM is
+    using a virtual analog controller (paddles, trakball, etc).</li>
+
+<li>Renamed various trakball-like controllers more accurately: AmigaMouse,
+    AtariMouse (previously CX80) and Trakball (previously CX22).  Related
+    to this, reduced the resolution of the Trakball by half, to properly
+    match real hardware.</li>
+
+<li>The stack pointer (SP) is now initialized to $FD instead of $FF, to
+    match research done in other 6502 projects.</li>
+
+<li>Fixed bug in debugger tracing and displaying the partial TIA image;
+    the first time entering the debugger and starting to trace, the image
+    was blanked out (black) instead of being drawn in greyscale.  Also, the
+    image is now synchronized, instead of being two frames behind.</li>
+
+<li>Fixed crash with zipped ROMs that are less than 4K in size; so far
+    this bug has only ever occurred in Windows XP, but it's been there
+    since Stella 4.1.</li>
+
+<li>Fixed bug in 'Rom Audit' functionality; sometimes ROMs without a
+    valid properties entry were being renamed as "Untitled.bin".</li>
+
+<li>For the entire UI, removed colons and generally made the UI items
+    easier to read.</li>
+
+<li>When in 'ROM launcher mode', Stella now uses slightly less CPU time.
+    More work is required in this area, though.</li>
+
+<li>Added ROM properties for D.K. VCS homebrew ROM, thanks to Andreas
+    Dietrich.</li>
+
+<li>Added slight improvement for auto-detecting Superchip bankswitching;
+    the new implementation now works for the NTSC 'Dig Dug' ROM.  Special
+    thanks for SpiceWare for the idea and modified implementation.</li>
+
+<li>Fixed long-standing bug in 3-voice music in DPC+ bankswitching scheme;
+    the music now sounds much more like the real thing.</li>
+
+<li>For the Linux/UNIX port:
+  <ul>
+    <li>The settings directory now uses the XDG Base Directory Specification.
+      In most cases, this means that your files will now be stored in
+      '~/.config/stella' instead of '~/.stella'.  To keep your old settings,
+      run the following commands from the terminal:</li>
+<blockquote><pre>
+cd ~
+mv .stella .config/stella
+</pre></blockquote>
+    <li>You will probably need to edit '~/.config/stella/stellarc' and change
+      some paths accordingly.</li>
+  </ul></li>
+
+<li>For the OSX port:
+  <ul>
+    <li>Always use the built-in png and zlib libraries instead of the system
+      versions.</li>
+
+    <li>The preferences file has changed from 'net.sourceforge.Stella.plist'
+      to 'Stella-emu.plist'.  To keep your old settings, run the following
+      commands from the terminal:</li>
+<blockquote><pre>
+cd ~/Library/Preferences
+mv net.sourceforge.Stella.plist Stella-emu.plist
+</pre></blockquote>
+  </ul></li>
+
+<li>Updated internal ROM properties database to ROM-Hunter version 13
+    (thanks go to RomHunter for his tireless research in this area).
+    Related to this, updated the snapshot collection.</li>
+
+<li>Updated included PNG and ZLIB libraries to latest stable version.  Also,
+    both libraries are now compiled into the app whenever one is selected.
+    This fixes issues with a newer ZLIB not working with an older PNG, etc.</li>
+
+<li>Updated build scripts for Visual Studio 2017 (Windows) and MacOS
+    Sierra (latest version of Xcode), and make these the minimum supported
+    versions for building Stella.</li>
+
+<li>Updated UNIX configure script to work with the clang 5+ and gcc 7+
+    compiler versions, and fixed compile issues on AArch64 and ppc64le
+    architectures.</li>
+</ul>
+
+-Have fun!
+
 <H4>November 21, 2016</H4>
 Stella release 4.7.3 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -35,8 +224,6 @@ Stella release 4.7.3 for Linux, MacOS X and Windows is now available.
     cross-compilation under certain circumstances.  Thanks to Vlad
     Zakharov for providing a patch to fix this issue.</li>
 </ul>
-
--Have fun!
 
 <H4>March 25, 2016</H4>
 Stella release 4.7.2 for Linux, MacOS X and Windows is now available.
@@ -3702,7 +3889,7 @@ near the end of October or beginning of November.
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
 <a href="http://minbar.org">Stephen Anthony</a> and
 <a href="theteam.html">The Stella Team</a>
-<br/>	Site Updated July 15, 2017</p>
+<br/>	Site Updated July 16, 2017</p>
 </div>
 		</div>
 		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
