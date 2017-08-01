@@ -178,8 +178,9 @@ rpmbuild -ba stella.spec</div>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs Visual Studio C++ 2017.  You will also need the SDL2 development libraries,
-  located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.
+  <p>Stella needs <a href="https://www.visualstudio.com/vs/community">Visual Studio C++ 2017</a>.
+  You will also need the SDL2 development libraries, located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.
+  The version you want will be named SDL2-devel-2.0.x-VC.zip (where 'x' is dependent on the version); download the latest version.
   <p>You will also need a Git client; the following assumes you are using <a href="https://tortoisegit.org">
   TortoiseGit</a>.
 
@@ -200,28 +201,23 @@ rpmbuild -ba stella.spec</div>
   </li>
 
   <li><p>Compiling the source code:
-  <p>Before compiling the code for the first time, Visual Studio must be set up as follows:
+  <p>Before compiling the code for the first time, you must set up your environment such that Visual Studio
+  can find the SDL development files:
   <ol>
-    <li><p>Open the Visual Studio 2017 project, located in REPO_DIR\src\windows, as in the following:
+    <li><p>Open the folder REPO_DIR\src\windows, similar to the following:
       <p><blockquote><img src="images/vs_open.png"/></blockquote>
-    <li><p>Unzip the <B>SDL2-devel-2.0.4-VC.zip</B> file you downloaded above somewhere on your system.
-      Make note of where these files are located.
-    <li><p>Go to "PROJECT -> Stella Properties" menu (or click Alt-F7); this will create a window
-      as follows: <p><blockquote><img src="images/vs_props.png"/></blockquote>
-    <li><p>Notice the bolded text <B>"C:\Users\stephen\Source\sdl\include"</B> and
-      <B>"C:\Users\stephen\Source\sdl\lib\x64"</B>?  You will need to add locations specific to your
-      system which points to the SDL files.  These locations are to directories within the
-      SDL2 zip archive, which you unzipped earlier.
-    <li><p>For building and running the 32-bit version you need the path to point at <B>lib\x86</B> in
-      <u>both</u> the <I>Debug</I> and <I>Release</I> versions.
-    <li><p>For building and running the 64-bit version you need the path to point at <B>lib\x64</B> in
-      <u>both</u> the <I>Debug</I> and <I>Release</I> versions.
-    <li><p>Build the project; it should run to completion, perhaps with some warnings.
+    <li><p>Unzip the <B>SDL2-devel-2.0.x-VC.zip</B> file you downloaded above into this folder.
+      This will create a folder named SDL2-2.0.x (where 'x' depends on the version you downloaded),
+      which should contain, among other things, folders named 'include' and 'lib'.
+    <li><p>Rename this folder to 'SDL'.  In the end, you must have a folder named SDL in src\windows,
+      and the folder must contain 'include' and 'lib' folders as well.
+    <li><p>Open the Visual Studio project file (Stella.vcxproj) and build the project; it should run to completion,
+      perhaps with some warnings.
     <li><p>If you try to run at this point, it will probably complain that it can't find
-      SDL2.dll.  Manually copy this file from SDL2 zip archive to one of the following locations:
+      SDL2.dll.  Manually copy this file from the SDL folder to one of the following locations:
       <blockquote><pre>
-For the 32-bit version, you have to copy <B>lib\x86\SDL2.dll</B> into the <I>Release</I> and <I>Debug</I> folders.
-For the 64-bit version, you have to copy <B>lib\x64\SDL2.dll</B> into the <I>x64\Release</I> and <I>x64\Debug</I> folders.
+For the 32-bit version, you have to copy <B>SDL\lib\x86\SDL2.dll</B> into the <I>Release</I> and <I>Debug</I> folders.
+For the 64-bit version, you have to copy <B>SDL\lib\x64\SDL2.dll</B> into the <I>x64\Release</I> and <I>x64\Debug</I> folders.
 </pre></blockquote>
     <li>You may also get an error that the libraries <B>msvcp140.dll</B> and/or <B>msvcr140.dll</B> are not available.
       If so, you will need to download them from
@@ -261,7 +257,7 @@ For the 64-bit version, you have to copy <B>lib\x64\SDL2.dll</B> into the <I>x64
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
 <a href="http://minbar.org">Stephen Anthony</a> and
 <a href="theteam.html">The Stella Team</a>
-<br/>	Site Updated July 23, 2017</p>
+<br/>	Site Updated August 1, 2017</p>
 </div>
 		</div>
 		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
