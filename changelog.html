@@ -14,6 +14,48 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>August 20, 2017</H4>
+Stella release 5.0.2 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Improved emulation of Trakball controller, eliminating bias in left/
+    right directions.  Thanks to Thomas Jentzsch for the idea and code.
+    Related to this, added 'tsense' commandline argument and associated
+    UI item, to allow changing sensitivity of mouse trackball emulation.</li>
+
+<li>Added preliminary support for multi-threading in the Blargg TV effects
+    code.  This is still a WIP; more improvements are coming.  Related to
+    this, further optimized the TIA rendering code.  Also added 'threads'
+    commandline argument and associated UI item to enable/disable
+    multi-threading.  Thanks to Thomas Jentzsch for the bulk of the work
+    in this area.</li>
+
+<li>Blargg TV effects now no longer cut off the right side of the image
+    (by several pixels) in certain cases.</li>
+
+<li>Updated CDF scheme to latest version from Spiceware.  In addition,
+    this scheme now supports versioning, so older and newer ROMs will
+    continue to work.</li>
+
+<li>Fixed an annoying bug in Linux, where Alt-Tab'ing out of a window and
+    then back again would pass a 'Tab' key event to the app, which in
+    most cases would navigate to the next UI element.</li>
+
+<li>Fixed potential issue with state file saving and the debugger; under
+    certain circumstances a rewind would give a different state than
+    before (note that the state file format has changed because of this).</li>
+
+<li>Fixed lockups when entering the debugger under certain circumstances.</li>
+
+<li>The debugger 'listtraps' command now shows all traps set, not just
+    the first one(s).</li>
+
+<li>Reverted joystick changes for Decathlon ROMs from last release, as
+    it was added by mistake.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>August 1, 2017</H4>
 The documentation for building Stella from source under Windows has changed.
 
@@ -32,8 +74,6 @@ Stella release 5.0.1 for Linux, MacOS X and Windows is now available.
 
 <li>Codebase now uses C++14 features.</li>
 </ul>
-
--Have fun!
 
 
 <H4>July 16, 2017</H4>
@@ -3910,7 +3950,7 @@ near the end of October or beginning of November.
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
 <a href="http://minbar.org">Stephen Anthony</a> and
 <a href="theteam.html">The Stella Team</a>
-<br/>	Site Updated August 6, 2017</p>
+<br/>	Site Updated August 20, 2017</p>
 </div>
 		</div>
 		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
