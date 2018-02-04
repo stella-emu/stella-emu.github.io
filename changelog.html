@@ -14,6 +14,151 @@
 			<div class="content">
 
 <!---------------------------------------------------------------->
+<H4>February 4, 2018</H4>
+Stella release 5.1 for Linux, MacOS X and Windows is now available.
+<ul>
+<li>Added "Time Machine" mode, which automatically creates save states
+    in user-defined intervals.  The user can navigate back and forth within
+    these states inside the emulator and the debugger.</li>
+
+<li>Huge improvements to the disassembly view in the debugger and
+    disassembly files created:
+  <ul>
+  <li>reformatting in debugger for better space utilization</li>
+  <li>much improved code and data detection</li>
+  <li>access tracking and indicators for TIA/IO/RAM adresses in disassembly</li>
+  <li>break vector is tracked (if used)</li>
+  <li>improved cycle count (page penalties, sums created in disassembly)</li>
+  <li>improved handling of instruction masking opcodes (e.g. BIT)</li>
+  </ul>
+</li>
+
+<li>Fixed change tracking bug during rewind; changes were accumulated
+    instead of being displayed only for the last rewind step.</li>
+
+<li>Extended 'rewind' to take a second parameter which allows rewinding
+    multiple states.</li>
+
+<li>Added 'unwind' command, which undoes the latest rewind(s).</li>
+
+<li>Added '<' (unwind) button to debugger.</li>
+
+<li>Thumbulator support is not conditional any more.</li>
+
+<li>Moved various developer related settings in new Developer Settings
+    dialog. These settings now come in two groups (player/developer) and
+    allow switching all settings at once.</li>
+
+<li>Don't trap write accesses to the datastream pointers in CDF and BUS.
+    This fixes -dev.thumb.trapfatal 1.</li>
+
+<li>Complete rework of TV mode and ystart autodetection. The new
+    implementation is more robust and reduces startup time.</li>
+
+<li>Add two "grace lines" of black to the top of the frame when
+    autodetecting ystart.</li>
+
+<li>Fixed Genesis controller autodetect (Stay Frosty 2, Scramble, etc).</li>
+
+<li>Fixed a bug in ystart autodetection that could cause screen jumps.</li>
+
+<li>Fixed several bugs in holdselect, holdreset and holdjoyX commandline
+    arguments; these now work as expected.</li>
+
+<li>Fixed bug in TIA collision handling; it is now disabled in VBlank.</li>
+
+<li>Improve TIA PF collision handling during hblank; this fixes a bug in
+    Thrust ROM.</li>
+
+<li>Fixed wrong display of HM values in debugger after 'HMCLR' has been
+    executed.</li>
+
+<li>Fixed bug with the debugger 'savedis' command in Windows; it wasn't
+    actually saving the files at all.  This has never been reported
+    before, so I guess it shows how many people use that functionality.</li>
+
+<li>The debugger 'savedis', 'saverom' and 'saveses' now save files in
+    a default, user-visible directory (see the documentation for more
+    information).  In the case of 'saveses', the filename is now named
+    based on the date and time of when the command was entered.</li>
+
+<li>Fixed bug with saving snapshots in 1x mode; there was graphical
+    corruption in some cases.  Such snapshots also now include any TV
+    effects / phosphor blending currently in use.</li>
+
+<li>Fixed regular-sized snapshots when phosphor effect was enabled;
+    sometimes the image was 'double-blended', resulting in a snapshot that
+    was too dark.</li>
+
+<li>Fixed crash when selecting 'CompuMate' as a controller type for a non-
+    CompuMate ROM; this controller type can no longer be manually
+    selected, and will be used automatically used for CompuMate ROMs.</li>
+
+<li>Fixed cheat codes, so 7 digits codes are now accepted as described in
+    the doc.</li>
+
+<li>Fixed swapped ports being displayed wrong in System Logs and debugger.</li>
+
+<li>Added options to erase the AtariVox/Savekey flash memory, either for
+    all ROMs or only the current one.  Also added a message (configurable)
+    when the flash memory is accessed.</li>
+
+<li>Access to the AtariVox/SaveKey can be signaled with a message.</li>
+
+<li>Added new interface palette 'Light'.</li>
+
+<li>Frame stats display made transparent. Also it now displays the real
+    frame rate and if the developer settings group is enabled.</li>
+
+<li>Improved tab auto-complete in debugger.</li>
+
+<li>Added conditional traps and savestate creation to debugger.</li>
+
+<li>Added 'Options...' button to debugger which gives access to the options
+    menu during debugging.</li>
+
+<li>Added debugger pseudo-register '_cyclesLo' and '_cyclesHi', which give
+    the number of CPU cycles that have occurred since emulation started.</li>
+
+<li>Added debugger pseudo-register '_fcycles', which gives the number of
+    CPU cycles that have occurred since the frame started.</li>
+
+<li>Added debugger pseudo-register '_icycles', which gives the number of
+    CPU cycles of the last instruction.</li>
+
+<li>Extended debugger 'dump' command to take a second argument, indicating
+    the end of the range to dump data.</li>
+
+<li>Improved change tracking; more values are tracked and change tracking
+    now works in case of a break too.</li>
+
+<li>Added widgets for trackball and SaveKey/AtariVox controllers.</li>
+
+<li>Improved emulation of 'FE' bankswitch scheme (no user-visible changes,
+    but internally the emulation is much more accurate compared to the
+    real thing).  Related to this, improved the debugger support for this
+    scheme (you can now switch banks in the debugger view).</li>
+
+<li>Added emulation of 7800 initial RAM values and Pause key.</li>
+
+<li>Added ROM properties for 'Scramble' ROMs, and updated info for all
+    "Champ Games" ROMs.</li>
+
+<li>Added ROM properties for 'Zippy the Porcupine' ROMs, and updated
+    info for all "Chris Spry (Sprybug)" ROMs.</li>
+
+<li>Support UNIX style builds (configure / make) on OSX with both
+    XCode / clang and g++.</li>
+
+<li>Fixed error when building with uClibc-ng for ARM (thanks to Sergio
+    Prado).</li>
+
+<li>Updated included PNG library to latest stable version.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>August 20, 2017</H4>
 Stella release 5.0.2 for Linux, MacOS X and Windows is now available.
 <ul>
@@ -52,8 +197,6 @@ Stella release 5.0.2 for Linux, MacOS X and Windows is now available.
 <li>Reverted joystick changes for Decathlon ROMs from last release, as
     it was added by mistake.</li>
 </ul>
-
--Have fun!
 
 
 <H4>August 1, 2017</H4>
@@ -3950,7 +4093,7 @@ near the end of October or beginning of November.
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
 <a href="http://minbar.org">Stephen Anthony</a> and
 <a href="theteam.html">The Stella Team</a>
-<br/>	Site Updated November 10, 2017</p>
+<br/>	Site Updated February 4, 2018</p>
 </div>
 		</div>
 		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
