@@ -15,6 +15,54 @@
 
 <!---------------------------------------------------------------->
 
+<H4>June 20, 2020</H4>
+Stella release 6.2.1 for Linux, macOS and Windows is now available.
+<ul>
+<li>Fixed Pitfall II ROM not working correctly.</li>
+
+<li>Fixed crashes when using some combinations of bankswitching schemes on
+    incorrect ROMs, or when using invalid ROM file sizes, etc.</li>
+
+<li>Fixed RIOT timer behaviour on reading/writing at the wraparound cycle.</li>
+
+<li>Fixed incorrectly setting D6 bit on TIA reads in some cases.  Related
+    to this, improve 'tiadriven' option to randomize only D5..D0 bits.</li>
+
+<li>Fixed custom palette and TV effects adjustable slider rounding issue.</li>
+
+<li>Fixed some bugs in 3E+ scheme when using non-standard ROM sizes.</li>
+
+<li>Fixed crash in Audio & Video dialog when opened from debugger, and the
+    debugger window sometimes being resized when using the Options dialog.</li>
+
+<li>Make NTSC custom phase shift not affect Yellow anymore.</li>
+
+<li>Fixed '1x' snapshot mode; TV effects are now disabled.  This mode
+    now generates a clean, pixel-exact image.</li>
+
+<li>Fixed mappings sometimes not being saved in the Retron77 port.</li>
+
+<li>A ROM properties file may now be placed next to the ROM (with the same
+    name as the ROM, except ending in .pro), and Stella will automatically
+    apply the properties to the ROM. [NOTE: this was present in 6.2, but
+    was mistakenly left out of the changelog]</li>
+
+<li>Added button to Game Info dialog to save properties of the currently
+    loaded ROM to a separate properties file (in the default save directory).
+    This is useful in conjunction with the previous item.</li>
+
+<li>Allow changing custom palette and TV effects adjustables in 1% steps
+    again.</li>
+
+<li>Updated documentation for changes in ROM properties key names.</li>
+
+<li>The codebase now compiles under gcc6 again.  Future versions will
+    require gcc7, though.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>June 7, 2020</H4>
 Stella release 6.2 for Linux, macOS and Windows is now available.
 <ul>
@@ -61,8 +109,6 @@ Stella release 6.2 for Linux, macOS and Windows is now available.
 
 <li>Added support for loading grayscale PNG images in the ROM launcher.</li>
 </ul>
-
--Have fun!
 
 
 <H4>April 25, 2020</H4>
@@ -4554,7 +4600,7 @@ near the end of October or beginning of November.
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
 <a href="http://minbar.org">Stephen Anthony</a> and
 <a href="theteam.html">The Stella Team</a>
-<br/>	Site Updated June 7, 2020</p>
+<br/>	Site Updated June 20, 2020</p>
 </div>
 		</div>
 		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
