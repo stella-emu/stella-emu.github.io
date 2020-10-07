@@ -15,6 +15,66 @@
 
 <!---------------------------------------------------------------->
 
+<H4>October 7, 2020</H4>
+Stella release 6.3 for Linux, macOS and Windows is now available.
+<ul>
+<li>Added adjustable autofire.</li>
+
+<li>Added 'Dark' UI theme.</li>
+
+<li>Extended global hotkeys for debug options.</li>
+
+<li>Added option to playback a game using the Time Machine.</li>
+
+<li>Allow taking snapshots from within the Time Machine dialog.</li>
+
+<li>Added the ability to access most files that Stella uses from within a
+    ZIP file. This includes the following:
+    <ul>
+    <li>Per-ROM properties file (so one can distribute a ROM and its
+        associated properties).</li>
+    <li>Debugger symbol (.sym) and list (.lst) files, etc.</li>
+    <li>Several others, as we extend the support.</li>
+    </ul>
+    Basically, you are now able to put many files that Stella uses inside
+    one ZIP file, and distribute just that file.</li>
+
+<li>Extended AtariVox support to handle flow control, so that long phrases
+    are no longer corrupted/cut off.  This includes properly supporting the
+    2600-daptor II, which is flashable to an AVox-USB converter.</li>
+
+<li>Added auto-detection of the serial port used for an AtariVox-USB adaptor.</li>
+
+<li>Added QuadTari controller support.</li>
+
+<li>Added option to select the audio device.</li>
+
+<li>Added support for CDFJ+ bankswitching type.</li>
+
+<li>Further enhanced UA bankswitching to support more Brazilian carts.</li>
+
+<li>Added option to display detected settings info when a ROM is loaded.</li>
+
+<li>Added another oddball TIA glitch option for delayed background color.</li>
+
+<li>Added option to disable aspect ratio correct scaling.</li>
+
+<li>Added debugger pseudo-registers '_timwrapread' and '_timwrapwrite',
+    which are set when the RIOT timer is read/written on timer wraparound,
+    respectively.</li>
+
+<li>Bankswitching schemes BUS, DPC+ and CDFx now work when startup bank
+    randomization is enabled (these schemes now ignore that setting).</li>
+
+<li>Replaced "Re-disassemble" with "Disassemble @ current line" in debugger.</li>
+
+<li>Fixed bug when taking fullscreen snapshots; the dimensions were
+    sometimes cut off.</li>
+</ul>
+
+-Have fun!
+
+
 <H4>June 20, 2020</H4>
 Stella release 6.2.1 for Linux, macOS and Windows is now available.
 <ul>
@@ -59,8 +119,6 @@ Stella release 6.2.1 for Linux, macOS and Windows is now available.
 <li>The codebase now compiles under gcc6 again.  Future versions will
     require gcc7, though.</li>
 </ul>
-
--Have fun!
 
 
 <H4>June 7, 2020</H4>
@@ -4600,7 +4658,7 @@ near the end of October or beginning of November.
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
 <a href="http://minbar.org">Stephen Anthony</a> and
 <a href="theteam.html">The Stella Team</a>
-<br/>	Site Updated September 7, 2020</p>
+<br/>	Site Updated October 7, 2020</p>
 </div>
 		</div>
 		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
