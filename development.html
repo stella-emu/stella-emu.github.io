@@ -27,7 +27,7 @@ following is a description of how to do this for the three major platforms.
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs g++ v/7 or Clang++ v/5 (with up-to-date C++17 support), make and
+  <p>Stella needs g++-7 or clang++-5 (with up-to-date C++17 support), make and
   <a href="http://www.libsdl.org/download-2.0.php">SDL2</a> development libraries installed.
   ZLib and PNG libraries are optional; Stella will use built-in versions if none
   are installed system-wide. These packages are likely available through your distribution
@@ -105,7 +105,7 @@ rpmbuild -ba stella.spec</div>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs Xcode 8 for compilation.  You will also need the SDL2 development libraries,
+  <p>Stella needs macOS 12 and associated Xcode version for compilation.  You will also need the SDL2 development libraries,
   located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.  You will need
   to download <B>SDL2-2.0.14.dmg</B> (or newer, if available).
 
@@ -127,8 +127,7 @@ rpmbuild -ba stella.spec</div>
 
   <li><p>Compiling the source code:
   <p><ol>
-    <li>The Xcode project is located at <I>src/macos/stella.xcodeproj</I> and is for 64-bit Intel-only
-    machines running 10.7 or greater.
+    <li>The Xcode project is located at <I>src/macos/stella.xcodeproj</I> and is for ARM M1 and 64-bit Intel machines.
     </li>
 
     <li><p>Place the <I>SDL.framework</I> bundle (located in the <B>SDL2 dmg</B> file
@@ -174,7 +173,7 @@ rpmbuild -ba stella.spec</div>
 </ol>
 
 <br/>
-<h3><u>Windows 7/8/10</u></h3>
+<h3><u>Windows 7/8/10/11</u></h3>
 <ol>
 
   <li><p>Getting the required tools:
@@ -253,11 +252,11 @@ For the 64-bit version, you have to copy <B>SDL\lib\x64\SDL2.dll</B> into the <I
 <!---------------------------------------------------------------->
 
 			</div>
-			<div class="footer"><hr><p>Copyright &copy; 1995-2021
+			<div class="footer"><hr><p>Copyright &copy; 1995-2022
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
 <a href="http://minbar.org">Stephen Anthony</a> and
 <a href="theteam.html">The Stella Team</a>
-<br/>	Site Updated November 16, 2021</p>
+<br/>	Site Updated June 13, 2022</p>
 </div>
 		</div>
 		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">

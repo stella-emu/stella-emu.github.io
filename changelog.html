@@ -15,6 +15,82 @@
 
 <!---------------------------------------------------------------->
 
+<H4>June 13, 2022</H4>
+Stella release 6.7 for Linux, macOS and Windows is now available.
+<ul>
+<li><b>IMPORTANT NOTES:</b>
+<ul>
+    <li>Because of fixes to JSON handling, all remappings will be reset
+        to defaults; if you had custom mappings, they will need to be
+        re-entered again.</li>
+    <li>Because of internal changes, all state files are now invalid.</li>
+</ul></li>
+
+<li>Completely reworked the file launcher:
+<ul>
+    <li>Redesigned user interface</li>
+    <li>Added tracking of user favorites, recently played and most popular games</li>
+    <li>Added virtual directories for selecting tracked games</li>
+    <li>Added quick path navigation</li>
+    <li>Added navigation history</li>
+    <li>Added icons for files and directories</li>
+    <li>Added option to show/hide file extensions</li>
+    <li>Extended context menu and shortcuts</li>
+    <li>Fixed sluggish behaviour when reading large and/or invalid files</li>
+</ul></li>
+
+<li>Added hotkey display to tooltips.</li>
+
+<li>Added option to automatically pause emulation when focus is lost.</li>
+
+<li>Added option to toggle autofire mode.</li>
+
+<li>Improved controller mappings for Paddles.</li>
+
+<li>Improved controller mappings for Driving controllers.</li>
+
+<li>Improved Mindlink support.</li>
+
+<li>Added another oddball TIA glitch option for score mode color.</li>
+
+<li>Enhanced TV jitter emulation (TODO: doc).</li>
+
+<li>Enhanced support for CDFJ+ bankswitching type.</li>
+
+<li>Added 0FA0 bankswitching for Fotomania ROMs.</li>
+
+<li>Added ARM chip auto detection.</li>
+
+<li>Extended support for older BUS (experimental) ROMs that worked
+    with an older, obsolete version of the BUS scheme; special thanks
+    to SpiceWare for the code.</li>
+
+<li>Fixed Stella crash due to invalid ZIP files.</li>
+
+<li>Fixed TV mode auto detection in some ARM ROMs.</li>
+
+<li>Fixed color loss when switching TV mode from/to PAL.</li>
+
+<li>Fixed score mode glitch emulation corner case.</li>
+
+<li>Fixed state messages staying on screen forever.</li>
+
+<li>Added M1 support for the macOS build.</li>
+
+<li>Debugger improvements:
+<ul>
+    <li>added PlusROM information</li>
+    <li>fixed patching code in ZP-RAM</li>
+    <li>improved bank origin detection</li>
+</ul></li>
+
+<li>Updated internal ROM properties database to ROM-Hunter version 17
+    (thanks go to RomHunter for his tireless research in this area).
+    Related to this, updated the snapshot collection.</li>
+</ul>
+-Have fun!
+
+
 <H4>November 16, 2021</H4>
 Stella release 6.6 for Linux, macOS and Windows is now available.
 <ul>
@@ -46,7 +122,6 @@ Stella release 6.6 for Linux, macOS and Windows is now available.
 
 <li>Debugger: added Thumb cycle counting.</li>
 </ul>
--Have fun!
 
 
 <H4>April 20, 2021</H4>
@@ -4810,11 +4885,11 @@ near the end of October or beginning of November.
 <!---------------------------------------------------------------->
 
 			</div>
-			<div class="footer"><hr><p>Copyright &copy; 1995-2021
+			<div class="footer"><hr><p>Copyright &copy; 1995-2022
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
 <a href="http://minbar.org">Stephen Anthony</a> and
 <a href="theteam.html">The Stella Team</a>
-<br/>	Site Updated November 16, 2021</p>
+<br/>	Site Updated June 13, 2022</p>
 </div>
 		</div>
 		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
