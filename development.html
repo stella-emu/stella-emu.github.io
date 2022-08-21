@@ -177,9 +177,9 @@ rpmbuild -ba stella.spec</div>
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs <a href="https://www.visualstudio.com/vs/community">Visual Studio C++ 2019</a>.
-  You will also need the SDL2 development libraries, located at <a href="http://www.libsdl.org/download-2.0.php">libsdl.org</a>.
-  The version you want will be named SDL2-devel-2.0.x-VC.zip (where 'x' is dependent on the version); download the latest version.
+  <p>Stella needs <a href="https://www.visualstudio.com/vs/community">Visual Studio C++ 2022</a>.
+  You will also need the SDL2 development libraries, located at <a href="https://github.com/libsdl-org/SDL/releases">GitHub</a>.
+  The version you want will be named SDL2-devel-2.2.x-VC.zip (where 'x' is dependent on the version); download the latest version.
   <p>You will also need a Git client; the following assumes you are using <a href="https://tortoisegit.org">
   TortoiseGit</a>.
 
@@ -203,20 +203,20 @@ rpmbuild -ba stella.spec</div>
   <p>Before compiling the code for the first time, you must set up your environment such that Visual Studio
   can find the SDL development files:
   <ol>
-    <li><p>Open the folder REPO_DIR\src\windows, similar to the following:
+    <li><p>Open the folder REPO_DIR\src\os\windows, similar to the following:
       <p><blockquote><img src="images/vs_open.png"/></blockquote>
-    <li><p>Unzip the <B>SDL2-devel-2.0.x-VC.zip</B> file you downloaded above into this folder.
-      This will create a folder named SDL2-2.0.x (where 'x' depends on the version you downloaded),
+    <li><p>Unzip the <B>SDL2-devel-2.2.x-VC.zip</B> file you downloaded above into this folder.
+      This will create a folder named SDL2-2.2.x (where 'x' depends on the version you downloaded),
       which should contain, among other things, folders named 'include' and 'lib'.
-    <li><p>Rename this folder to 'SDL'.  In the end, you must have a folder named SDL in src\windows,
+    <li><p>Rename this folder to 'SDL'.  In the end, you must have a folder named SDL in src\os\windows,
       and the folder must contain 'include' and 'lib' folders as well.
     <li><p>Open the Visual Studio project file (Stella.vcxproj) and build the project; it should run to completion,
       perhaps with some warnings.
     <li><p>If you try to run at this point, it will probably complain that it can't find
-      SDL2.dll.  Manually copy this file from the SDL folder to one of the following locations:
+      SDL2.dll.  Manually copy this file from the SDL folder to the following locations:
       <blockquote><pre>
-For the 32-bit version, you have to copy <B>SDL\lib\x86\SDL2.dll</B> into the <I>Win32\Release</I> and <I>Win32\Debug</I> folders.
-For the 64-bit version, you have to copy <B>SDL\lib\x64\SDL2.dll</B> into the <I>x64\Release</I> and <I>x64\Debug</I> folders.
+For the 32-bit version: <I>Win32\Release</I> and <I>Win32\Debug</I> subfolders.
+For the 64-bit version: <I>x64\Release</I> and <I>x64\Debug</I> subfolders.
 </pre></blockquote>
     <li>You may also get an error that the libraries <B>msvcp140.dll</B> and/or <B>msvcr140.dll</B> are not available.
       If so, you will need to download them from
