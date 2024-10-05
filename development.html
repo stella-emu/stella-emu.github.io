@@ -27,7 +27,7 @@ following is a description of how to do this for the three major platforms.
 <ol>
 
   <li><p>Getting the required tools:
-  <p>Stella needs g++-7 or clang++-5 (with up-to-date C++17 support), make and
+  <p>Stella needs g++-11 or clang++-10 (with up-to-date C++20 support), make and
   <a href="http://www.libsdl.org/download-2.0.php">SDL2</a> development libraries installed.
   ZLib and PNG libraries are optional; Stella will use built-in versions if none
   are installed system-wide. These packages are likely available through your distribution
@@ -67,10 +67,6 @@ make install (if you want to install locally)</div>
 dpkg-buildpackage</div>
     </li>
 
-    <li><p>RPM-based distributions:
-    <p><div class="con">cd 'location of stella source code'/src/unix
-rpmbuild -ba stella.spec</div>
-    </li>
     </ol>
   </li>
 
@@ -134,7 +130,7 @@ rpmbuild -ba stella.spec</div>
     you downloaded earlier) into the <I>/Library/Frameworks</I> directory.
     </li>
 
-    <li><p>Open the project file using Xcode 8.</li>
+    <li><p>Open the project file using Xcode 12.</li>
 
     <li><p>Build the project by pressing Cmd-b, and run by pressing Cmd-r.</li>
 
@@ -213,9 +209,8 @@ rpmbuild -ba stella.spec</div>
     <li><p>Open the Visual Studio project file (Stella.vcxproj) and build the project; it should run to completion,
       perhaps with some warnings.
     <li><p>If you try to run at this point, it will probably complain that it can't find
-      SDL2.dll.  Manually copy this file from the SDL folder to the following locations:
+      SDL2.dll.  Manually copy this file from the SDL folder to the following location:
       <blockquote><pre>
-	For the 32-bit version: <I>Win32\Release</I> and <I>Win32\Debug</I> subfolders
 	For the 64-bit version: <I>x64\Release</I> and <I>x64\Debug</I> subfolders
       </pre></blockquote>
     <li>You may also get an error that the libraries <B>msvcp140.dll</B> and/or <B>msvcr140.dll</B> are not available.
@@ -256,7 +251,7 @@ rpmbuild -ba stella.spec</div>
 <a href="http://www.bradfordmott.com">Bradford W. Mott</a>,
 <a href="http://minbar.org">Stephen Anthony</a> and
 <a href="theteam.html">The Stella Team</a>
-<br/>	Site Updated August 21, 2022</p>
+<br/>	Site Updated October 5, 2024</p>
 </div>
 		</div>
 		<div class="leftcolumn"><img src="menu-title.gif" width="125" height="125">
