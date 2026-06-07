@@ -207,11 +207,15 @@ dpkg-buildpackage</div>
     <li><p>Rename this folder to 'SDL'.  In the end, you must have a folder named SDL in src\os\windows,
       and the folder must contain 'include' and 'lib' folders as well.
     <li><p>Open the Visual Studio project file (Stella.vcxproj) and build the project; it should run to completion,
-      perhaps with some warnings.
+      perhaps with some warnings. Stella can be built for either x64 or ARM64 by choosing the corresponding build
+      target.
     <li><p>If you try to run at this point, it will probably complain that it can't find
       SDL2.dll.  Manually copy this file from the SDL folder to the following location:
       <blockquote><pre>
-	For the 64-bit version: <I>x64\Release</I> and <I>x64\Debug</I> subfolders
+	For the x64 version: <I>x64\Release</I> and <I>x64\Debug</I> subfolders
+      </pre></blockquote>
+      <blockquote><pre>
+	For the ARM64 version: <I>arm64\Release</I> and <I>arm64\Debug</I> subfolders
       </pre></blockquote>
     <li>You may also get an error that the libraries <B>msvcp140.dll</B> and/or <B>msvcr140.dll</B> are not available.
       If so, you will need to download them from
